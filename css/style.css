@@ -44,3 +44,8 @@ header .nav-tab ul li{
     font-weight: 700;
 }
 
+.nav-btn{
+    margin-right: 4rem;
+    position: relative;
+    margin-left: 1rem;
+}
