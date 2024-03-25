@@ -1,3 +1,23 @@
+:root {
+    --bg-black-dark: #e7e7ed;
+    --bg-black-med: #e7e5e8;
+    --bg-black-light: #fcf6ff;
+    --text-black-dark: #333052;
+    --text-black-med: #5e5c80;
+    --text-black-light: #ffffff;
+    --text-size-medium:1.4rem;
+    --text-size-large: 2rem;
+    --text-size-small: 1rem;
+
+    --skin-color: #d84444;
+}
+
+*{
+    padding: 0 0;
+    margin: 0 0;
+    box-sizing: border-box;
+}
+
 .flex{
     display: flex;
     align-items: center;
@@ -5,4 +25,28 @@
 
 .grid{
     display: grid;
+}
+
+.bttn{
+    width: 8rem;
+    color: var(--text-black-light);
+    border-radius: 1rem;
+    font-size: 1.rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    background-color: var(--skin-color);
+    border: none;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.bttn:hover{
+    color: var(--skin-color);
+    background-color: transparent;
+    border: 2px solid var(--skin-color);
+}
+
+.nav-btn{
+    margin-right: 4rem;
 }
