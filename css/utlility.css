@@ -12,14 +12,6 @@
     --skin-color: #d84444;
 }
 
-.dark {
-    --bg-black-dark: #1a1a1a;
-    --bg-black-med: #222222;
-    --bg-black-light: #393939;
-    --text-black-dark: #ffffff;
-    --text-black-med: #dfdddd;
-}
-
 *{
     padding: 0 0;
     margin: 0 0;
