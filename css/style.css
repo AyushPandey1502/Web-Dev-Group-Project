@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
     height: 6000px;
+    color: rgb(var(--foreground-rgb));
+    background: linear-gradient(to bottom,
+            transparent,
+            rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+            background: url(../assets/images/background_image.jpg) no-repeat;
+            background-repeat: repeat-y;
 }
 
 body.dark {
@@ -13,39 +19,60 @@ body.dark {
     --text-black-med: #dfdddd;
 }
 
-header{
+header {
     position: sticky;
     padding: 1.5rem 3rem;
 }
 
-nav{
+nav {
     position: sticky;
     justify-content: space-between;
     border-radius: 1rem;
     background-color: var(--bg-black-med);
 }
 
-header .logo img{
+header .logo img {
     height: 5.5rem;
     margin-left: 4rem;
 }
 
-header .nav-tab ul{
+header .nav-tab ul {
     list-style: none;
 }
 
-header .nav-tab ul li{
+header .nav-tab ul li {
     margin-left: 4rem;
 }
 
-.nav-tab ul li a{
+.nav-tab ul li a {
     text-decoration: none;
     font-size: var(--text-size-medium);
     font-weight: 700;
 }
 
-.nav-btn{
+.nav-btn {
     margin-right: 4rem;
     position: relative;
     margin-left: 1rem;
+}
+
+section.home {
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.home-container {
+    flex-direction: column;
+}
+
+.home-content p {
+    margin: 10vh;
+    color: white;
+    font-size: 20px;
+}
+
+.home-btn {
+    margin-top: 30px;
+    width: 220px;
 }
