@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    height: 6000px;
+    /* height: 6000px; */
     color: rgb(var(--foreground-rgb));
     background: linear-gradient(to bottom,
             transparent,
@@ -173,7 +173,7 @@ section.home {
 .mentor img {
     border: 2px solid #ffffff;
     border-radius: 50%;
-    height: 300px;
+    height: 40vh;
 }
 
 .our-team {
@@ -196,9 +196,44 @@ section.home {
 .team-card img {
     border: 2px solid #ffffff;
     border-radius: 50%;
-    height: 200px;
+    height: 25vh;
+    /* height: 200px; */
 }
 
 .our-team-container {
     justify-content: space-between;
+}
+
+/* ====================== Contact Us ====================== */
+
+.contact-container{
+    background-color: rgba(71, 86, 110, 0.5);
+    padding: 40px 40px;
+}
+
+.logo{
+    width: 30%;
+}
+
+.logo img{
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    height: 25vh;
+}
+
+.social-contacts{
+    width: 70%;
+    justify-content: space-evenly;
+}
+
+.social-contacts i{
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: 800;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.connect-us{
+    flex-direction: column;
 }
