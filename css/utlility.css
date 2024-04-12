@@ -1,8 +1,7 @@
 :root {
-    --bg-black-dark: #e7e7ed;
+    --text-black-dark: #e7e7ed;
     --bg-black-med: #e7e5e8;
     --bg-black-light: #fcf6ff;
-    --text-black-dark: #333052;
     --text-black-med: #5e5c80;
     --text-black-light: #ffffff;
     --text-size-medium: 1.4rem;
@@ -13,7 +12,7 @@
     --background-start-rgb: 214, 219, 220;
     --background-end-rgb: 255, 255, 255;
 
-    --skin-color: #d84444;
+    --skin-color: #06b6d4;
 }
 
 * {
@@ -36,12 +35,12 @@
 .bttn {
     width: 8rem;
     color: var(--text-black-light);
-    border-radius: 1rem;
+    border-radius: 0.8rem;
     font-size: 1.rem;
     padding: 0.5rem 1rem;
     font-size: 1.1rem;
     font-weight: 700;
-    background-color: var(--skin-color);
+    background: linear-gradient(to right, rgba(255,255,255,0.5), rgba(255,255,255,0)), var(--skin-color);
     border: none;
     transition: .2s;
     cursor: pointer;
@@ -55,6 +54,14 @@
 
 section {
     padding: 40px 80px;
-    width: 100vh;
+    width: 100vw;
     height: 100vh;
+}
+
+.section-title{
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    color: var(--text-black-dark);
+    margin-bottom: 6rem;
 }

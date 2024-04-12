@@ -7,16 +7,9 @@ body {
     background: linear-gradient(to bottom,
             transparent,
             rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
-            background: url(../assets/images/background_image.jpg) no-repeat;
-            background-repeat: repeat-y;
-}
-
-body.dark {
-    --bg-black-dark: #1a1a1a;
-    --bg-black-med: #222222;
-    --bg-black-light: #393939;
-    --text-black-dark: #ffffff;
-    --text-black-med: #dfdddd;
+    background: url(../assets/images/background_image.jpg) no-repeat;
+    background-repeat: repeat-y;
+    overflow-x: hidden;
 }
 
 header {
@@ -74,5 +67,81 @@ section.home {
 
 .home-btn {
     margin-top: 30px;
-    width: 220px;
+    width: 240px;
 }
+
+
+/* =================== TIMELINE START ======================== */
+
+.scrolling-wrapper-flexbox {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    column-gap: 60px;
+    align-items: center;
+  }
+
+.card {
+    flex: 0 0 auto;
+    position: relative;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 350px;
+    height: 400px;
+    /* overflow: hidden; */
+    animation: marquee 10s linear forwards;
+}
+
+.card h2 {
+    text-align: center;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    color: var(--text-black-dark);
+}
+
+.timeline-time {
+    color: var(--text-black-dark);
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0; 
+}
+.timeline-time h3{
+    display: inline;
+    border-bottom: 1px solid #ffffff;
+    margin-bottom: 3rem;
+}
+
+.timeline-time h2{
+    margin-top: 10px;
+}
+
+
+.scrolling-wrapper-flexbox {
+    -webkit-overflow-scrolling: touch;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+
+.scrolling-wrapper-flexbox::-webkit-scrollbar {
+    display: none;
+}
+
+.card-1{
+    background-image: url(../assets/images/bulls-and-bear.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.marquee-container {
+    display: inline-block;
+    animation: marquee 20s linear infinite;
+    white-space: nowrap; 
+  }
+  
+  @keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+  }
