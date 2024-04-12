@@ -79,7 +79,7 @@ section.home {
     overflow-x: auto;
     column-gap: 60px;
     align-items: center;
-  }
+}
 
 .card {
     flex: 0 0 auto;
@@ -105,15 +105,16 @@ section.home {
     position: absolute;
     bottom: 20px;
     left: 0;
-    right: 0; 
+    right: 0;
 }
-.timeline-time h3{
+
+.timeline-time h3 {
     display: inline;
     border-bottom: 1px solid #ffffff;
     margin-bottom: 3rem;
 }
 
-.timeline-time h2{
+.timeline-time h2 {
     margin-top: 10px;
 }
 
@@ -129,7 +130,7 @@ section.home {
     display: none;
 }
 
-.card-1{
+.card-1 {
     background-image: url(../assets/images/bulls-and-bear.jpg);
     background-size: cover;
     background-position: center;
@@ -138,10 +139,66 @@ section.home {
 .marquee-container {
     display: inline-block;
     animation: marquee 20s linear infinite;
-    white-space: nowrap; 
-  }
-  
-  @keyframes marquee {
-    0% { transform: translateX(0%); }
-    100% { transform: translateX(-100%); }
-  }
+    white-space: nowrap;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+/* ======================= OUR TEAM ============================== */
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 50px;
+}
+
+.mentor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+}
+
+.mentor img {
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    height: 300px;
+}
+
+.our-team {
+    width: 70%;
+}
+
+.team-card {
+    flex-direction: column;
+}
+
+.team-card h3,
+.team-card h2 {
+    color: #ffffff;
+}
+
+.team-card h2 {
+    margin-top: 20px;
+}
+
+.team-card img {
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    height: 200px;
+}
+
+.our-team-container {
+    justify-content: space-between;
+}
