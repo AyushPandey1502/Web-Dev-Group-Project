@@ -59,7 +59,7 @@ section {
 }
 
 .section-title{
-    font-size: 35px;
+    font-size: 2.2vw;
     font-weight: 800;
     text-align: center;
     color: var(--text-black-dark);
@@ -67,8 +67,8 @@ section {
 }
 
 .subtitle{
-    font-size: 25px;
-    font-weight: 500;
+    font-size: 1.5vw;
+    font-weight: 600;
     text-align: center;
     color: var(--text-black-dark);
     margin-bottom: 3rem;
