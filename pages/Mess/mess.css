@@ -49,14 +49,17 @@ header .nav-tab ul li {
     position: relative;
     margin-left: 1rem;
 }
-
 .main-content{
-    flex-direction: column;
+    gap: 100px;
+    justify-content: space-evenly;
 }
 
 .chotta-dhobi{
-    /* border: 2px solid white; */
     border-radius: 15px;
+}
+
+.chotta-dhobi-left, .chotta-dhobi-right{
+    flex-direction: column;
 }
 
 .washes-left{
@@ -65,7 +68,19 @@ header .nav-tab ul li {
 
 .submit-clothes-btn{
     margin-top: 10px;
-    width: 400px;
-    padding: 5px 5px;
+    width: 300px;
+    padding: 10px 5px;
     font-size: max(2vh, 20px);
+}
+
+.chotta-dhobi-img img{
+    width: 500px;
+}
+
+textarea{
+    background-color: rgba(71, 86, 110, 0.7);
+    color: white;
+    border-radius: 10px;
+    padding: 10px 10px;
+    font-size: 2.3vh;
 }
