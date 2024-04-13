@@ -59,15 +59,29 @@ section.home {
     flex-direction: column;
 }
 
+/* .home-img img{
+    z-index: 1;
+    filter: invert(100%);
+    bottom: 0;
+} */
+
+.home{
+    background: url(../assets/images/header-bg.png);
+    filter: invert(100%);
+}
+
 .home-content p {
     margin: 10vh;
     color: white;
     font-size: 20px;
+    filter: invert(100%);
+    z-index: 1;
 }
 
 .home-btn {
     margin-top: 30px;
     width: 240px;
+    filter: invert(100%);
 }
 
 
