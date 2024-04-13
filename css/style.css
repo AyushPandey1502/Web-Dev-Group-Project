@@ -215,10 +215,7 @@ section.home {
     background-color: rgba(71, 86, 110, 0.5);
     padding: 40px 40px;
     border-radius: 10px;
-}
-
-.logo{
-    width: 30%;
+    justify-content: space-evenly;
 }
 
 .logo img{
@@ -228,7 +225,6 @@ section.home {
 }
 
 .social-contacts{
-    width: 70%;
     justify-content: space-between;
 }
 
@@ -241,5 +237,8 @@ section.home {
 }
 
 .connect-us{
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
