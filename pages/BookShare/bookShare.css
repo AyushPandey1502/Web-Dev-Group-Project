@@ -151,4 +151,12 @@ fieldset{
 h5{
     color: white;
 }
+.post{
+    justify-content:space-around;
+    height: 500px;
+    background-color: rgba(48, 126, 251, 0.1);
 
+}
+.form{
+    color: white;
+}
