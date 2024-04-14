@@ -29,36 +29,71 @@
                 <button class="nav-btn bttn">Login</button>
             </nav>
         </header>
+
         <section class="main-content flex">
-            <div class="chotta-dhobi-left flex">
-                <div class="chotta-dhobi-header flex">
-                    <div class="chotta-dhobi-img">
-                        <img src="../../assets/images/chotta-dhobi.png" alt="">
+            <h2 class="section-title greet">Good <span class="greeting"></span>!</h2>
+            <div class="chotta-dhobi-content flex">
+                <div class="chotta-dhobi-left flex">
+                    <div class="chotta-dhobi-header flex">
+                        <div class="chotta-dhobi-img">
+                            <img src="../../assets/images/chotta-dhobi.png" alt="">
+                        </div>
+                    </div>
+                    <img class="bubbles" src="../../assets/images/bubbles-img.png" alt="">
+                </div>
+
+
+
+                <div class="chotta-dhobi-dashboard">
+                    <div class="chotta-dhobi-status">
+                        <h1 class="section-title washes-left">29</h1>
+                        <h3 class="subtitle">washes left</h3>
+                    </div>
+                    <div class="chotta-dhobi-history flex">
+                        <h2 class="subtitle">History</h2>
+                        <li>20 clothes washed on <span class="date"></span></li>
+                        <li>14 clothes washed on <span class="date"></span></li>
+                        <li>12 clothes washed on <span class="date"></span></li>
+                        <li>17 clothes washed on <span class="date"></span></li>
+                        <li>19 clothes washed on <span class="date"></span></li>
+                        <li>10 clothes washed on <span class="date"></span></li>
+                        
                     </div>
                 </div>
-                <img src="../../assets/images/bubbles-img.png" alt="">
-            </div>
-            <div class="chotta-dhobi-center">
-                <div class="chotta-dhobi-status">
-                    <h2 class="section-title">Current Status</h2>
-                    <div class="washing-status">
-                        <div class="clothes-numb">
-                            
+
+
+
+                <div class="chotta-dhobi-center">
+                    <div class="chotta-dhobi-status">
+                        <div class="chotta-dhobi-status-header flex">
+                            <h2 class="subtitle">Current <br>Status</h2>
+                            <div class="current-status"><div class="dot"></div> On Process</div>
+                        </div>
+
+                        <div class="washing-status flex">
+                            <div class="clothes-numb-details flex">
+                                <i class="fa-solid fa-shirt"></i>
+                                <span class="clothes-num">20</span>
+                            </div>
+                            <div class="clothes-tag-details flex">
+                                <i class="fa-solid fa-tag"></i>
+                                <span class="clothes-token-num">256</span>
+                            </div>
+                            <button class="bttn" onclick=clothesSubmission()>Collect Now!</button>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="chotta-dhobi-right flex">
-                <div class="chotta-dhobi-status">
-                    <h2 class="section-title">Good <span class="greeting">Morning</span></h2>
-                    <h1 class="section-title washes-left">29</h1>
-                    <h3 class="subtitle">washes left</h3>
+                <div class="chotta-dhobi-right flex">
+                    <textarea name="cloth-description" id="" cols="30" rows="10"
+                        placeholder="Enter description..."></textarea> <br>
+                    <button class="bttn submit-clothes-btn" onclick=submitClothes()>Submit Clothes <i class="fa-solid fa-soap"></i></button>
                 </div>
-                <textarea name="cloth-description" id="" cols="40" rows="15" placeholder="Enter description..."></textarea>
-                <button class="bttn submit-clothes-btn">Submit Clothes <i class="fa-solid fa-soap"></i></button>
             </div>
         </section>
     </div>
+    <script>
+    </script>
+    <script src="mess.js"></script>
 </body>
 
 </html>
