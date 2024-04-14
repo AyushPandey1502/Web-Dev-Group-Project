@@ -67,12 +67,13 @@ header .nav-tab ul li {
     height:300px;
 }
 .post-container{
-    background-color: rgba(71, 86, 110, 0.5);
+    /*background-color: rgba(71, 86, 110, 0.5);*/
     padding: 40px 40px;
     border-radius: 10px;
     justify-content: space-between;
     width: 100%;
-    height: 300px;    
+    height: 300px;  
+    color: white;  
 }
 .middle-left img{
     width:250px;
@@ -83,6 +84,19 @@ header .nav-tab ul li {
 }
 .bookname input{
     width:400px;
+}
+.author input{
+    width: 400px;
+}
+fieldset{
+    border-radius: 20px;
+    margin-left: 10px;
+    border-style:inset;
+    border-width: 5px;
+    border-color:indigo;
+}
+.left-container{
+    justify-content: center;
 }
 
 
