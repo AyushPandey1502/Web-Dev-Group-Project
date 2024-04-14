@@ -14,7 +14,7 @@
     --background-start-rgb: 214, 219, 220;
     --background-end-rgb: 255, 255, 255;
 
-    --skin-color: #06b6d4;
+    --skin-color: #11afcb;
 }
 
 
@@ -58,7 +58,7 @@
 section {
     padding: 40px 80px;
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .section-title{
