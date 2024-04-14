@@ -76,6 +76,9 @@ header .nav-tab ul li {
 
 .main-container {
     justify-content: space-evenly;
+    background-color: black;
+    margin-left: 110px;
+    margin-right: 110px;
 }
 
 .img1 img {
@@ -85,6 +88,7 @@ header .nav-tab ul li {
 
 .text-top {
     color: white;
+    text-align: center;
     font-size: 40px;
     margin-left: -2em;
     margin-bottom: 1em;
@@ -95,54 +99,51 @@ header .nav-tab ul li {
     width: 500px;
     height: 600px;
     margin-top: 60px;
-    /* margin-left: 500px; */
     color: white;
     font-size: 25px;
-    border: 3px solid;
     padding-left: 100px;
     padding-top: 20px;
-    border-color: aqua;
-    background-color: black;
+
 }
 
 .loc {
-    width: 300px;
+    width: 400px;
     height: 40px;
     font-size: 20px;
     margin-bottom: 7px;
-    margin-left: 35px;
+    margin-top: 5px;
     padding-left: 10px;
 }
 
 
 .dest {
-    width: 300px;
+    width: 400px;
     height: 40px;
     font-size: 20px;
     margin-bottom: 7px;
-    margin-left: 39.5px;
+    margin-top: 5px;
     padding-left: 10px
 }
 
 .date {
-    width: 300px;
+    width: 400px;
     height: 40px;
     font-size: 20px;
     margin-bottom: 7px;
-    margin-left: 42px;
+    margin-top: 5px;
     padding-left: 10px
 }
 
 .vac {
-    width: 300px;
+    width: 400px;
     height: 40px;
     font-size: 20px;
-    margin-left: 40px;
+    margin-top: 5px;
     padding-left: 10px
 }
 
 .detail button {
-    margin-left: 100px;
+    margin-left: 80px;
     margin-top: 30px;
     width: 160px;
     height: 60px;
@@ -173,8 +174,6 @@ header .nav-tab ul li {
     width: 350px;
     height: 400px;
     margin-bottom: 2cm;
-    /* overflow: hidden; */
-    /* animation: marquee 10s linear forwards; */
 }
 
 .vac-start {
