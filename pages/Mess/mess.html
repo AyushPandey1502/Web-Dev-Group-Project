@@ -31,7 +31,7 @@
         </header>
 
         <section class="main-content flex">
-            <h2 class="section-title greet">Good <span class="greeting"></span>!</h2>
+            <h2 class="section-title greet">Good <span class="greeting">Morning</span>!</h2>
             <div class="chotta-dhobi-content flex">
                 <div class="chotta-dhobi-left flex">
                     <div class="chotta-dhobi-header flex">
@@ -49,25 +49,32 @@
                         <h1 class="section-title washes-left">29</h1>
                         <h3 class="subtitle">washes left</h3>
                     </div>
-                    <div class="chotta-dhobi-history flex">
+                    <div class="chotta-dhobi-history">
                         <h2 class="subtitle">History</h2>
-                        <li>20 clothes washed on <span class="date"></span></li>
-                        <li>14 clothes washed on <span class="date"></span></li>
-                        <li>12 clothes washed on <span class="date"></span></li>
-                        <li>17 clothes washed on <span class="date"></span></li>
-                        <li>19 clothes washed on <span class="date"></span></li>
-                        <li>10 clothes washed on <span class="date"></span></li>
-                        
+                        <ul>
+                            <li>13 clothes washed on <span class="date"></span></li>
+                            <li>14 clothes washed on <span class="date"></span></li>
+                            <li>12 clothes washed on <span class="date"></span></li>
+                            <li>17 clothes washed on <span class="date"></span></li>
+                            <li>19 clothes washed on <span class="date"></span></li>
+                            <li>10 clothes washed on <span class="date"></span></li>
+                        </ul>
+                    </div>
+                    <div class="button flex">
+                        <button class="bttn submit-btn" onclick=submitBtn()>Submit Clothes <i
+                                class="fa-solid fa-soap"></i></button>
                     </div>
                 </div>
 
 
 
-                <div class="chotta-dhobi-center">
-                    <div class="chotta-dhobi-status">
+                <div class="chotta-dhobi-center flex">
+                    <div class="chotta-dhobi-status flex">
                         <div class="chotta-dhobi-status-header flex">
                             <h2 class="subtitle">Current <br>Status</h2>
-                            <div class="current-status"><div class="dot"></div> On Process</div>
+                            <div class="current-status">
+                                <div class="dot"></div> On Process
+                            </div>
                         </div>
 
                         <div class="washing-status flex">
@@ -79,14 +86,34 @@
                                 <i class="fa-solid fa-tag"></i>
                                 <span class="clothes-token-num">256</span>
                             </div>
-                            <button class="bttn" onclick=clothesSubmission()>Collect Now!</button>
                         </div>
+                        <div class="status-content"></div>
+                        <button class="collect-btn bttn" onclick=clothesCollection()>Collect Now!</button>
                     </div>
                 </div>
+
+
+
                 <div class="chotta-dhobi-right flex">
-                    <textarea name="cloth-description" id="" cols="30" rows="10"
-                        placeholder="Enter description..."></textarea> <br>
-                    <button class="bttn submit-clothes-btn" onclick=submitClothes()>Submit Clothes <i class="fa-solid fa-soap"></i></button>
+                    <h3 class="subtitle">SUBMISSION DETAILS</h3>
+                    <form id="clothesForm" action="">
+                        <div class="submit-input flex">
+                            <input type="text" id="numClothes" placeholder="number of clothes" required>
+                            <input type="text" id="tokenNumber" placeholder="token number" required>
+                            <select id="tokenColor" name="tokenColor" required>
+                                <option value="red">Red</option>
+                                <option value="green">Green</option>
+                                <option value="blue">Blue</option>
+                                <option value="yellow">Yellow</option>
+                            </select>
+                        </div>
+                        <div>
+                            <textarea name="cloth-description" id="clothDescription" cols="50" rows="10" placeholder="Enter description..."></textarea>
+                        </div>
+                        <div class="flex">
+                            <button type="submit" class="bttn submit-clothes-btn">Submit Clothes <i class="fa-solid fa-soap"></i></button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>

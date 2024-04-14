@@ -50,7 +50,7 @@ header .nav-tab ul li {
     margin-left: 1rem;
 }
 .main-content{
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-direction: column;
     /* background: url(../../assets/images/bubbles.gif) no-repeat; */
     /* background-size: cover; */
@@ -58,30 +58,62 @@ header .nav-tab ul li {
 
 section{
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 .greet{
-    margin-bottom: 0;
+    margin-bottom: 20px;
 }
 
 .chotta-dhobi{
     border-radius: 15px;
 }
 .chotta-dhobi-content{
-    justify-content: space-between;
+    justify-content: space-evenly;
+}
+
+.chotta-dhobi-dashboard{
+    border: 2px solid white;
+    height: 460px;
+    padding: 20px 20px;
+    border-radius: 10px;
+    animation: fadeIn 0.5s;
 }
 
 .chotta-dhobi-left, .chotta-dhobi-right{
     flex-direction: column;
-    display: none;
+    animation: fadeIn 0.5s;
 }
+
+/* .chotta-dhobi-left{
+
+} */
 
 .chotta-dhobi-center{
     display: none;
+    border: 2px solid white;
+    height: 520px;
+    padding: 30px 20px;
+    border-radius: 10px;
+    animation: fadeIn 0.5s;
+    width: 40%;
+}
+
+.chotta-dhobi-status{
+    flex-direction: column;
 }
 
 .chotta-dhobi-right{
     flex-direction: column;
+    display: none;
+    border: 2px solid white;
+    height: 460px;
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+
+.chotta-dhobi-right .subtitle{
+    margin-bottom: 20px;
 }
 
 .bubbles{
@@ -93,10 +125,10 @@ section{
 }
 
 .submit-clothes-btn{
-    margin-top: 10px;
-    width: 300px;
+    margin-top: 30px;
+    width: 200px;
     padding: 10px 5px;
-    font-size: max(2vh, 20px);
+    font-size: min(2vh, 20px);
 }
 
 .chotta-dhobi-img img{
@@ -109,6 +141,7 @@ textarea{
     border-radius: 10px;
     padding: 10px 10px;
     font-size: 2.3vh;
+    margin: auto auto;
 }
 
 .clothes-numb-details, .clothes-tag-details{
@@ -137,13 +170,19 @@ textarea{
 .chotta-dhobi-history{
     color: white;
     background-color: rgba(71, 86, 110, 0.7);
-    padding: 10px 10px;
+    padding: 20px 20px;
     border-radius: 10px;
     flex-direction: column;
 }
-.chot
+.chotta-dhobi-history .subtitle{
+    margin-bottom: 10px;
+}
 
-.washing-status button{
+.chotta-dhobi-history ul{
+    list-style: none;
+}
+
+.collect-btn{
     margin-top: 20px;
     display: none;
 }
@@ -171,4 +210,41 @@ textarea{
     height: 10px;
     width: 10px;
     display: inline-block;
+}
+
+.status-content{
+    color: white;
+    width: 90%;
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+.submit-btn{
+    width: 200px;
+    margin-top: 20px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.chotta-dhobi-right .submit-input input, select{
+    width: 80%;
+    margin: 20px 10px;
+    height: 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: rgba(71, 86, 110, 0.7);
+    color: white;
+    text-align: center;
+}
+
+.chotta-dhobi-right .submit-input input::placeholder {
+    color: white;
 }
