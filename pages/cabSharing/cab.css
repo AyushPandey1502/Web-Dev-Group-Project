@@ -74,17 +74,13 @@ header .nav-tab ul li {
 }
 
 
-/* .main-container {
-    border-radius: 30%;
-} */
+.main-container {
+    justify-content: space-evenly;
+}
 
-.img1 {
-    display: flex;
-    width: 500px;
-    height: 400px;
-    margin-top: 25px;
-    margin-left: 15px;
-    border-radius: 50%;
+.img1 img {
+    width: 600px;
+    height: 600px;
 }
 
 .text-top {
@@ -97,15 +93,16 @@ header .nav-tab ul li {
 
 .detail {
     width: 500px;
-    height: 500px;
-    margin-top: 3em;
-    margin-left: 20em;
+    height: 600px;
+    margin-top: 60px;
+    /* margin-left: 500px; */
     color: white;
     font-size: 25px;
-    border: 1px solid;
+    border: 3px solid;
     padding-left: 100px;
+    padding-top: 20px;
     border-color: aqua;
-    /* background-color: yellow; */
+    background-color: black;
 }
 
 .loc {
@@ -113,8 +110,8 @@ header .nav-tab ul li {
     height: 40px;
     font-size: 20px;
     margin-bottom: 7px;
-    margin-left: 25px;
-    padding-left: 10px
+    margin-left: 35px;
+    padding-left: 10px;
 }
 
 
@@ -123,7 +120,7 @@ header .nav-tab ul li {
     height: 40px;
     font-size: 20px;
     margin-bottom: 7px;
-    margin-left: 54.5px;
+    margin-left: 39.5px;
     padding-left: 10px
 }
 
@@ -140,9 +137,32 @@ header .nav-tab ul li {
     width: 300px;
     height: 40px;
     font-size: 20px;
-    margin-left: 3px;
+    margin-left: 40px;
     padding-left: 10px
 }
+
+.detail button {
+    margin-left: 100px;
+    margin-top: 30px;
+    width: 160px;
+    height: 60px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #5f03f4;
+}
+
+.detail button:hover {
+    background-color: #853451;
+}
+
+
+
 
 .vacancy {
     color: white;
@@ -157,7 +177,81 @@ header .nav-tab ul li {
     /* animation: marquee 10s linear forwards; */
 }
 
+.vac-start {
+    color: white;
+    font-size: 70px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.ride-top-image {
+    width: 600px;
+    height: 600px;
+}
+
 .vac-container {
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
+.vacancy-card-image {
+    height: 10px;
+    width: 700px;
+    margin-left: -25px;
+}
+
+.vacancy {
+    padding: 20px;
+    font-size: 20px;
+    background-color: #000;
+}
+
+/* .v1 {
+    padding: 20px;
+    font-size: 20px;
+
+    background-color: #000;
+}
+
+
+.v2 {
+    background-color: #ffb703;
+}
+
+.v3 {
+    background-color: #023047;
+}
+
+.v4 {
+    background-color: #219ebc;
+}
+
+.v5 {
+    background-color: #8ecae6;
+}
+
+.v6 {
+    background-color: #fb8500;
+}
+
+.v7 {
+    background-color: #fb860046;
+}
+
+.v8 {
+    background-color: #fb8500;
+}
+
+.v9 {
+    background-color: #fb8500;
+}
+
+.v10 {
+    background-color: #fb8500;
+}
+
+.v11 {
+    background-color: #fb8500;
+}
+ */
