@@ -82,12 +82,16 @@ header .nav-tab ul li {
 .middle-center{
     margin-top: 100px;
 }
-.bookname input{
-    width:400px;
+input{
+    border-style:solid black;
+    border-width: 4px;
+    border-radius: 10px;
+    height: 30px;
 }
-.author input{
-    width: 400px;
+input[type='option']{
+    width:100px;
 }
+
 fieldset{
     border-radius: 20px;
     margin-left: 10px;
@@ -98,5 +102,53 @@ fieldset{
 .left-container{
     justify-content: center;
 }
-
+.tiles-container{
+    height:250px;
+    justify-content: space-between;
+}
+.borrowbooks{
+    height:350px;
+    width:300px;
+    background-color: rgba(48, 126, 251, 0.1);
+    padding: 40px 40px;
+    border-radius: 10px;
+    justify-content: space-evenly;   
+    box-shadow: 15px 15px 10px rgba(10, 150, 238, 1); 
+}
+.borrownotes{
+    height:350px;
+    width:300px;
+    background-color: rgba(48, 126, 251, 0.1);
+    padding: 40px 40px;
+    border-radius: 10px;
+    justify-content: space-evenly;
+    box-shadow: 15px 15px 10px rgba(10, 150, 238, 1);    
+}
+.earnmoney{
+    height:350px;
+    width:300px;
+    background-color: rgba(48, 126, 251, 0.1);
+    padding: 40px 40px;
+    border-radius: 10px;
+    justify-content: space-evenly;   
+    box-shadow: 15px 15px 10px rgba(10, 150, 238, 1); 
+}
+.borrowbooks img{
+    height: 150px;
+    width:150px;
+    margin-left: 35px;
+}
+.borrownotes img{
+    height: 150px;
+    width:150px;
+    margin-left: 35px;
+}
+.earnmoney img{
+    height: 150px;
+    width:150px;
+    margin-left: 35px;
+}
+h5{
+    color: white;
+}
 
