@@ -21,7 +21,7 @@ function submitClothes() {
     document.querySelector('.chota-dhobi-right').style.display = 'none';
     document.querySelector('.chota-dhobi-center').style.display = 'block';
     document.querySelector('.washes-left').textContent = parseInt(document.querySelector('.washes-left').textContent) - 1;
-
+    document.querySelector('.main-img').src = '../../assets/images/chotaDhobi/washing-machine.png';
 }
 function clothesCollection() {
     alert('Thank you for collecting your clothes. Have a nice day!!');
@@ -35,7 +35,7 @@ function clothesCollection() {
     currentStatus.style.borderColor = 'red';
     document.querySelector('.collect-btn').style.display = 'none';
     document.querySelector('.status-content').innerHTML = 'We deliver more than just cleanliness. Experience the rejuvenating power of freshly laundered clothes, transforming your day into a seamless blend of comfort and confidence.!!';
-
+    document.querySelector('.main-img').src = '../../assets/images/chotaDhobi/astronaut_washing.png';
 
     let currentDate = new Date();
     let year = currentDate.getFullYear();
@@ -68,11 +68,12 @@ function changeColor() {
         currentStatus.style.borderColor = 'yellow';
         // document.querySelector('.dot').style.color = 'yellow';
         document.querySelector('.collect-btn').style.display = 'block';
+        document.querySelector('.main-img').src = '../../assets/images/chotaDhobi/folded-clothes.png';
         document.querySelector('.status-content').innerHTML = 'Spinning, Rinsing, Drying and Folding with Precision. ! Hey buddy, washing of your clothes is completed. Please collect ASAP!!';
     }
 }
 
-setInterval(changeColor, 5000);
+setInterval(changeColor, 10000);
 
 
 
@@ -91,6 +92,7 @@ function updateDates() {
 function submitBtn() {
     document.querySelector('.chota-dhobi-dashboard').style.display = 'none';
     document.querySelector('.chota-dhobi-right').style.display = 'block';
+    document.querySelector('.main-img').src = '../../assets/images/chotaDhobi/basket.png';
 }
 
 window.onload = function () {
@@ -102,6 +104,7 @@ document.getElementById("clothesForm").addEventListener("submit", function (even
     event.preventDefault();
     if (validateForm()) {
         submitClothes();
+        
         document.querySelector('.clothes-num').innerHTML = numClothes;
         document.querySelector('.clothes-token-num').innerHTML = tokenNumber;
         document.querySelector('.clothes-tag-details i').style.color = tokenColor;
