@@ -74,21 +74,21 @@ header .nav-tab ul li {
 }
 
 
-/* .main-container {
-    border-radius: 30%;
-} */
+.main-container {
+    justify-content: space-evenly;
+    background-color: black;
+    margin-left: 110px;
+    margin-right: 110px;
+}
 
-.img1 {
-    display: flex;
-    width: 500px;
-    height: 400px;
-    margin-top: 25px;
-    margin-left: 15px;
-    border-radius: 50%;
+.img1 img {
+    width: 600px;
+    height: 600px;
 }
 
 .text-top {
     color: white;
+    text-align: center;
     font-size: 40px;
     margin-left: -2em;
     margin-bottom: 1em;
@@ -97,52 +97,73 @@ header .nav-tab ul li {
 
 .detail {
     width: 500px;
-    height: 500px;
-    margin-top: 3em;
-    margin-left: 20em;
+    height: 600px;
+    margin-top: 60px;
     color: white;
     font-size: 25px;
-    border: 1px solid;
     padding-left: 100px;
-    border-color: aqua;
-    /* background-color: yellow; */
+    padding-top: 20px;
+
 }
 
 .loc {
-    width: 300px;
+    width: 400px;
     height: 40px;
     font-size: 20px;
     margin-bottom: 7px;
-    margin-left: 25px;
-    padding-left: 10px
+    margin-top: 5px;
+    padding-left: 10px;
 }
 
 
 .dest {
-    width: 300px;
+    width: 400px;
     height: 40px;
     font-size: 20px;
     margin-bottom: 7px;
-    margin-left: 54.5px;
+    margin-top: 5px;
     padding-left: 10px
 }
 
 .date {
-    width: 300px;
+    width: 400px;
     height: 40px;
     font-size: 20px;
     margin-bottom: 7px;
-    margin-left: 42px;
+    margin-top: 5px;
     padding-left: 10px
 }
 
 .vac {
-    width: 300px;
+    width: 400px;
     height: 40px;
     font-size: 20px;
-    margin-left: 3px;
+    margin-top: 5px;
     padding-left: 10px
 }
+
+.detail button {
+    margin-left: 80px;
+    margin-top: 30px;
+    width: 160px;
+    height: 60px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #5f03f4;
+}
+
+.detail button:hover {
+    background-color: #853451;
+}
+
+
+
 
 .vacancy {
     color: white;
@@ -153,11 +174,100 @@ header .nav-tab ul li {
     width: 350px;
     height: 400px;
     margin-bottom: 2cm;
-    /* overflow: hidden; */
-    /* animation: marquee 10s linear forwards; */
+}
+
+.vac-start {
+    color: white;
+    font-size: 70px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.ride-top-image {
+    width: 600px;
+    height: 600px;
 }
 
 .vac-container {
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
+.vacancy-card-image {
+    height: 10px;
+    width: 700px;
+    margin-left: -25px;
+}
+
+.vacancy {
+    padding: 20px;
+    font-size: 20px;
+    background-color: #000;
+}
+
+.vac-container button {
+    width: 100px;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4a90e2;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.vac-container button:hover {
+    background-color: #357dbf;
+}
+
+/* .v1 {
+    padding: 20px;
+    font-size: 20px;
+
+    background-color: #000;
+}
+
+
+.v2 {
+    background-color: #ffb703;
+}
+
+.v3 {
+    background-color: #023047;
+}
+
+.v4 {
+    background-color: #219ebc;
+}
+
+.v5 {
+    background-color: #8ecae6;
+}
+
+.v6 {
+    background-color: #fb8500;
+}
+
+.v7 {
+    background-color: #fb860046;
+}
+
+.v8 {
+    background-color: #fb8500;
+}
+
+.v9 {
+    background-color: #fb8500;
+}
+
+.v10 {
+    background-color: #fb8500;
+}
+
+.v11 {
+    background-color: #fb8500;
+}
+ */

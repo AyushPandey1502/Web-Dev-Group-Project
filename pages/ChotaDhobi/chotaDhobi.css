@@ -3,7 +3,7 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 body{
@@ -50,10 +50,10 @@ header .nav-tab ul li {
     margin-left: 1rem;
 }
 .main-content{
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-direction: column;
-    /* background: url(../../assets/images/bubbles.gif) no-repeat; */
-    /* background-size: cover; */
+    /* column-gap: 100px; */
+    
 }
 
 section{
@@ -65,45 +65,47 @@ section{
     margin-bottom: 20px;
 }
 
-.chotta-dhobi{
+.chota-dhobi{
     border-radius: 15px;
 }
-.chotta-dhobi-content{
+.chota-dhobi-content{
     justify-content: space-evenly;
+    column-gap: 100px;
 }
 
-.chotta-dhobi-dashboard{
+.chota-dhobi-dashboard{
     border: 2px solid white;
-    height: 460px;
-    padding: 20px 20px;
+    max-height: 500px;
+    padding: 50px 40px;
     border-radius: 10px;
     animation: fadeIn 0.5s;
 }
 
-.chotta-dhobi-left, .chotta-dhobi-right{
+.chota-dhobi-left, .chota-dhobi-right{
     flex-direction: column;
     animation: fadeIn 0.5s;
+    /* background-size: cover; */
 }
 
-/* .chotta-dhobi-left{
-
+/* .chota-dhobi-left{
+    background: url(../../assets/images/bubbles.gif) no-repeat;
 } */
 
-.chotta-dhobi-center{
+.chota-dhobi-center{
     display: none;
     border: 2px solid white;
     height: 520px;
     padding: 30px 20px;
     border-radius: 10px;
-    animation: fadeIn 0.5s;
+    animation: fadeIn 0.8s;
     width: 40%;
 }
 
-.chotta-dhobi-status{
+.chota-dhobi-status{
     flex-direction: column;
 }
 
-.chotta-dhobi-right{
+.chota-dhobi-right{
     flex-direction: column;
     display: none;
     border: 2px solid white;
@@ -112,12 +114,12 @@ section{
     border-radius: 10px;
 }
 
-.chotta-dhobi-right .subtitle{
+.chota-dhobi-right .subtitle{
     margin-bottom: 20px;
 }
 
 .bubbles{
-    width: 400px;
+    width: 450px;
 }
 
 .washes-left{
@@ -131,7 +133,7 @@ section{
     font-size: min(2vh, 20px);
 }
 
-.chotta-dhobi-img img{
+.chota-dhobi-img img{
     width: 500px;
 }
 
@@ -141,7 +143,12 @@ textarea{
     border-radius: 10px;
     padding: 10px 10px;
     font-size: 2.3vh;
-    margin: auto auto;
+    margin: auto;
+    margin-left: 25px;
+    margin-right: 10px;
+    max-width: 100%;
+    min-width: 90%;
+    height: 200px;
 }
 
 .clothes-numb-details, .clothes-tag-details{
@@ -167,18 +174,18 @@ textarea{
     /* flex-direction: column; */
 }
 
-.chotta-dhobi-history{
+.chota-dhobi-history{
     color: white;
     background-color: rgba(71, 86, 110, 0.7);
     padding: 20px 20px;
     border-radius: 10px;
     flex-direction: column;
 }
-.chotta-dhobi-history .subtitle{
+.chota-dhobi-history .subtitle{
     margin-bottom: 10px;
 }
 
-.chotta-dhobi-history ul{
+.chota-dhobi-history ul{
     list-style: none;
 }
 
@@ -187,12 +194,12 @@ textarea{
     display: none;
 }
 
-.chotta-dhobi-status-header{
+.chota-dhobi-status-header{
     gap: 40px;
     margin-bottom: 50px;
 }
 
-.chotta-dhobi-status-header .subtitle{
+.chota-dhobi-status-header .subtitle{
     margin-bottom: 0;
 }
 
@@ -234,7 +241,7 @@ textarea{
 }
 
 
-.chotta-dhobi-right .submit-input input, select{
+.chota-dhobi-right .submit-input input, select{
     width: 80%;
     margin: 20px 10px;
     height: 30px;
@@ -245,6 +252,6 @@ textarea{
     text-align: center;
 }
 
-.chotta-dhobi-right .submit-input input::placeholder {
+.chota-dhobi-right .submit-input input::placeholder {
     color: white;
 }
