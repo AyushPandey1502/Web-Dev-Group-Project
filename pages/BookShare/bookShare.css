@@ -171,27 +171,61 @@ h5{
     width:600px;
     height:600px;
     animation-name:rotation;
-    animation-duration:4s;
+    animation-duration:7s;
+    animation-iteration-count: infinite;
 }
-@keyframes rotation{
-    0% { left:0px; top:0px;}
-  25%  { left:100px; top:100px;}
-  50%  { left:200px; top:200px;}
-  75%  { left:100px; top:100px;}
-  100% { left:0px; top:0px;}
+@keyframes rotation {
+    0% {
+        transform: rotate(-30deg);
+    }
+
+    50% {
+        transform: rotate(20deg);
+    }
+    100%{
+        transform: rotate(-30deg);
+    }
 }
 .post-left button{
-    height: 30px;
+    height: 40px;
     width:200px;
     margin-left: 75px;
 }
-.book{
-    height: 280px;
+.book1{
+    height: 300px;
     width:300px;
     background-color: rgba(110, 64, 218, 0.5);
     text-align: center;
     border-radius: 10px;
     margin-bottom: 50px;
+    padding: 15px 15px;
+}
+.book2{
+    height: 300px;
+    width:300px;
+    background-color: rgba(218, 64, 126, 0.5);
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    padding: 15px 15px;
+}
+.book3{
+    height: 300px;
+    width:300px;
+    background-color: rgba(64, 218, 103, 0.5);
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    padding: 15px 15px;
+}
+.book4{
+    height: 300px;
+    width:300px;
+    background-color: rgba(218, 131, 64, 0.5);
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    padding: 15px 15px;
 }
 .borrow-book{
     justify-content: space-around;
@@ -210,12 +244,29 @@ h5{
     margin-bottom: 60px;
     background-color: rgba(1, 1, 1, 1);
     border-radius: 10px;
-    height: 320px;
+    height: 350px;
+    padding: 20px 20px;
 }
 .borrow-right img{
     height:250px;
     width:250px;
+    animation-name: curve;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
 }
+@keyframes curve{
+    0% {
+        transform: rotate(-10deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+    100%{
+        transform: rotate(-10deg);
+    }
+}
+
 .bor{
     justify-content: space-evenly;
     border-radius: 10px;
@@ -223,4 +274,51 @@ h5{
 span{
     filter: invert(1);
     margin-left: 42%;
+    animation-name: movef;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+@keyframes movef{
+    0%{
+        left:0px;
+        top:0px;
+    }
+    100%{
+        left:0px;
+        top:25px;
+    }
+}
+.pagination { 
+    text-align: center; 
+    margin-top: 2rem; 
+} 
+.pagination a { 
+    color: white; 
+    padding: 8px 16px; 
+    text-decoration: none; 
+    border: 1px solid #007BFF; 
+    margin: 0 5px; 
+    border-radius: 4px; 
+} 
+  
+.pagination a:hover { 
+    background-color: #007BFF; 
+    color: white; 
+} 
+  
+.pagination .active { 
+    background-color: b; 
+    color: white; 
+} 
+#page-numbers { 
+    margin-top: 20px; 
+    font-size: 16px; 
+}
+#page-numbers{
+    color: white;
+}
+a{
+    text-decoration: none; 
 }
