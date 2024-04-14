@@ -207,6 +207,23 @@ header .nav-tab ul li {
     background-color: #000;
 }
 
+.vac-container button {
+    width: 100px;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4a90e2;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.vac-container button:hover {
+    background-color: #357dbf;
+}
+
 /* .v1 {
     padding: 20px;
     font-size: 20px;
