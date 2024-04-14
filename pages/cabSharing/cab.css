@@ -90,24 +90,31 @@ header .nav-tab ul li {
 .text-top {
     color: white;
     font-size: 40px;
+    margin-left: -2em;
+    margin-bottom: 1em;
+
 }
 
 .detail {
     width: 500px;
     height: 500px;
-    margin-top: 7em;
+    margin-top: 3em;
     margin-left: 20em;
     color: white;
     font-size: 25px;
+    border: 1px solid;
+    padding-left: 100px;
+    border-color: aqua;
     /* background-color: yellow; */
 }
 
 .loc {
     width: 300px;
     height: 40px;
-    font-size: 12px;
-    margin-bottom: 5px;
-    margin-left: 14px;
+    font-size: 20px;
+    margin-bottom: 7px;
+    margin-left: 25px;
+    padding-left: 10px
 }
 
 
@@ -115,21 +122,42 @@ header .nav-tab ul li {
     width: 300px;
     height: 40px;
     font-size: 20px;
-    margin-bottom: 5px;
-    margin-left: 33.5px;
+    margin-bottom: 7px;
+    margin-left: 54.5px;
+    padding-left: 10px
 }
 
 .date {
     width: 300px;
     height: 40px;
     font-size: 20px;
-    margin-bottom: 5px;
-    margin-left: 26px;
+    margin-bottom: 7px;
+    margin-left: 42px;
+    padding-left: 10px
 }
 
 .vac {
     width: 300px;
     height: 40px;
     font-size: 20px;
-    margin-bottom: 5px;
+    margin-left: 3px;
+    padding-left: 10px
+}
+
+.vacancy {
+    color: white;
+    flex: 0 0 auto;
+    position: relative;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 350px;
+    height: 400px;
+    margin-bottom: 2cm;
+    /* overflow: hidden; */
+    /* animation: marquee 10s linear forwards; */
+}
+
+.vac-container {
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
