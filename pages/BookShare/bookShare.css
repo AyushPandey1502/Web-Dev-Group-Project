@@ -113,7 +113,7 @@ fieldset{
     padding: 40px 40px;
     border-radius: 10px;
     justify-content: space-evenly;   
-    box-shadow: 15px 15px 10px rgba(10, 150, 238, 1); 
+    box-shadow: 10px 10px 10px rgba(10, 150, 238, 1); 
 }
 .borrownotes{
     height:350px;
@@ -122,7 +122,7 @@ fieldset{
     padding: 40px 40px;
     border-radius: 10px;
     justify-content: space-evenly;
-    box-shadow: 15px 15px 10px rgba(10, 150, 238, 1);    
+    box-shadow: 10px 10px 10px rgba(10, 150, 238, 1);    
 }
 .earnmoney{
     height:350px;
@@ -131,7 +131,7 @@ fieldset{
     padding: 40px 40px;
     border-radius: 10px;
     justify-content: space-evenly;   
-    box-shadow: 15px 15px 10px rgba(10, 150, 238, 1); 
+    box-shadow: 10px 10px 10px rgba(10, 150, 238, 1); 
 }
 .borrowbooks img{
     height: 150px;
@@ -155,8 +155,15 @@ h5{
     justify-content:space-around;
     height: 500px;
     background-color: rgba(48, 126, 251, 0.1);
+    border-radius: 10px;
 
 }
 .form{
+    color: white;
+}
+#bookname {
+    width:360px;    
+}
+.bookname{
     color: white;
 }
