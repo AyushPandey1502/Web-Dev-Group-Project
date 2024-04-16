@@ -61,6 +61,15 @@ section {
     margin-bottom: 0;
 }
 
+.bg-blur {
+    background-color: rgba(71, 86, 110, 0.7);
+}
+
+.styling{
+    font-size: 50px;
+    font-weight: 600;
+}
+
 .greet {
     margin-bottom: 20px;
 }
@@ -72,7 +81,7 @@ section {
 .chota-dhobi-content {
     justify-content: space-evenly;
     column-gap: 100px;
-    background-color: rgba(1, 1, 1, 0.9);
+    background-color: rgba(1, 1, 1, 0.6);
     border-radius: 10px;
     width: 90%;
     padding: 40px 40px;
@@ -83,19 +92,19 @@ section {
     max-height: 500px;
     padding: 50px 40px;
     border-radius: 10px;
-    animation: fadeIn 0.5s;
+    animation: fadeIn 1s;
 }
 
 .chota-dhobi-left,
 .chota-dhobi-right {
     flex-direction: column;
-    animation: fadeIn 0.5s;
+    animation: fadeIn 1s;
     /* background-size: cover; */
 }
 
-/* .chota-dhobi-left{
-    background: url(../../assets/images/bubbles.gif) no-repeat;
-} */
+.chota-dhobi-left img {
+    animation: swing 5s infinite;
+}
 
 .chota-dhobi-center {
     display: none;
@@ -103,7 +112,7 @@ section {
     height: 520px;
     padding: 30px 20px;
     border-radius: 10px;
-    animation: fadeIn 0.8s;
+    animation: fadeIn 1s;
     width: 40%;
 }
 
@@ -124,10 +133,6 @@ section {
     margin-bottom: 20px;
 }
 
-.bubbles {
-    width: 450px;
-}
-
 .washes-left {
     margin-bottom: 5px;
 }
@@ -139,11 +144,22 @@ section {
     font-size: min(2vh, 20px);
 }
 
-.chota-dhobi-img img {
-    width: 500px;
+
+@keyframes swing {
+    0% {
+        transform: rotate(-5deg);
+    }
+
+    50% {
+        transform: rotate(2deg);
+    }
+
+    100% {
+        transform: rotate(-5deg);
+    }
 }
 
-textarea {
+#clothDescription {
     background-color: rgba(71, 86, 110, 0.7);
     color: white;
     border-radius: 10px;
@@ -217,7 +233,7 @@ textarea {
 .current-status {
     border: 2px solid red;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 18px;
     color: red;
     font-weight: 500;
     padding: 10px 10px;
@@ -234,8 +250,11 @@ textarea {
 .status-content {
     color: white;
     width: 90%;
-    font-size: 18px;
+    font-size: 17px;
     margin-top: 50px;
+    padding: 15px 15px;
+    border-radius: 10px;
+    border: 2px solid white;
 }
 
 .submit-btn {
@@ -250,6 +269,20 @@ textarea {
 
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes grow-shrink {
+    0% {
+        scale: 1;
+    }
+
+    50% {
+        scale: 1.2;
+    }
+
+    100% {
+        scale: 1;
     }
 }
 
@@ -289,5 +322,55 @@ select {
 }
 
 .queries-img img {
-    width: 30vw;
+    width: 26vw;
+    animation: grow-shrink 8s infinite;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.queries-form input {
+    margin-top: 10px;
+}
+
+.queries-form input[type="text"],
+.queries-form input[type="email"] {
+    border-radius: 8px;
+    height: 4.5vh;
+    padding: 2px 5px;
+    margin-bottom: 3vh;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.queries-form input[type="email"] {
+    width: 100%;
+}
+
+input:focus {
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+
+.queries-form textarea {
+    background-color: rgba(71, 86, 110, 0.6);
+    color: white;
+    border-radius: 10px;
+    padding: 10px 10px;
+    font-size: 2.3vh;
+    margin: auto;
+    max-width: 100%;
+    min-width: 90%;
+    height: 200px;
+}
+
+.queries-form input[type="submit"] {
+    width: 200px;
+    padding: 10px 5px;
+    margin-top: 30px;
 }

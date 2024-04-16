@@ -31,7 +31,7 @@
         </header>
 
         <section class="main-content flex">
-            <h2 class="section-title greet">Good <span class="greeting">Morning</span>!</h2>
+            <h2 class="section-title greet"><span class="styling">G</span>ood <span class="greeting">Morning</span>!</h2>
             <div class="chota-dhobi-content flex">
                 <div class="chota-dhobi-left flex">
                     <img src="../../assets/images/chotaDhobi/astronaut_washing.png" class="main-img">
@@ -71,16 +71,16 @@
                         </div>
 
                         <div class="washing-status flex">
-                            <div class="clothes-numb-details flex">
+                            <div class="clothes-numb-details flex bg-blur">
                                 <i class="fa-solid fa-shirt"></i>
                                 <span class="clothes-num">20</span>
                             </div>
-                            <div class="clothes-tag-details flex">
+                            <div class="clothes-tag-details flex bg-blur">
                                 <i class="fa-solid fa-tag"></i>
                                 <span class="clothes-token-num">256</span>
                             </div>
                         </div>
-                        <div class="status-content"> We deliver more than just cleanliness. Experience the rejuvenating
+                        <div class="status-content bg-blur"> We deliver more than just cleanliness. Experience the rejuvenating
                             power of freshly laundered clothes, transforming your day into a seamless blend of comfort
                             and confidence.</div>
                         <button class="collect-btn bttn" onclick=clothesCollection()>Collect Now!</button>
@@ -117,17 +117,21 @@
 
         <section class="queries flex">
             <div class="queries-container flex">
-                <h3 class="subtitle">Have any queries??</h3>
+                <h3 class="subtitle"><span class="styling">H</span>ave any queries??</h3>
                 <div class="queries-content grid">
                     <div class="queries-form-container flex">
                         <form action="submit-queries" class="queries-form flex">
-                            <div class="flex">
+                            <div class="row">
                                 <input type="text" placeholder="first name">
                                 <input type="text" placeholder="last name">
                             </div>
-                            <input type="email" placeholder="your email">
-                            <textarea name="desc" id="" cols="30" rows="10" placeholder="description"></textarea>
-                            <input type="submit" value="Submit Now!!">
+                            <div class="row">
+                                <input type="email" placeholder="your email">
+                            </div>
+                            <textarea name="desc" id="" cols="35" rows="10" placeholder="description" class="row"></textarea>
+                            <div class="row">
+                                <input type="submit" value="Submit Now !!" class="flex bttn">
+                            </div>
                         </form>
                     </div>
                     <div class="queries-img flex">
