@@ -227,6 +227,7 @@ h5{
     height: 300px;
     width:300px;
     background-color: rgba(110, 64, 218, 0.5);
+    background-image: linear-gradient(to bottom right,blue,lightblue,blue);
     text-align: center;
     border-radius: 10px;
     margin-bottom: 30px;
@@ -234,12 +235,13 @@ h5{
     padding: 15px 15px;
 }
 .book1:hover{
-    transform: scale(1.2,1.2);
+    transform: scale(1.2,1.1);
 }
 .book2{
     height: 300px;
     width:300px;
     background-color: rgba(218, 64, 126, 0.5);
+    background-image: linear-gradient(to bottom right,brown,orange,brown);
     text-align: center;
     border-radius: 10px;
     margin-bottom: 30px;
@@ -247,12 +249,13 @@ h5{
     padding: 15px 15px;
 }
 .book2:hover{
-    transform: scale(1.2,1.2);
+    transform: scale(1.2,1.1);
 }
 .book3{
     height: 300px;
     width:300px;
     background-color: rgba(64, 218, 103, 0.5);
+    background-image: linear-gradient(to bottom right, darkgreen,lightgreen,darkgreen);
     text-align: center;
     border-radius: 10px;
     margin-bottom: 30px;
@@ -260,12 +263,13 @@ h5{
     padding: 15px 15px;
 }
 .book3:hover{
-    transform: scale(1.2,1.2);
+    transform: scale(1.2,1.1);
 }
 .book4{
     height: 300px;
     width:300px;
     background-color: rgba(218, 131, 64, 0.5);
+    background-image: linear-gradient(to bottom right,grey,white,grey);
     text-align: center;
     border-radius: 10px;
     margin-bottom: 30px;
@@ -273,7 +277,7 @@ h5{
     padding: 15px 15px;
 }
 .book4:hover{
-    transform: scale(1.2,1.2);
+    transform: scale(1.2,1.1);
 }
 .borrow-book{
     justify-content: space-around;
