@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     /* box-sizing: border-box; */
 }
 
-body{
+body {
     background: url(../../assets/images/background_image.jpg) no-repeat;
     background-repeat: repeat-y;
     overflow-x: hidden;
@@ -49,63 +49,78 @@ header .nav-tab ul li {
     position: relative;
     margin-left: 1rem;
 }
-.main-content{
+
+.main-content {
     justify-content: space-evenly;
     flex-direction: column;
     /* column-gap: 100px; */
-    
 }
 
-section{
+section {
     margin-top: 0;
     margin-bottom: 0;
 }
 
-.greet{
+.bg-blur {
+    background-color: rgba(71, 86, 110, 0.7);
+}
+
+.styling{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.greet {
     margin-bottom: 20px;
 }
 
-.chota-dhobi{
+.chota-dhobi {
     border-radius: 15px;
 }
-.chota-dhobi-content{
+
+.chota-dhobi-content {
     justify-content: space-evenly;
     column-gap: 100px;
+    background-color: rgba(1, 1, 1, 0.6);
+    border-radius: 10px;
+    width: 90%;
+    padding: 40px 40px;
 }
 
-.chota-dhobi-dashboard{
+.chota-dhobi-dashboard {
     border: 2px solid white;
     max-height: 500px;
     padding: 50px 40px;
     border-radius: 10px;
-    animation: fadeIn 0.5s;
+    animation: fadeIn 1s;
 }
 
-.chota-dhobi-left, .chota-dhobi-right{
+.chota-dhobi-left,
+.chota-dhobi-right {
     flex-direction: column;
-    animation: fadeIn 0.5s;
+    animation: fadeIn 1s;
     /* background-size: cover; */
 }
 
-/* .chota-dhobi-left{
-    background: url(../../assets/images/bubbles.gif) no-repeat;
-} */
+.chota-dhobi-left img {
+    animation: swing 5s infinite;
+}
 
-.chota-dhobi-center{
+.chota-dhobi-center {
     display: none;
     border: 2px solid white;
     height: 520px;
     padding: 30px 20px;
     border-radius: 10px;
-    animation: fadeIn 0.8s;
+    animation: fadeIn 1s;
     width: 40%;
 }
 
-.chota-dhobi-status{
+.chota-dhobi-status {
     flex-direction: column;
 }
 
-.chota-dhobi-right{
+.chota-dhobi-right {
     flex-direction: column;
     display: none;
     border: 2px solid white;
@@ -114,30 +129,37 @@ section{
     border-radius: 10px;
 }
 
-.chota-dhobi-right .subtitle{
+.chota-dhobi-right .subtitle {
     margin-bottom: 20px;
 }
 
-.bubbles{
-    width: 450px;
-}
-
-.washes-left{
+.washes-left {
     margin-bottom: 5px;
 }
 
-.submit-clothes-btn{
+.submit-clothes-btn {
     margin-top: 30px;
     width: 200px;
     padding: 10px 5px;
     font-size: min(2vh, 20px);
 }
 
-.chota-dhobi-img img{
-    width: 500px;
+
+@keyframes swing {
+    0% {
+        transform: rotate(-5deg);
+    }
+
+    50% {
+        transform: rotate(2deg);
+    }
+
+    100% {
+        transform: rotate(-5deg);
+    }
 }
 
-textarea{
+#clothDescription {
     background-color: rgba(71, 86, 110, 0.7);
     color: white;
     border-radius: 10px;
@@ -151,7 +173,8 @@ textarea{
     height: 200px;
 }
 
-.clothes-numb-details, .clothes-tag-details{
+.clothes-numb-details,
+.clothes-tag-details {
     flex-direction: column;
     border: 2px solid white;
     border-radius: 10px;
@@ -161,57 +184,62 @@ textarea{
     width: 100px;
 }
 
-.clothes-numb-details i, .clothes-tag-details i{
+.clothes-numb-details i,
+.clothes-tag-details i {
     margin-bottom: 10px;
 }
 
-.clothes-numb-details span, .clothes-tag-details span{
+.clothes-numb-details span,
+.clothes-tag-details span {
     font-weight: 600;
     font-size: max(2vh, 2vh);
 }
-.washing-status{
+
+.washing-status {
     gap: 40px;
     /* flex-direction: column; */
 }
 
-.chota-dhobi-history{
+.chota-dhobi-history {
     color: white;
     background-color: rgba(71, 86, 110, 0.7);
     padding: 20px 20px;
     border-radius: 10px;
     flex-direction: column;
 }
-.chota-dhobi-history .subtitle{
+
+.chota-dhobi-history .subtitle {
     margin-bottom: 10px;
 }
 
-.chota-dhobi-history ul{
+.chota-dhobi-history ul {
     list-style: none;
 }
 
-.collect-btn{
+.collect-btn {
     margin-top: 20px;
     display: none;
 }
 
-.chota-dhobi-status-header{
+.chota-dhobi-status-header {
     gap: 40px;
     margin-bottom: 50px;
 }
 
-.chota-dhobi-status-header .subtitle{
+.chota-dhobi-status-header .subtitle {
     margin-bottom: 0;
 }
 
-.current-status{
+.current-status {
     border: 2px solid red;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 18px;
     color: red;
     font-weight: 500;
     padding: 10px 10px;
 }
-.dot{
+
+.dot {
     background-color: red;
     border-radius: 50%;
     height: 10px;
@@ -219,14 +247,17 @@ textarea{
     display: inline-block;
 }
 
-.status-content{
+.status-content {
     color: white;
     width: 90%;
-    font-size: 18px;
+    font-size: 17px;
     margin-top: 50px;
+    padding: 15px 15px;
+    border-radius: 10px;
+    border: 2px solid white;
 }
 
-.submit-btn{
+.submit-btn {
     width: 200px;
     margin-top: 20px;
 }
@@ -235,13 +266,29 @@ textarea{
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
 }
 
+@keyframes grow-shrink {
+    0% {
+        scale: 1;
+    }
 
-.chota-dhobi-right .submit-input input, select{
+    50% {
+        scale: 1.2;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
+
+
+.chota-dhobi-right .submit-input input,
+select {
     width: 80%;
     margin: 20px 10px;
     height: 30px;
@@ -254,4 +301,76 @@ textarea{
 
 .chota-dhobi-right .submit-input input::placeholder {
     color: white;
+}
+
+
+.queries-container {
+    background-color: rgba(71, 86, 110, 0.7);
+    border-radius: 10px;
+    width: 90%;
+    padding: 40px 40px;
+    flex-direction: column;
+}
+
+.queries-form {
+    flex-direction: column;
+}
+
+.queries-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.queries-img img {
+    width: 26vw;
+    animation: grow-shrink 8s infinite;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.queries-form input {
+    margin-top: 10px;
+}
+
+.queries-form input[type="text"],
+.queries-form input[type="email"] {
+    border-radius: 8px;
+    height: 4.5vh;
+    padding: 2px 5px;
+    margin-bottom: 3vh;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.queries-form input[type="email"] {
+    width: 100%;
+}
+
+input:focus {
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+
+.queries-form textarea {
+    background-color: rgba(71, 86, 110, 0.6);
+    color: white;
+    border-radius: 10px;
+    padding: 10px 10px;
+    font-size: 2.3vh;
+    margin: auto;
+    max-width: 100%;
+    min-width: 90%;
+    height: 200px;
+}
+
+.queries-form input[type="submit"] {
+    width: 200px;
+    padding: 10px 5px;
+    margin-top: 30px;
 }
