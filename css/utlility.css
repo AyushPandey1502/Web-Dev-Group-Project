@@ -25,6 +25,18 @@
     scroll-behavior: smooth;
 }
 
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(var(--foreground-rgb));
+    background: linear-gradient(to bottom,
+            transparent,
+            rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+    background: url(../assets/images/background_image.jpg) no-repeat;
+    background-repeat: repeat-y;
+    overflow-x: hidden;
+}
+
 .flex {
     display: flex;
     justify-content: center;
