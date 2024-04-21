@@ -49,15 +49,6 @@ header .nav-tab ul li {
 }
 
 
-.top-container {
-    background-color: rgba(71, 86, 110, 0.5);
-    padding: 40px 40px;
-    border-radius: 10px;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 350px;
-}
-
 .topleft {
     width: 40%;
 }
@@ -74,9 +65,9 @@ header .nav-tab ul li {
 }
 
 
-.main-container {
+.top-container {
     justify-content: space-evenly;
-    background-color: black;
+    background-color: rgba(71, 86, 110, 0.5);
     margin-left: 110px;
     margin-right: 110px;
 }
@@ -86,16 +77,16 @@ header .nav-tab ul li {
     height: 600px;
 }
 
-.text-top {
+h1 {
     color: white;
     text-align: center;
-    font-size: 40px;
+    font-size: 50px;
     margin-left: -2em;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
 
 }
 
-.detail {
+.ride_list {
     width: 500px;
     height: 600px;
     margin-top: 60px;
@@ -142,7 +133,7 @@ header .nav-tab ul li {
     padding-left: 10px
 }
 
-.detail button {
+.ride_list button {
     margin-left: 80px;
     margin-top: 30px;
     width: 160px;
@@ -158,7 +149,7 @@ header .nav-tab ul li {
     background-color: #5f03f4;
 }
 
-.detail button:hover {
+.ride_list button:hover {
     background-color: #853451;
 }
 
