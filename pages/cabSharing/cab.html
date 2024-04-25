@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cab Sharing</title>
     <link rel="stylesheet" href="../../css/utlility.css">
     <link rel="stylesheet" href="cab.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -29,41 +29,33 @@
     </header>
     </section>
 
+    <section class="top-container flex">
+        <form class="ride_list">
+            <h1>LIST A RIDE</h1>
+            Pick Up<br>
+            <input class="loc" type="text" placeholder="&#9679;"><br>
+            Drop<br>
+            <input class="dest" type="text" placeholder="&#9679;"> <br>
+            When<br>
+            <input class=" date" type="date" placeholder="None"> <br>
+            Vacancy
+            <input class="vac" type="number" min="1">
+            <button>Find Rides</button>
+        </form>
+        <div class="img1">
+            <img src="../../assets/images/astro-car.png" alt="">
+        </div>
+    </section>
+
     <section>
-        <div class="main-container flex">
-
-
-
-            <form class="detail">
-                <div class="text-top">BOOK A RIDE</div>
-                Pick Up<br>
-                <input class="loc" type="text" placeholder="&#9679;"><br>
-                Drop<br>
-                <input class="dest" type="text" placeholder="&#9679;"> <br>
-                When<br>
-                <input class=" date" type="date" placeholder="None"> <br>
-                Vacancy
-                <input class="vac" type="number" min="1">
-                <button>Find Rides</button>
-            </form>
-            <div class="img1">
-                <img src="../../assets/images/astro-car.png" alt="">
+        <div class="vac-start flex">
+            <h1>Available Rides</h1>
+            <div class="ride-top-image">
+                <img src="../../assets/images/cab3.png" alt="">
             </div>
-
         </div>
-    </section>
-    <section class="vac-start flex">
-        <div>Available Rides</div>
-        <div class="ride-top-image">
-            <img src="../../assets/images/cab3.png" alt="">
-        </div>
-    </section>
-    <section>
         <div class="vac-container flex">
             <div class="vacancy v1">
-                <!-- <div class="vacancy-card-image">
-                    <img src="../../assets/images/details.png" alt="">
-                </div> -->
                 <b>From</b> : VIT Vellore <br><br>
                 <b>To</b> : Katpadi Railway Station<br><br>
                 <b>Date</b> : 24-04-2024<br><br>
@@ -149,8 +141,16 @@
                 <button>Book Ride</button>
             </div>
         </div>
-
+        <div class="pagination" id="pagination">
+            <a href="#" id="prev">Previous</a>
+            <a href="#" class="page-link" data-page="1">1</a>
+            <a href="#" class="page-link" data-page="2">2</a>
+            <a href="#" class="page-link" data-page="3">3</a>
+            <a href="#" id="next">Next</a>
+            <p id="page-numbers"> </p>
+        </div>
     </section>
+    <script src="cab.js"></script>
 </body>
 
 </html>
