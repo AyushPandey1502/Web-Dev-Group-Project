@@ -67,3 +67,38 @@ updatePagination();
 
 
 
+function submitForm() {
+    // Get form values
+    var bookTitle = document.getElementById('bookname').value;
+    var publishers = document.getElementById('publishers').value;
+    var author = document.getElementById('author').value;
+    var slot = document.getElementById('slot').value;
+    var edition = document.getElementById('edition').value;
+    var genre = document.getElementById('genre').value;
+    var price = document.getElementById('price').value;
+
+    // Create HTML elements for the new book
+    var bookContainer = document.createElement('div');
+    bookContainer.classList.add('book');
+
+    var bookContent = `
+        <div class="book1">
+            <h2>${bookTitle}</h2><br>
+            <ul type="none">
+                <li>${publishers}</li>
+                <li>${edition} edition</li>
+                <li>${author}</li>
+                <li>${genre}</li>
+            </ul><br>
+            <h3>Available in: ${slot}</h3>
+            <h3>Price: ${price} Rs.</h3>
+        </div>
+    `;
+    bookContainer.innerHTML = bookContent;
+
+    // Append the new book to the book container
+    booksContainer.appendChild(bookContainer);
+}
+
+
+
