@@ -58,7 +58,7 @@ body {
     transition: background-color 0.5s ease, border-color 0.5s ease, color 0.5s ease; /* added transition for smooth change */
 }
 
-.bttn:,  {
+.bttn:hover {
     color: var(--skin-color);
     background-color: transparent;
     border: 2px solid var(--skin-color);
@@ -85,9 +85,4 @@ section {
     text-align: center;
     color: var(--text-black-dark);
     margin-bottom: 2rem;
-}
-
-.blur {
-    filter: blur(3px); /* Adjust the blur intensity as needed */
-    transition: filter 0.3s ease; /* Smooth transition for blur effect */
 }

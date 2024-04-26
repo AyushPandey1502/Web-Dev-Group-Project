@@ -107,9 +107,11 @@ section.home {
     bottom: 100px;   
     margin-top: 10px;
     width: 250px;
-    filter: invert(100%);
     font-size: 22px;
     color: black;
+    border-style: solid;
+    /* Apply a linear gradient as border image */
+    border-image: linear-gradient(to right, purple, blue, purple) 1;
 }
 
 
