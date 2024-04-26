@@ -347,8 +347,8 @@ section.home {
 .team-card img {
     border: 2px solid #ffffff;
     border-radius: 50%;
-    height: 20vh;
-    /* height: 200px; */
+    height: 180px;
+    width: 160px;
 }
 
 .our-team-container {
