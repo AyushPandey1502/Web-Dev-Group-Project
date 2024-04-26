@@ -94,9 +94,10 @@ section.home {
 .home-content p {
     margin: 20vh;
     color: white;
-    font-size: 20px;
+    font-size: 25px;
     z-index: 1;
     margin-bottom: 10vh;
+    text-align: center;
 }
 
 .home-btn {
@@ -109,6 +110,7 @@ section.home {
     border-style: solid;
     /* Apply a linear gradient as border image */
     border-image: linear-gradient(to right, purple, blue, purple) 1;
+    cursor: pointer;
 }
 
 
