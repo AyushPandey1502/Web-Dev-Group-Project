@@ -220,6 +220,18 @@ section.home {
 
 
 /* ============================SERVICES==================== */
+.services-desc{
+    font-size: 30px;
+    color: white;
+    text-align: left;
+}
+
+#typing{
+    font-weight: 800;
+    color: var(--skin-color);
+    font-size: 35px;
+}
+
 .services {
     min-height: auto;
     padding-bottom: 7rem;
@@ -470,6 +482,14 @@ section.home {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.footer-copyright{
+    text-align: center;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
 }
 
 
