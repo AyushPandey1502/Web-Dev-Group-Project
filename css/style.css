@@ -72,61 +72,6 @@ header:hover::before{
     margin-left: 1rem;
 }
 
-.nav-btn i{
-    margin-right: 6px;
-    font-size: 15px;
-}
-
-.indicator{
-    position: absolute;
-    top: -50%;
-    width: 70px;
-    height: 70px;
-    background: linear-gradient(45deg, #2196f3, #e91e63);
-    border: 6px solid #06021b;
-    border-radius: 50%;
-    transition: .5s;
-}
-
-.indicator::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: -22px;
-    width: 20px;
-    height: 20px; 
-    background: transparent;
-    border-top-right-radius: 20px;
-    box-shadow: 1px -10px 0 #06021b;
-}
-
-.indicator::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: -22px;
-    width: 20px;
-    height: 20px; 
-    background: transparent;
-    border-top-left-radius: 20px;
-    box-shadow: -1px -10px 0 #06021b; 
-}
-
-.nav-tab ul li:nth-child(1).active~.indicator {
-    transform: translateX(calc(70px * 0));
-}
-
-.nav-tab ul li:nth-child(2).active~.indicator {
-    transform: translateX(calc(70px * 1));
-}
-
-.nav-tab ul li:nth-child(3).active~.indicator {
-    transform: translateX(calc(70px * 2));
-}
-
-.nav-tab ul li:nth-child(4).active~.indicator {
-    transform: translateX(calc(70px * 3));
-}
 
 
 
