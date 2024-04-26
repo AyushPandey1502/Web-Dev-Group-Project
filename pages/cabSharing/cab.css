@@ -13,43 +13,6 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-header {
-    position: sticky;
-    padding: 1.5rem 3rem;
-}
-
-nav {
-    position: sticky;
-    justify-content: space-between;
-    border-radius: 1rem;
-    background-color: white;
-}
-
-header .logo img {
-    height: 5.5rem;
-    margin-left: 4rem;
-}
-
-header .nav-tab ul {
-    list-style: none;
-}
-
-header .nav-tab ul li {
-    margin-left: 4rem;
-}
-
-.nav-tab ul li a {
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 700;
-}
-
-.nav-btn {
-    margin-right: 4rem;
-    position: relative;
-    margin-left: 1rem;
-}
-
 
 .top-container {
     justify-content: space-evenly;
