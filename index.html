@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/utlility.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
 
@@ -29,142 +30,137 @@
                 </div>
             </nav>
         </header>
-        <div class="login-popup">
-            <div class="wrapper">
-                <span class="icon-close">
-                    <ion-icon name="close">x</ion-icon>
-                </span>
-                <div class="form-box login">
-                    <h2>Login</h2>
-                    <form action="#">
-                        <div class="input-box">
-                            <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                            <input type="email" name="" id="" required>
-                            <label for="">Email</label>
-                        </div>
-                        <div class="input-box">
-                            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                            <input type="password" name="" id="" required>
-                            <label for="">Password</label>
-                        </div>
-                        <div class="remember-forgot">
-                            <label><input type="checkbox" name="" id="">Remember me</label>
-                            <a href="#">Forgot Password?</a>
-                        </div>
-                        <button type="submit" class="btn">Login</button>
-                        <div class="login-register">
-                            <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
-                        </div>
-                    </form>
+        <section class="home" id="home">
+            <div class="home-container flex">
+
+                <div class="home-content">
+                    <p>Strap in, fellow scholars, because college life just got a whole lot weirder (and funnier).
+                        Welcome to Parenthesis, where we've mastered the art of turning academic chaos into organized
+                        chaos. Think of us as your trusty sidekick in this wild ride called college - we've got your
+                        back, even when you're convinced your textbooks are conspiring against you.
+                        From sharing books for those "open book" exams that still manage to stump you, to finding a
+                        buddy for that dreaded trip to the airport (because we all know public transport is an adventure
+                        in itself), we're the ultimate college buddy you never knew you needed.</p>
                 </div>
-                <div class="form-box register">
-                    <h2>Registration</h2>
-                    <form action="#">
-                        <div class="input-box">
-                            <span class="icon"><ion-icon name="person"></ion-icon></ion-icon></span>
-                            <input type="text" name="" id="" required>
-                            <label for="">Username</label>
-                        </div>
-                        <div class="input-box">
-                            <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                            <input type="email" name="" id="" required>
-                            <label for="">Email</label>
-                        </div>
-                        <div class="input-box">
-                            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                            <input type="password" name="" id="" required>
-                            <label for="">Password</label>
-                        </div>
-                        <div class="remember-forgot">
-                            <label><input type="checkbox" name="" id="">I agree to the terms &
-                                conditions.</label>
-                        </div>
-                        <button type="submit" class="btn">Register</button>
-                        <div class="login-register">
-                            <p>Already have an account? <a href="#" class="login-link">Login</a></p>
-                        </div>
-                    </form>
+                <button class="home-btn bttn">Join the community</button>
+            </div>
+            <div class="login-popup">
+                <div class="wrapper">
+                    <span class="icon-close">
+                        <ion-icon name="close">x</ion-icon>
+                    </span>
+                    <div class="form-box login">
+                        <h2>Login</h2>
+                        <form action="#">
+                            <div class="input-box">
+                                <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                                <input type="email" name="" id="" required>
+                                <label for="">Email</label>
+                            </div>
+                            <div class="input-box">
+                                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                                <input type="password" name="" id="" required>
+                                <label for="">Password</label>
+                            </div>
+                            <div class="remember-forgot">
+                                <label><input type="checkbox" name="" id="">Remember me</label>
+                                <a href="#">Forgot Password?</a>
+                            </div>
+                            <button type="submit" class="btn">Login</button>
+                            <div class="login-register">
+                                <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="form-box register">
+                        <h2>Registration</h2>
+                        <form action="#">
+                            <div class="input-box">
+                                <span class="icon"><ion-icon name="person"></ion-icon></ion-icon></span>
+                                <input type="text" name="" id="" required>
+                                <label for="">Username</label>
+                            </div>
+                            <div class="input-box">
+                                <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                                <input type="email" name="" id="" required>
+                                <label for="">Email</label>
+                            </div>
+                            <div class="input-box">
+                                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                                <input type="password" name="" id="" required>
+                                <label for="">Password</label>
+                            </div>
+                            <div class="remember-forgot">
+                                <label><input type="checkbox" name="" id="">I agree to the terms & conditions.</label>
+                            </div>
+                            <button type="submit" class="btn">Register</button>
+                            <div class="login-register">
+                                <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="section-container">
-            <section class="home" id="home">
-                <div class="home-container flex">
-
-                    <div class="home-content">
-                        <p>Strap in, fellow scholars, because college life just got a whole lot weirder (and funnier).
-                            Welcome to Parenthesis, where we've mastered the art of turning academic chaos into
-                            organized
-                            chaos. Think of us as your trusty sidekick in this wild ride called college - we've got your
-                            back, even when you're convinced your textbooks are conspiring against you.
-                            From sharing books for those "open book" exams that still manage to stump you, to finding a
-                            buddy for that dreaded trip to the airport (because we all know public transport is an
-                            adventure
-                            in itself), we're the ultimate college buddy you never knew you needed.</p>
-                    </div>
-                    <button class="home-btn bttn">Join the community</button>
-                </div>
-
-            </section>
-            <section class="timeline">
-                <div class="timeline-container">
-                    <h2 class="section-title">TIMELINE</h2>
-                    <div class="marquee-container">
-                        <div class="scrolling-wrapper-flexbox">
-                            <div class="marquee-container"></div>
-                            <div class="card card-1">
-                                <h2>Bulls & Bear, VIT</h2>
-                                <div class="timeline-time">
-                                    <h3>01-02 APRIL 2024</h3>
-                                    <h2>STOCKASTIC 2024 !</h2>
-                                </div>
+        </section>
+        <section class="timeline">
+            <div class="timeline-container">
+                <h2 class="section-title">TIMELINE</h2>
+                <div class="marquee-container">
+                    <div class="scrolling-wrapper-flexbox">
+                        <div class="marquee-container"></div>
+                        <div class="card card-1">
+                            <h2>Bulls & Bear, VIT</h2>
+                            <div class="timeline-time">
+                                <h3>01-02 APRIL 2024</h3>
+                                <h2>STOCKASTIC 2024 !</h2>
                             </div>
-                            <div class="card card-1">
-                                <h2>E-Cell, VIT</h2>
-                                <div class="timeline-time">
-                                    <h3>13-16 APRIL 2024</h3>
-                                    <h2>E-SUMMIT 2024 !</h2>
-                                </div>
+                        </div>
+                        <div class="card card-1">
+                            <h2>E-Cell, VIT</h2>
+                            <div class="timeline-time">
+                                <h3>13-16 APRIL 2024</h3>
+                                <h2>E-SUMMIT 2024 !</h2>
                             </div>
-                            <div class="card card-1">
-                                <h2>E-Cell, VIT</h2>
-                                <div class="timeline-time">
-                                    <h3>13-16 APRIL 2024</h3>
-                                    <h2>E-SUMMIT 2024 !</h2>
-                                </div>
+                        </div>
+                        <div class="card card-1">
+                            <h2>E-Cell, VIT</h2>
+                            <div class="timeline-time">
+                                <h3>13-16 APRIL 2024</h3>
+                                <h2>E-SUMMIT 2024 !</h2>
                             </div>
-                            <div class="card card-1">
-                                <h2>E-Cell, VIT</h2>
-                                <div class="timeline-time">
-                                    <h3>13-16 APRIL 2024</h3>
-                                    <h2>E-SUMMIT 2024 !</h2>
-                                </div>
+                        </div>
+                        <div class="card card-1">
+                            <h2>E-Cell, VIT</h2>
+                            <div class="timeline-time">
+                                <h3>13-16 APRIL 2024</h3>
+                                <h2>E-SUMMIT 2024 !</h2>
                             </div>
-                            <div class="card card-1">
-                                <h2>E-Cell, VIT</h2>
-                                <div class="timeline-time">
-                                    <h3>13-16 APRIL 2024</h3>
-                                    <h2>E-SUMMIT 2024 !</h2>
-                                </div>
+                        </div>
+                        <div class="card card-1">
+                            <h2>E-Cell, VIT</h2>
+                            <div class="timeline-time">
+                                <h3>13-16 APRIL 2024</h3>
+                                <h2>E-SUMMIT 2024 !</h2>
                             </div>
-                            <div class="card card-1">
-                                <h2>E-Cell, VIT</h2>
-                                <div class="timeline-time">
-                                    <h3>13-16 APRIL 2024</h3>
-                                    <h2>E-SUMMIT 2024 !</h2>
-                                </div>
+                        </div>
+                        <div class="card card-1">
+                            <h2>E-Cell, VIT</h2>
+                            <div class="timeline-time">
+                                <h3>13-16 APRIL 2024</h3>
+                                <h2>E-SUMMIT 2024 !</h2>
                             </div>
-                            <div class="card card-1">
-                                <h2>E-Cell, VIT</h2>
-                                <div class="timeline-time">
-                                    <h3>13-16 APRIL 2024</h3>
-                                    <h2>E-SUMMIT 2024 !</h2>
-                                </div>
+                        </div>
+                        <div class="card card-1">
+                            <h2>E-Cell, VIT</h2>
+                            <div class="timeline-time">
+                                <h3>13-16 APRIL 2024</h3>
+                                <h2>E-SUMMIT 2024 !</h2>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
             <section class="about-us" id="about-us">
                 <div class="about-container">
