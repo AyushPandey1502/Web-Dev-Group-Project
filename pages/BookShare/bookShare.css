@@ -234,6 +234,7 @@ h5{
     margin-top: 30px;
     padding: 15px 15px;
     transition: 0.5s ease;
+
 }
 .book1:hover{
     transform: scale(1.05,1.05);
@@ -349,11 +350,20 @@ span{
         top:25px;
     }
 }
-.pagination { 
+
+.number {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination {
     text-align: center; 
     margin-top: 2rem; 
 } 
-.pagination a { 
+
+.page-link, .next, .prev { 
     color: white; 
     padding: 8px 16px; 
     text-decoration: none; 
@@ -362,7 +372,7 @@ span{
     border-radius: 4px; 
 } 
   
-.pagination a:hover { 
+.page-link:hover, .next:hover, .prev:hover { 
     background-color: #007BFF; 
     color: white; 
 } 
@@ -382,5 +392,6 @@ a{
     text-decoration: none; 
 }
 .book{
+    display: none;
     transition: 0.5s ease;
 }
