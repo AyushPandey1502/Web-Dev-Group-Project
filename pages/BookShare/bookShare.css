@@ -11,84 +11,30 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-header {
-    position: sticky;
-    padding: 1.5rem 3rem;
+.top{
+    margin-top: 7rem;
+    margin-bottom: 0;
 }
-
-nav {
-    position: sticky;
-    justify-content: space-between;
-    border-radius: 1rem;
-    background-color: white;
+section.tiles{
+    margin-top: -30px;
 }
-
-header .logo img {
-    height: 5.5rem;
-    margin-left: 4rem;
-}
-
-header .nav-tab ul {
-    list-style: none;
-}
-
-header .nav-tab ul li {
-    margin-left: 4rem;
-}
-
-.nav-tab ul li a {
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 700;
-}
-
-.nav-btn {
-    margin-right: 4rem;
-    position: relative;
-    margin-left: 1rem;
-}
-/* .slide-wrapper{
-        width: calc(900px * 4);
-        animation: top-container 10s ease infinite;
-        margin-bottom: 80px;
-}
-@keyframes top-container { 
-    0% {
-        margin-left: 0px;
-    } 
-    50% {
-        margin-left: calc(-900px * 1);
-    }
-}
-#slideshow {
-    overflow: hidden;
-    height: 350px;
-    width: 900px;
-    margin: 0 auto;
-} */
 
 .top-container{
     background-color: rgba(71, 86, 110, 0.5);
-    padding: 40px 40px;
+    padding: 10px 10px;
     border-radius: 10px;
     justify-content: space-evenly;
     width: 100%;
-    height: 350px;
+    height: 320px;
     /* float:left; 
     margin-right: 200px; */
 }
-/* 
-.slide2left{
-    width:40% ;
+.tiles h1{
+    font-size: 30px;
+    color: white;
+    text-align: center;
 }
-.slide2left img{
-    height:100px;
-    margin-left: 30px;
-}
-.slide2right img{
-    height:300px;
-    width: 300px;
-} */
+
 .topleft{
     width:40%;
 }
@@ -137,6 +83,7 @@ fieldset{
     height:250px;
     justify-content: space-between;
 }
+
 .borrowbooks{
     height:350px;
     width:300px;
