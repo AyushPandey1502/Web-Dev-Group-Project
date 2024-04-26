@@ -171,10 +171,35 @@ section.home {
     display: none;
 }
 
-.card-1 {
-    background-image: url(../assets/images/bulls-and-bear.jpg);
+.timeline-card {
     background-size: cover;
     background-position: center;
+}
+
+.card-1{
+    background-image: url(../assets/images/clubEvents/bulls-and-bear.jpg);
+}
+
+.card-2{
+    background-image: url(../assets/images/clubEvents/eSummit.jpg);
+}
+.card-3{
+    background-image: url(../assets/images/clubEvents/mun.jpeg);
+}
+
+.card-4{
+    background-image: url(../assets/images/clubEvents/tag.jpg);
+}
+
+.card-5{
+    background-image: url(../assets/images/clubEvents/Robowars.jpg);
+}
+
+.card-6{
+    background-image: url(../assets/images/clubEvents/anchoring.jpg);
+}
+.card-7{
+    background-image: url(../assets/images/clubEvents/dance.jpg);
 }
 
 .marquee-container {
