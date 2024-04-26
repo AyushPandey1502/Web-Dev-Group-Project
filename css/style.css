@@ -14,7 +14,7 @@ header{
     top:0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    padding: 10px 100px;
     background: rgba(255,255,255,0.1);
     backdrop-filter: blur(5px);
     border-bottom: 3px solid rgba(255,255,255,0.2);    
@@ -44,8 +44,9 @@ header:hover::before{
     align-items: center;
 }
 .nav-logo img{
-    height: 50px;
-    width: 100%;
+    margin-top: 0;
+    height: 80px;   
+    width: 250px;
     cursor: pointer;
 }
 .navbar a{
@@ -88,11 +89,6 @@ section.home {
     flex-direction: column;
 }
 
-/* .home-img img{
-    z-index: 1;
-    filter: invert(100%);
-    bottom: 0;
-} */
 
 .home{
     background: url(../assets/images/ComputerDesktopWallpapersCollection203_020.jpg);
@@ -107,9 +103,13 @@ section.home {
 }
 
 .home-btn {
+    position: absolute;
+    bottom: 100px;   
     margin-top: 10px;
-    width: 240px;
+    width: 250px;
     filter: invert(100%);
+    font-size: 22px;
+    color: black;
 }
 
 

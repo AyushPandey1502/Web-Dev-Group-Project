@@ -38,3 +38,4 @@ iconClose.addEventListener('click', ()=>{
 function toggleBlur() {
     sectionContainer.classList.toggle('blur');
 }
+
