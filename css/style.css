@@ -197,6 +197,67 @@ section.home {
 }
 
 
+/* ============================SERVICES==================== */
+.services{
+    min-height: auto;
+    padding-bottom: 7rem;
+}
+.services h1{
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.services .services-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+} 
+.services-container .services-box{
+    flex:1 1 20rem;
+    background-color: rgba(71, 86, 110, 0.5);
+    width: 200px;
+    padding:3rem 2rem 4rem;
+    border-radius: 2rem;
+    box-shadow: 0 0.1rem 1rem rgba(0,0,0,0.2);
+    text-align: center;
+    border-top: 0.6rem solid #30049f;
+    border-bottom: 0.6rem solid #30049f;
+    transition: 0.5s ease;
+}
+.services-container .services-box h2{
+    color: white;
+}
+.services-container .services-box:hover{
+    box-shadow: 0 0.1rem 2rem rgba(0,0,0,0.2);
+    transform: scale(1.05);
+}
+.services-box i{
+    color: #129cdc;
+    font-size: 7rem;
+}
+.services-box h2{
+    font-size: 2.0rem;
+    transition: 0.5s ease;
+}
+.services-box h2:hover{
+    color: #30049f;
+}
+.services-box p{
+    font-size: 1.2rem;
+    margin: 1rem 0 2.5rem;
+    color: white;
+}
+.services-box a{
+    text-decoration: none;
+}
+
+
 /* ======================= OUR TEAM ============================== */
 
 .about-container {
@@ -277,10 +338,6 @@ section.home {
     color: #ffffff;
     justify-content: space-between;
     margin-left: 30px;
-}
-
-.social-contacts i:hover{
-    cursor: pointer;
 }
 
 .connect-us{
