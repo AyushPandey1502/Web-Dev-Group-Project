@@ -359,14 +359,32 @@ section.home {
 
 /* ====================== Contact Page ===================== */
 
+.contact-section .section-t1 h1 {
+    color: black;
+    font-size: 50px;
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
 .content {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    /* width: 100%; */
+    width: 30000px;
     /* color: white; */
     /* background-color: rgba(71, 86, 110, 0.5);
      */
     background-color: #fff;
+    padding: 30px;
 }
 
 .contact-left h2 {
@@ -375,14 +393,22 @@ section.home {
     margin-bottom: 40px;
 }
 
+.contact-list ul {
+    list-style-type: none;
+
+}
+
 .contact-list li {
     margin-bottom: 40px;
+    list-style-type: none;
+
 }
 
 .contact-list li h3 {
     font-size: 1.3em;
     font-weight: 600;
     margin-bottom: 10px;
+
 }
 
 .contact-list li h3 i {
@@ -397,6 +423,7 @@ section.home {
 
 .contact-list li span a {
     color: #777;
+    text-decoration: none;
 }
 
 .contact-right p {
@@ -445,6 +472,7 @@ section.home {
 
 .contact-form .btn {
     border: none;
+    background-color: #6a59d1;
     margin-top: 0;
     border-radius: 5px;
     cursor: pointer;
