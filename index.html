@@ -51,142 +51,207 @@
                         <div class="indicator flex"></div>
                     </ul>
                 </div>
-                <button class="nav-btn bttn flex"><i class="fa-solid fa-user"></i>Login</button>
+                <button class="nav-btn bttn flex btnLogin-popup"><i class="fa-solid fa-user"></i>Login</button>
             </nav>
         </header>
-        <section class="home" id="home">
-            <div class="home-container flex">
-                
-                <div class="home-content">
-                    <p>Strap in, fellow scholars, because college life just got a whole lot weirder (and funnier).
-                        Welcome to Parenthesis, where we've mastered the art of turning academic chaos into organized
-                        chaos. Think of us as your trusty sidekick in this wild ride called college - we've got your
-                        back, even when you're convinced your textbooks are conspiring against you.
-                        From sharing books for those "open book" exams that still manage to stump you, to finding a
-                        buddy for that dreaded trip to the airport (because we all know public transport is an adventure
-                        in itself), we're the ultimate college buddy you never knew you needed.</p>
-                </div>
-                <button class="home-btn bttn">Join the community</button>
-            </div>
-        </section>
-        <section class="timeline">
-            <div class="timeline-container">
-                <h2 class="section-title">TIMELINE</h2>
-                <div class="marquee-container">
-                    <div class="scrolling-wrapper-flexbox">
-                        <div class="marquee-container"></div>
-                        <div class="card card-1">
-                            <h2>E-Cell, VIT</h2>
-                            <div class="timeline-time">
-                                <h3>13-16 APRIL 2024</h3>
-                                <h2>E-SUMMIT 2024 !</h2>
-                            </div>
-                        </div>
-                        <div class="card card-1">
-                            <h2>E-Cell, VIT</h2>
-                            <div class="timeline-time">
-                                <h3>13-16 APRIL 2024</h3>
-                                <h2>E-SUMMIT 2024 !</h2>
-                            </div>
-                        </div>
-                        <div class="card card-1">
-                            <h2>E-Cell, VIT</h2>
-                            <div class="timeline-time">
-                                <h3>13-16 APRIL 2024</h3>
-                                <h2>E-SUMMIT 2024 !</h2>
-                            </div>
-                        </div>
-                        <div class="card card-1">
-                            <h2>E-Cell, VIT</h2>
-                            <div class="timeline-time">
-                                <h3>13-16 APRIL 2024</h3>
-                                <h2>E-SUMMIT 2024 !</h2>
-                            </div>
-                        </div>
-                        <div class="card card-1">
-                            <h2>E-Cell, VIT</h2>
-                            <div class="timeline-time">
-                                <h3>13-16 APRIL 2024</h3>
-                                <h2>E-SUMMIT 2024 !</h2>
-                            </div>
-                        </div>
-                        <div class="card card-1">
-                            <h2>E-Cell, VIT</h2>
-                            <div class="timeline-time">
-                                <h3>13-16 APRIL 2024</h3>
-                                <h2>E-SUMMIT 2024 !</h2>
-                            </div>
-                        </div>
-                        <div class="card card-1">
-                            <h2>E-Cell, VIT</h2>
-                            <div class="timeline-time">
-                                <h3>13-16 APRIL 2024</h3>
-                                <h2>E-SUMMIT 2024 !</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section class="about-us">
-            <div class="about-container">
-                <div class="mentor">
-                    <h3 class="section-title">OUR MENTOR</h3>
-                    <img src="assets/images/mentor.jpg" alt="">
-                    <h2>Prof. JAYAKUMAR S.</h2>
+        <!-- ========================== Pop Up ========================== -->
+        <div class="login-popup flex">
+            <div class="wrapper">
+                <span class="icon-close">
+                    <ion-icon name="close">x</ion-icon>
+                </span>
+                <div class="form-box login">
+                    <h2>Login</h2>
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                            <input type="email" name="" id="" required>
+                            <label for="">Email</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                            <input type="password" name="" id="" required>
+                            <label for="">Password</label>
+                        </div>
+                        <div class="remember-forgot">
+                            <label><input type="checkbox" name="" id="">Remember me</label>
+                            <a href="#">Forgot Password?</a>
+                        </div>
+                        <button type="submit" class="btn">Login</button>
+                        <div class="login-register">
+                            <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+                        </div>
+                    </form>
                 </div>
-                <div class="our-team ">
-                    <h3 class="section-title">OUR TEAM</h3>
-                    <div class="our-team-container flex">
-                        <div class="team-card flex">
-                            <img src="assets/images/mentor.jpg" alt="">
-                            <h2>AYUSH PANDEY</h2>
-                            <h3>22BCE3956</h3>
+                <div class="form-box register">
+                    <h2>Registration</h2>
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="person"></ion-icon></ion-icon></span>
+                            <input type="text" name="" id="" required>
+                            <label for="">Username</label>
                         </div>
-                        <div class="team-card flex">
-                            <img src="assets/images/mentor.jpg" alt="">
-                            <h2>SHASHWAT PATHAK</h2>
-                            <h3>22BCE0629</h3>
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                            <input type="email" name="" id="" required>
+                            <label for="">Email</label>
                         </div>
-                        <div class="team-card flex">
-                            <img src="assets/images/mentor.jpg" alt="">
-                            <h2>AYUSH PANDEY</h2>
-                            <h3>22BCE2284</h3>
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                            <input type="password" name="" id="" required>
+                            <label for="">Password</label>
                         </div>
-                        <div class="team-card flex">
-                            <img src="assets/images/mentor.jpg" alt="">
-                            <h2>SARA KANETKAR</h2>
-                            <h3>22BDS0423</h3>
+                        <div class="remember-forgot">
+                            <label><input type="checkbox" name="" id="">I agree to the terms & conditions.</label>
                         </div>
-                    </div>
+                        <button type="submit" class="btn">Register</button>
+                        <div class="login-register">
+                            <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                        </div>
+                    </form>
                 </div>
             </div>
-        </section>
+        </div>
+        <!-- ======================== PopUp Ends ======================= -->
+        <div class="section-container">
 
-        <section class="contact">
-            <div class="contact-container flex">
-                <div class="logo flex">
-                    <img src="assets/images/mentor.jpg" alt="">
+            <section class="home" id="home">
+                <div class="home-container flex">
+
+                    <div class="home-content">
+                        <p>Strap in, fellow scholars, because college life just got a whole lot weirder (and funnier).
+                            Welcome to Parenthesis, where we've mastered the art of turning academic chaos into
+                            organized
+                            chaos. Think of us as your trusty sidekick in this wild ride called college - we've got your
+                            back, even when you're convinced your textbooks are conspiring against you.
+                            From sharing books for those "open book" exams that still manage to stump you, to finding a
+                            buddy for that dreaded trip to the airport (because we all know public transport is an
+                            adventure
+                            in itself), we're the ultimate college buddy you never knew you needed.</p>
+                    </div>
+                    <button class="home-btn bttn">Join the community</button>
                 </div>
-                <div class="connect-us">
-                    <div class="subtitle">JOIN OUR COMMUNITY</div>
-                    <div class="social-contacts flex">
-                        <i class="fa-brands fa-square-facebook"></i>
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-discord"></i>
-                        <i class="fa-brands fa-telegram"></i>
-                        <i class="fa-brands fa-youtube"></i>
+
+            </section>
+            <section class="timeline">
+                <div class="timeline-container">
+                    <h2 class="section-title">TIMELINE</h2>
+                    <div class="marquee-container">
+                        <div class="scrolling-wrapper-flexbox">
+                            <div class="marquee-container"></div>
+                            <div class="card card-1">
+                                <h2>E-Cell, VIT</h2>
+                                <div class="timeline-time">
+                                    <h3>13-16 APRIL 2024</h3>
+                                    <h2>E-SUMMIT 2024 !</h2>
+                                </div>
+                            </div>
+                            <div class="card card-1">
+                                <h2>E-Cell, VIT</h2>
+                                <div class="timeline-time">
+                                    <h3>13-16 APRIL 2024</h3>
+                                    <h2>E-SUMMIT 2024 !</h2>
+                                </div>
+                            </div>
+                            <div class="card card-1">
+                                <h2>E-Cell, VIT</h2>
+                                <div class="timeline-time">
+                                    <h3>13-16 APRIL 2024</h3>
+                                    <h2>E-SUMMIT 2024 !</h2>
+                                </div>
+                            </div>
+                            <div class="card card-1">
+                                <h2>E-Cell, VIT</h2>
+                                <div class="timeline-time">
+                                    <h3>13-16 APRIL 2024</h3>
+                                    <h2>E-SUMMIT 2024 !</h2>
+                                </div>
+                            </div>
+                            <div class="card card-1">
+                                <h2>E-Cell, VIT</h2>
+                                <div class="timeline-time">
+                                    <h3>13-16 APRIL 2024</h3>
+                                    <h2>E-SUMMIT 2024 !</h2>
+                                </div>
+                            </div>
+                            <div class="card card-1">
+                                <h2>E-Cell, VIT</h2>
+                                <div class="timeline-time">
+                                    <h3>13-16 APRIL 2024</h3>
+                                    <h2>E-SUMMIT 2024 !</h2>
+                                </div>
+                            </div>
+                            <div class="card card-1">
+                                <h2>E-Cell, VIT</h2>
+                                <div class="timeline-time">
+                                    <h3>13-16 APRIL 2024</h3>
+                                    <h2>E-SUMMIT 2024 !</h2>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+
+            <section class="about-us">
+                <div class="about-container">
+                    <div class="mentor">
+                        <h3 class="section-title">OUR MENTOR</h3>
+                        <img src="assets/images/mentor.jpg" alt="">
+                        <h2>Prof. JAYAKUMAR S.</h2>
+                    </div>
+                    <div class="our-team ">
+                        <h3 class="section-title">OUR TEAM</h3>
+                        <div class="our-team-container flex">
+                            <div class="team-card flex">
+                                <img src="assets/images/mentor.jpg" alt="">
+                                <h2>AYUSH PANDEY</h2>
+                                <h3>22BCE3956</h3>
+                            </div>
+                            <div class="team-card flex">
+                                <img src="assets/images/mentor.jpg" alt="">
+                                <h2>SHASHWAT PATHAK</h2>
+                                <h3>22BCE0629</h3>
+                            </div>
+                            <div class="team-card flex">
+                                <img src="assets/images/mentor.jpg" alt="">
+                                <h2>AYUSH PANDEY</h2>
+                                <h3>22BCE2284</h3>
+                            </div>
+                            <div class="team-card flex">
+                                <img src="assets/images/mentor.jpg" alt="">
+                                <h2>SARA KANETKAR</h2>
+                                <h3>22BDS0423</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact">
+                <div class="contact-container flex">
+                    <div class="logo flex">
+                        <img src="assets/images/mentor.jpg" alt="">
+                    </div>
+                    <div class="connect-us">
+                        <div class="subtitle">JOIN OUR COMMUNITY</div>
+                        <div class="social-contacts flex">
+                            <i class="fa-brands fa-square-facebook"></i>
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-discord"></i>
+                            <i class="fa-brands fa-telegram"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </div>
     <script src="js/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
-    2.x snippet:
 </body>
 
 </html>

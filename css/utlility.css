@@ -86,3 +86,8 @@ section {
     color: var(--text-black-dark);
     margin-bottom: 2rem;
 }
+
+.blur {
+    filter: blur(3px); /* Adjust the blur intensity as needed */
+    transition: filter 0.3s ease; /* Smooth transition for blur effect */
+}
