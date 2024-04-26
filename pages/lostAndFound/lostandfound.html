@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="lfstyle.css" />
+    <link rel="stylesheet" href="lfstyl.css" />
     <link rel="stylesheet" href="../../css/utlility.css" />
   </head>
   <body>
@@ -13,6 +13,7 @@
         <div class="logo">
           <img src="../../assets/images/logo.png" alt="" />
         </div>
+
         <div class="nav-tab">
           <ul class="flex">
             <li><a href="#home">Home</a></li>
@@ -39,7 +40,7 @@
       </div>
 
       <h1>ABOUT:</h1>
-      <h2>
+      <h2 class="para">
         Lost and found websites allow users to report lost or found items by
         providing details such as descriptions and contact information. The
         website's system matches lost and found items, facilitating
@@ -49,125 +50,53 @@
         in a convenient and efficient manner.
       </h2>
     </section>
-    <section class="info" id="info">
 
-      <div class="left">
-        <div class="piclost">
-          <img src="/pages/lost_and_found/assets/lost.jpg" />
-        </div>
-        <div class="lost">
-          <form>
-            <legend>LOST ITEMS</legend>
-            <height:50px></height:50px>
-            <width:50px></width:50px>
-            FirstName:<br />
-            <input type="text" size="30" maxlength="10" />
-            <br />
-            LastName:<br />
-            <input type="text" size="30" maxlength="10" />
-            <br />
-            Email ID:<br />
-            <input type="text" size="30" maxlength="10" />
-            <br />
-            Mobile Number:<br />
-            <input type="text" size="30" maxlength="10" />
-            <br />
-            ITEM LOST:<br />
-            <input type="text" size="30" maxlength="10" />
-            <br />
-            LOST ITEM IMAGE:<br />
-            <input type="file" size="30" maxlength="10" />
-            <input type="submit">
-        </div>
+    <div class="left">
+      <div class="piclost">
+        <img src="../lostAndFound/assets/lost.jpg" />
       </div>
+      <div class="lost">
+        <legend>LOST OR FOUND ITEMS</legend>
+        <height:50px></height:50px>
+        <width:50px></width:50px>
 
+        <form id="lostFoundForm">
+          <label for="firstName">First Name:</label><br />
+          <input type="text" id="firstName" name="firstName" /><br />
 
-      <div class="right">
-        <div class="found">
-          <form>
-            <legend>FOUND ITEMS</legend>
-            <height:50px></height:50px>
-            <width:50px></width:50px>
-            FirstName:<br />
-            <input type="text"  maxlength="10" />
-            <br />
-            LastName:<br />
-            <input type="text"  maxlength="10" />
-            <br />
-            Email ID:<br />
-            <input type="text"  maxlength="10" />
-            <br />
-            Mobile Number:<br />
-            <input type="text"  maxlength="10" />
-            <br />
-            ITEM FOUND:<br />
-            <input type="text"  maxlength="10" />
-            <br />
-            FOUND ITEM IMAGE:<br />
-        <button class="bttn"><input type="file"> </button>
-        <input type="submit">
-          </form>
-        </div>
-        <div class="picfound">
-          <img src="/pages/lost_and_found/assets/lost.jpg" />
-        </div>
+          <label for="lastName">Last Name:</label><br />
+          <input type="text" id="lastName" name="lastName" /><br />
+
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="email" /><br />
+
+          <label for="phone">Phone Number:</label><br />
+          <input type="tel" id="phone" name="phone" /><br />
+
+          <input type="radio" id="lost" name="lostFound" value="lost" />
+          <label for="lost">Lost</label><br />
+          <input type="radio" id="found" name="lostFound" value="found" />
+          <label for="found">Found</label><br />
+
+          <label for="item">Item:</label><br />
+          <input type="text" id="item" name="item" /><br />
+
+          <label for="file">Upload File:</label><br />
+          <input type="file" id="file" name="file" /><br />
+
+          <input type="button" value="Submit" onclick="submitForm()" />
+        </form>
       </div>
-    </section>
-    <section>
-        <div class="borrow-book fl  ex" id="data-container">
-            <div class="book" id="book">
-                <div class="book1">
-                    <h2>INFORMATION AQUIRED:</h2><br>
-                    
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                </div>
-            </div>
-                <div class="book">
-                    <div class="book2">
-                    <h2>INFORMATION AQUIRED:</h2><br>
-                    
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                </div>
-                </div>
-                
-                <div class="book">
-                <div class="book3">
-                    <h2>INFORMATION AQUIRED:</h2><br>
-                    
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                </div>
-            </div>
-        
-                <div class="book">
-                <div class="book4">
-                    <h2>INFORMATION AQUIRED:</h2><br>
-                    
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                </div>
-            </div>
-        
-                <div class="book">
-                <div class="book3">
-                    <h2>INFORMATION AQUIRED:</h2><br>
-                    
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                </div>
-            </div>
-    </section>
+      <div class="picfound">
+        <img src="../lostAndFound/assets/lost.jpg" />
+      </div>
+    </div>
+
+    <div id="displayData">
+      <h4>INFORMATION ENTERED</h4>
+      <br />
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
