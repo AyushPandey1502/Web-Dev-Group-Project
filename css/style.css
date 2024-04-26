@@ -243,6 +243,99 @@ section.home {
     justify-content: space-between;
 }
 
+/* ====================== Contact Page ===================== */
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* color: white; */
+    /* background-color: rgba(71, 86, 110, 0.5);
+     */
+    background-color: #fff;
+}
+
+.contact-left h2 {
+    font-size: 2.1em;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+
+.contact-list li {
+    margin-bottom: 40px;
+}
+
+.contact-list li h3 {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact-list li h3 i {
+    color: #6a59d1;
+    font-size: 1.3em;
+}
+
+.contact-list li span {
+    color: #777;
+    margin-left: 40px;
+}
+
+.contact-list li span a {
+    color: #777;
+}
+
+.contact-right p {
+    color: #777;
+    font-size: 1.6em;
+    margin-bottom: 30px;
+}
+
+.contact-right p span {
+    color: #0e2431;
+    font-weight: 700;
+}
+
+.contact-form input,
+.contact-form textarea {
+    border: none;
+    color: #0e2431;
+    background: rgba(106, 89, 209, 0.1);
+    font-size: 1em;
+    margin-bottom: 20px;
+    padding: 15px 40px 40px 20px;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    width: 100%;
+    resize: none;
+}
+
+::placeholder {
+    color: #0e2431;
+}
+
+.contact-form .first-row input {
+    width: 100%;
+}
+
+.contact-form .second-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-form .second-row input {
+    width: 48%;
+}
+
+.contact-form .btn {
+    border: none;
+    margin-top: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 /* ====================== Contact Us ====================== */
 
 .contact-container {
