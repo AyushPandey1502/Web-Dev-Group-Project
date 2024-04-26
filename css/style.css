@@ -178,29 +178,31 @@ section.home {
     background-position: center;
 }
 
-.card-1{
+.card-1 {
     background-image: url(../assets/images/clubEvents/bulls-and-bear.jpg);
 }
 
-.card-2{
+.card-2 {
     background-image: url(../assets/images/clubEvents/eSummit.jpg);
 }
-.card-3{
+
+.card-3 {
     background-image: url(../assets/images/clubEvents/mun.jpeg);
 }
 
-.card-4{
+.card-4 {
     background-image: url(../assets/images/clubEvents/tag.jpg);
 }
 
-.card-5{
+.card-5 {
     background-image: url(../assets/images/clubEvents/Robowars.jpg);
 }
 
-.card-6{
+.card-6 {
     background-image: url(../assets/images/clubEvents/anchoring.jpg);
 }
-.card-7{
+
+.card-7 {
     background-image: url(../assets/images/clubEvents/dance.jpg);
 }
 
@@ -222,13 +224,13 @@ section.home {
 
 
 /* ============================SERVICES==================== */
-.services-desc{
+.services-desc {
     font-size: 30px;
     color: white;
     text-align: left;
 }
 
-#typing{
+#typing {
     font-weight: 800;
     color: var(--skin-color);
     font-size: 35px;
@@ -361,9 +363,11 @@ section.home {
 
 /* ====================== Contact Page ===================== */
 
-.contact-section .section-t1 h1 {
-    color: black;
+.contact-section h1 {
+    color: white;
     font-size: 50px;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 
@@ -380,19 +384,21 @@ section.home {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    /* width: 100%; */
-    width: 30000px;
-    /* color: white; */
-    /* background-color: rgba(71, 86, 110, 0.5);
-     */
-    background-color: #fff;
+    width: 1000px;
+    background-color: rgba(71, 86, 110, 0.5);
+    border-radius: 2rem;
     padding: 30px;
+    box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.2);
+    border-top: 0.6rem solid #30049f;
+    border-bottom: 0.6rem solid #30049f;
+
 }
 
 .contact-left h2 {
     font-size: 2.1em;
     font-weight: 800;
     margin-bottom: 40px;
+    color: white;
 }
 
 .contact-list ul {
@@ -404,40 +410,50 @@ section.home {
     margin-bottom: 40px;
     list-style-type: none;
 
+
 }
 
 .contact-list li h3 {
     font-size: 1.3em;
     font-weight: 600;
     margin-bottom: 10px;
+    color: white;
 
 }
 
 .contact-list li h3 i {
-    color: #6a59d1;
+    color: #129cdc;
     font-size: 1.3em;
 }
 
 .contact-list li span {
-    color: #777;
+    color: #129cdc;
     margin-left: 40px;
+
 }
 
 .contact-list li span a {
-    color: #777;
     text-decoration: none;
 }
 
+.contact-list li span a,
+a:visited,
+a:hover,
+a:active {
+    color: inherit;
+}
+
+/* 
 .contact-right p {
-    color: #777;
+    color: #129cdc;
     font-size: 1.6em;
     margin-bottom: 30px;
 }
 
 .contact-right p span {
-    color: #0e2431;
+    color: #fff;
     font-weight: 700;
-}
+} */
 
 .contact-form input,
 .contact-form textarea {
@@ -456,7 +472,7 @@ section.home {
 }
 
 ::placeholder {
-    color: #0e2431;
+    color: #fff;
 }
 
 .contact-form .first-row input {
@@ -481,7 +497,7 @@ section.home {
 }
 
 
-/* ====================== Contact Us ====================== */
+/* ====================== Footer ====================== */
 
 .contact-container {
     background-color: rgba(71, 86, 110, 0.5);
@@ -514,7 +530,7 @@ section.home {
     align-items: center;
 }
 
-.footer-copyright{
+.footer-copyright {
     text-align: center;
     font-size: 20px;
     background-color: black;
