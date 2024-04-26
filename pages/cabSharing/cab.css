@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 body {
@@ -49,27 +51,11 @@ header .nav-tab ul li {
 }
 
 
-.topleft {
-    width: 40%;
-}
-
-.topright img {
-    width: 300px;
-    height: 300px;
-}
-
-.head1 {
-    display: flex;
-    flex-direction: row;
-
-}
-
-
 .top-container {
     justify-content: space-evenly;
     background-color: rgba(71, 86, 110, 0.5);
-    margin-left: 110px;
-    margin-right: 110px;
+    /* margin-left: 50px;
+    margin-right: 50px; */
 }
 
 .img1 img {
@@ -88,11 +74,11 @@ h1 {
 }
 
 .ride_list {
-    width: 500px;
+    width: 400px;
     height: 600px;
-    margin-top: 60px;
+    margin-top: 30px;
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     padding-left: 100px;
     padding-top: 20px;
 
@@ -126,6 +112,15 @@ h1 {
     padding-left: 10px
 }
 
+.cost {
+    width: 400px;
+    height: 40px;
+    font-size: 20px;
+    margin-bottom: 7px;
+    margin-top: 5px;
+    padding-left: 10px
+}
+
 .vac {
     width: 400px;
     height: 40px;
@@ -148,15 +143,14 @@ h1 {
     border-radius: 10px;
     text-align: center;
     background-color: #5f03f4;
+
 }
 
 .ride_list button:hover {
     background-color: #853451;
+    transition: all 0.3s ease;
+
 }
-
-
-
-
 
 .vac-start {
     background-color: rgba(1, 1, 1, 1);
@@ -190,11 +184,13 @@ h1 {
     border: 2px solid white;
     border-radius: 10px;
     width: 350px;
-    height: 400px;
+    height: 500px;
     margin-bottom: 2cm;
-    padding: 20px;
-    font-size: 20px;
-    background-color: #000;
+    background-color: rgba(229, 229, 20, 0.805);
+    color: black;
+    text-align: center;
+    padding: 45px;
+    font-size: 21px;
 }
 
 .vacancy-card-image {
@@ -203,21 +199,30 @@ h1 {
     margin-left: -25px;
 }
 
+
+
+
 .vac-container button {
-    width: 100px;
-    height: 40px;
-    margin-top: 10px;
-    border-radius: 5px;
-    border: none;
-    background-color: #4a90e2;
+    width: 160px;
+    height: 60px;
     color: #fff;
-    font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    outline: none;
+    border: none;
+    transition: all 0.3s ease;
+    position: relative;
+    border-radius: 10px;
+    background-color: #0c0c0c;
+    box-shadow: inset 2px 2px 2px 0px rgba(49, 49, 49, 0.5),
+        7px 7px 20px 0px rgba(20, 20, 20, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
 }
 
 .vac-container button:hover {
-    background-color: #357dbf;
+    background-color: #2b2bff;
+    top: 2px;
 }
 
 .pagination {
