@@ -6,13 +6,14 @@ const nextButton = document.getElementById('next');
 const pageNumbers = document.getElementById('page-numbers'); 
 const pageLinks = document.querySelectorAll('.page-link'); 
 
-const books = Array.from(booksContainer.getElementsByClassName('book')); 
+const books = Array.from(booksContainer.getElementsByClassName('book'));
 
-const totalPages = Math.ceil(books.length / booksPerPage); 
-let currentPage = 1; 
+const totalPages = Math.ceil(books.length / booksPerPage);
+let current = 1;
 
 
-function displayPage(page) { 
+function displayPage(page) {
+    const books = Array.from(booksContainer.getElementsByClassName('book'));
     const startIndex = (page - 1) * booksPerPage; 
     const endIndex = startIndex + booksPerPage; 
     books.forEach((book, index) => { 
@@ -24,7 +25,7 @@ function displayPage(page) {
     }); 
 } 
  
-function updatePagination() { 
+function updatePagination(currentPage) { 
     pageNumbers.textContent = `Page ${currentPage} of ${totalPages}`; 
     prevButton.disabled = currentPage === 1; 
     nextButton.disabled = currentPage === totalPages; 
@@ -33,42 +34,56 @@ function updatePagination() {
         link.classList.toggle('active', page === currentPage); 
     }); 
 } 
-prevButton.addEventListener('click', () => { 
-    if (currentPage > 1) { 
-        currentPage--; 
-        displayPage(currentPage); 
-        updatePagination(); 
+prevButton.addEventListener('click', () => {
+    current--; 
+    if (current >= 1) { 
+        displayPage(current); 
+        updatePagination(current); 
+    }
+
+    if (current < 1) {
+        current = 3
+        displayPage(3)
+        updatePagination(3)
+    }
+});
+
+nextButton.addEventListener('click', () => {
+    current++; 
+    if (current <= totalPages) { 
+        displayPage(current); 
+        updatePagination(current); 
     } 
+
+    if (current > totalPages) {
+        current = 1
+        displayPage(1)
+        updatePagination(1)
+    }
 }); 
 
-nextButton.addEventListener('click', () => { 
-    if (currentPage < totalPages) { 
-        currentPage++; 
-        displayPage(currentPage); 
-        updatePagination(); 
-    } 
-}); 
-
-// Event listener for page number buttons 
 pageLinks.forEach((link) => { 
     link.addEventListener('click', (e) => { 
         e.preventDefault(); 
         const page = parseInt(link.getAttribute('data-page')); 
-        if (page !== currentPage) { 
-            currentPage = page; 
-            displayPage(currentPage); 
-            updatePagination(); 
-        } 
+            displayPage(page);
+            updatePagination(page); 
     }); 
 }); 
 
-displayPage(currentPage); 
-updatePagination();
+document.addEventListener('DOMContentLoaded', function() {
+    var submitButton = document.getElementById('submit-book');
+    displayPage(1);
+    updatePagination(1)
 
+    submitButton.addEventListener('click', function(event) {
+        event.preventDefault();
 
+        submitForm();
+    });
+});
 
 function submitForm() {
-    // Get form values
     var bookTitle = document.getElementById('bookname').value;
     var publishers = document.getElementById('publishers').value;
     var author = document.getElementById('author').value;
@@ -77,7 +92,6 @@ function submitForm() {
     var genre = document.getElementById('genre').value;
     var price = document.getElementById('price').value;
 
-    // Create HTML elements for the new book
     var bookContainer = document.createElement('div');
     bookContainer.classList.add('book');
 
@@ -96,9 +110,10 @@ function submitForm() {
     `;
     bookContainer.innerHTML = bookContent;
 
-    // Append the new book to the book container
-    booksContainer.appendChild(bookContainer);
+    var borrowBook = document.querySelector('.borrow-book');
+    borrowBook.appendChild(bookContainer);
+    const test = document.querySelector('.borrow-book');
+    current = 3;
+    displayPage(3);
+    updatePagination(3);
 }
-
-
-
