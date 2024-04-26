@@ -70,20 +70,11 @@ header:hover::before {
     color: red;
 }
 
-
-
-
 .nav-btn {
     margin-right: 4rem;
     position: relative;
     margin-left: 1rem;
 }
-
-
-
-
-
-
 
 section.home {
     background-size: cover;
@@ -446,6 +437,7 @@ section.home {
     color: #ffffff;
     justify-content: space-between;
     margin-left: 30px;
+    cursor: pointer;
 }
 
 .connect-us {
