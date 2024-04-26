@@ -1,84 +1,4 @@
-body {
-    font-family: 'Poppins', sans-serif;
-    color: rgb(var(--foreground-rgb));
-    background: linear-gradient(to bottom,
-            transparent,
-            rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
-    background: url(../assets/images/background_image.jpg) no-repeat;
-    background-repeat: repeat-y;
-    overflow-x: hidden;
-}
-
-header{
-    position: fixed;
-    top:0;
-    left: 0;
-    width: 100%;
-    padding: 10px 100px;
-    background: rgba(255,255,255,0.1);
-    backdrop-filter: blur(5px);
-    border-bottom: 3px solid rgba(255,255,255,0.2);    
-    /* border-right: 3px solid rgba(255,255,255,0.2);
-    border-left: 3px solid rgba(255,255,255,0.2);        */
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    height: 90px;
-}
-header::before{
-    content: '';
-    position: absolute;
-    top:0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent,rgba(255,255,255,.4),transparent);
-    transition: .5s;
-}
-header:hover::before{
-    left: 100%;
-}
-
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.nav-logo img{
-    margin-top: 0;
-    height: 80px;   
-    width: 250px;
-    cursor: pointer;
-}
-.navbar a{
-    color: white;
-    font-size: 23px;
-    text-decoration: none;
-    margin-left: 35px;
-}
-.navbar button{
-    margin-left: 35px;
-    width: 90px;
-    font-size: 20px;
-}
-.navbar a:hover{
-    color: red  ;
-}
-
-
-
-
-.nav-btn {
-    margin-right: 4rem;
-    position: relative;
-    margin-left: 1rem;
-}
-
-
-
-
-
-
-
+/* ====================== Home Section Start ======================= */
 section.home {
     background-size: cover;
     width: 100vw;
@@ -88,7 +8,6 @@ section.home {
 .home-container {
     flex-direction: column;
 }
-
 
 .home{
     background: url(../assets/images/ComputerDesktopWallpapersCollection203_020.jpg);
@@ -110,9 +29,10 @@ section.home {
     font-size: 22px;
     color: black;
     border-style: solid;
-    /* Apply a linear gradient as border image */
     border-image: linear-gradient(to right, purple, blue, purple) 1;
 }
+
+/* ====================== Home Section Start ======================= */
 
 
 /* =================== TIMELINE START ======================== */
@@ -263,7 +183,6 @@ section.home {
 }
 
 .logo img{
-    border: 2px solid #ffffff;
     border-radius: 50%;
     height: 25vh;
 }
