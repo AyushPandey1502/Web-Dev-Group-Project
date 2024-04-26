@@ -88,6 +88,6 @@ section {
 }
 
 .blur {
-    filter: blur(3px); /* Adjust the blur intensity as needed */
-    transition: filter 0.3s ease; /* Smooth transition for blur effect */
+    filter: blur(3px); 
+    transition: filter 0.3s ease; 
 }
