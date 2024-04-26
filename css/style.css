@@ -279,6 +279,10 @@ section.home {
     margin-left: 30px;
 }
 
+.social-contacts i:hover{
+    cursor: pointer;
+}
+
 .connect-us{
     display: flex;
     flex-direction: column;
