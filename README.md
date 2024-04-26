@@ -5,7 +5,7 @@
 1. **Clone Repository**: 
    - Clone the GitHub repository to your local machine using the command:
      ```
-     git clone https://github.com/AyushPandey1502/Portfolio.git
+     git clone https://github.com/AyushPandey1502/Web-Dev-Group-Project.git
      ```
 
 2. **Navigate to Directory**: 
