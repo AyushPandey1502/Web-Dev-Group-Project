@@ -52,10 +52,10 @@ body {
     font-size: 1.1rem;
     padding: 0.5rem 1rem;
     font-weight: 700;
-    background: linear-gradient(to right, rgba(255,255,255,0.5), rgba(255,255,255,0)), var(--skin-color);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0)), var(--skin-color);
     border: none;
     cursor: pointer;
-    transition: background-color 0.5s ease, border-color 0.5s ease, color 0.5s ease; /* added transition for smooth change */
+    transition: background-color 0.5s ease, border-color 0.5s ease, color 0.5s ease;
 }
 
 .bttn:hover {
@@ -67,19 +67,20 @@ body {
 
 section {
     padding: 40px 80px;
+    margin-top: 50px;
     width: 100vw;
-    /* height: 100vh; */
+    height: 100vh;
 }
 
-.section-title{
-    font-size: max(2.2vw,30px);
+.section-title {
+    font-size: max(2.2vw, 30px);
     font-weight: 800;
     text-align: center;
     color: var(--text-black-dark);
     margin-bottom: 3rem;
 }
 
-.subtitle{
+.subtitle {
     font-size: max(1.5vw, 20px);
     font-weight: 600;
     text-align: center;
@@ -88,6 +89,93 @@ section {
 }
 
 .blur {
-    filter: blur(3px); /* Adjust the blur intensity as needed */
-    transition: filter 0.3s ease; /* Smooth transition for blur effect */
+    filter: blur(3px);
+    transition: filter 0.3s ease;
 }
+
+/* =================================== Navigation Bar Start ============================= */
+header{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 10px 100px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px);
+    border-bottom: 3px solid rgba(255,255,255,0.2);    
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 90px;
+    z-index: 100;
+}
+header::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent,rgba(255,255,255,.4),transparent);
+    transition: .5s;
+}
+header:hover::before{
+    left: 100%;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-logo img{
+    margin-top: 0;
+    height: 80px;   
+    width: 250px;
+    cursor: pointer;
+}
+.navbar a{
+    color: white;
+    font-size: 23px;
+    text-decoration: none;
+    padding-left: 35px;
+    font-weight: 700;
+}
+.navbar button{
+    margin-left: 35px;
+    width: 90px;
+    font-size: 20px;
+}
+.navbar a:hover{
+    color: var(--skin-color);
+}
+
+.nav-btn {
+    margin-right: 3rem;
+    position: relative;
+    margin-left: 3rem;
+}
+
+.nav-tab li {
+    position: relative;
+}
+
+.nav-tab li a::after {
+    content: '';
+    position: absolute;
+    left: 32px;
+    bottom: -6px;
+    width: 80%;
+    height: 4px;
+    background: white;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.nav-tab li a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+/* =================================== Navigation Bar Ends ============================= */
