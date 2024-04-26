@@ -1,0 +1,12 @@
+function submitForm() {
+    var form = document.getElementById("lostFoundForm");
+    var formData = new FormData(form);
+
+    var enteredValues = "<h2>Form Data:</h2><ul>";
+    for (var pair of formData.entries()) {
+        enteredValues += "<li><strong>" + pair[0] + ":</strong> " + pair[1] + "</li>";
+    }
+    enteredValues += "</ul>";
+
+    document.getElementById("displayData").innerHTML = enteredValues;
+}
