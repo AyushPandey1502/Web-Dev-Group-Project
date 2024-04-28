@@ -94,58 +94,64 @@ section {
 }
 
 /* =================================== Navigation Bar Start ============================= */
-header{
+header {
     position: fixed;
-    top:0;
+    top: 0;
     left: 0;
     width: 100%;
     padding: 10px 100px;
-    background: rgba(255,255,255,0.1);
+    background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(5px);
-    border-bottom: 3px solid rgba(255,255,255,0.2);    
+    border-bottom: 3px solid rgba(255, 255, 255, 0.2);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     height: 90px;
     z-index: 100;
 }
-header::before{
+
+header::before {
     content: '';
     position: absolute;
-    top:0;
+    top: 0;
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent,rgba(255,255,255,.4),transparent);
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
     transition: .5s;
 }
-header:hover::before{
+
+header:hover::before {
     left: 100%;
 }
 
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.nav-logo img{
+
+.nav-logo img {
     margin-top: 0;
-    height: 80px;   
+    height: 80px;
     width: 250px;
     cursor: pointer;
 }
-.navbar li a{
+
+.navbar li a {
     color: white;
     font-size: 23px;
     text-decoration: none;
     padding-left: 35px;
     font-weight: 700;
 }
-.navbar button{
+
+.navbar button {
     margin-left: 35px;
     width: 90px;
     font-size: 20px;
 }
-.navbar a:hover{
+
+.navbar a:hover {
     color: var(--skin-color);
 }
 
@@ -182,13 +188,13 @@ header:hover::before{
     color: var(--skin-color);
 }
 
-li a.active{
+li a.active {
     color: var(--skin-color);
 }
 
 /* =================================== Navigation Bar Ends ============================= */
 
-.login-icon{
+.login-icon {
     margin-left: 35px;
     margin-right: 5rem;
     color: var(--skin-color);
@@ -260,21 +266,31 @@ li a.active{
 
 
 @media (max-width: 1199px) {
-    section{
+    section {
         margin-top: 0px;
     }
+
+    section.home{
+        padding-left: 0;
+        width: 60%;
+    }
+
+    .home-content p {
+        margin-left: 20px; 
+    }
+
     .section-container {
         overflow: hidden;
         float: right;
         width: 80%;
     }
 
-    .nav-logo{
+    .nav-logo {
         top: 30%;
         margin-bottom: 100px;
     }
 
-    header{
+    header {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -293,18 +309,47 @@ li a.active{
         padding: 5px 5px;
     }
 
-    .links, .navbar{
+    .links,
+    .navbar {
         flex-direction: column;
     }
 
-    .navbar{
+    .navbar {
         align-items: center;
     }
 
-    .links li{
-        margin-left: 0px;
+    .links li {
+        margin-left: -35px;
         margin-bottom: 10px;
     }
+
+    .login-status {
+        margin: auto;
+        margin-top: 35px;
+    }
+
+    .our-team-container {
+        display: grid;
+        grid-template-columns: 200px 200px;
+        row-gap: 20px;
+        column-gap: 0;
+        width: 70%;
+    }
+
+    .team-card {
+        width: 200px;
+    }
+
+    h3.section-title {
+        text-align: left;
+        margin-left: 25%;
+    }
+
+    .team-card h3,
+    .team-card h2 {
+        text-align: center;
+    }
+    
 
 }
 
@@ -314,8 +359,22 @@ li a.active{
         width: 75%;
     }
 
+    section.home{
+        width: 100%;
+        padding-left: 80px;
+    }
+
+    .home-content p {
+        margin: 20px;
+        width: 80%;
+    }
+
     .aside {
         width: 25%;
+    }
+
+    .card{
+        height: 200px;
     }
 }
 
@@ -324,9 +383,11 @@ li a.active{
         width: 250px;
         left: -300px;
     }
-    .section-container{
+
+    .section-container {
         width: 100%;
     }
+
     .aside.open {
         left: 0;
     }
@@ -340,8 +401,8 @@ li a.active{
         left: 270px;
     }
 
-}
-
-@media (max-width: 457px){
+    
 
 }
+
+@media (max-width: 457px) {}

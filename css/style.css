@@ -1,4 +1,4 @@
-.main-container{
+.main-container {
     overflow-x: hidden;
 }
 
@@ -24,6 +24,9 @@ section.home {
     z-index: 1;
     margin-bottom: 10vh;
     text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
 }
 
 .home-btn {
@@ -274,6 +277,9 @@ section.home {
 .team-card h3,
 .team-card h2 {
     color: #ffffff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
 }
 
 .team-card h2 {
@@ -659,7 +665,7 @@ a:active {
 
 /* ==================== Arrow to Top ================= */
 
-.s-icon{
+.s-icon {
     position: fixed;
     bottom: 50px;
     left: 95%;
