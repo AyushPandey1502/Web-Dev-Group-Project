@@ -1,31 +1,63 @@
+let typed = new Typed("#typing", {
+    strings: ["", "Book Share", "SoapSync", "Cab Share", "Lost & Found"],
+    typeSpeed: 150,
+    backSpeed: 60,
+    loop: true
+  });
 
 
-const wrapper = document.querySelector('.wrapper');
-const loginLink = document.querySelector('.login-link');
-const registerLink = document.querySelector('.register-link');
-const btnPopup = document.querySelector('.btnLogin-popup');
-const iconClose = document.querySelector('.icon-close');
-
-
-registerLink.addEventListener('click', () => {
-    wrapper.classList.add('active');
-});
-
-loginLink.addEventListener('click', () => {
-    wrapper.classList.remove('active');
-});
-
-btnPopup.addEventListener('click', () => {
-    wrapper.classList.add('active-popup');
-    toggleBlur();
-});
-
-iconClose.addEventListener('click', () => {
-    wrapper.classList.remove('active-popup');
-    toggleBlur();
-});
-
-
-
+// ===================== Nav Bar Start =====================
+document.addEventListener('DOMContentLoaded', function () {
+    const navLinks = document.querySelectorAll('.links li a');
+    const sections = document.querySelectorAll('section');
+  
+    function makeLinkActive() {
+      let currentSectionId = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (window.scrollY >= sectionTop - 50 && window.scrollY < sectionTop + sectionHeight - 50) {
+          currentSectionId = section.id;
+        }
+      });
+  
+      navLinks.forEach(link => {
+        const targetId = link.getAttribute('href').substring(1);
+        if (targetId === currentSectionId) {
+          link.classList.add('active');
+        } else {
+          link.classList.remove('active');
+        }
+      });
+    }
+  
+      // ===================== Nav Bar Start ===============================
+    navLinks.forEach(function (link) {
+      link.addEventListener('click', function (event) {
+        event.preventDefault();
+        navLinks.forEach(function (link) {
+          link.classList.remove('active');
+        });
+        this.classList.add('active');
+  
+        const targetId = this.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+  
+        if (targetSection) {
+          const offset = 40;
+          const targetOffset = targetSection.offsetTop - offset;
+  
+          window.scrollTo({
+            top: targetOffset,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  
+    window.addEventListener('scroll', makeLinkActive);
+  });
+  
+  // ===================== Nav Bar Ends ===============================
 
 

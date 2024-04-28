@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <div class="popUp-container"></div>
     <div class="main-container">
         <header>
             <nav class="navbar flex">
@@ -22,7 +23,7 @@
                     <ul class="links flex" type="none">
                         <li><a href="../../index.html">Home</a></li>
                         <li><a href="#about">About Us</a></li>
-                        <li><a href="#services">Services</a></li>
+                        <li><a href="#services" class="active">Services</a></li>
                         <li><a href="#contact">Contact Us</a></li>
                         <button class="nav-btn bttn btnLogin-popup">Login</button>
                     </ul>
@@ -141,8 +142,13 @@
             </div>
         </section>
     </div>
-    <script src="chotaDhobi.js"></script>
     <script src="../../js/utility.js"></script>
+    <script src="chotaDhobi.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            updateLoginButton();
+        });
+    </script>
 </body>
 
 </html>

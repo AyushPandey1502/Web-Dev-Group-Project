@@ -1,3 +1,6 @@
+let isLogined = false;
+let userName = "";
+
 let users = [
   { name: 'Ayush Pandey', email: 'ayush.pandey2022b@vitstudent.ac.in', password: 'Ayush@123' }
 ];
@@ -18,99 +21,63 @@ function isEmailRegistered(email) {
   return users.some(user => user.email === email);
 }
 
+const wrapper = document.querySelector('.wrapper');
+const loginLink = document.querySelector('.login-link');
+const registerLink = document.querySelector('.register-link');
+const btnPopup = document.querySelector('.btnLogin-popup');
+const iconClose = document.querySelector('.icon-close');
+const sectionContainer = document.querySelector('.section-container');
 
-let userName = "Ayush Pandey";
-let email = "ayush.pandey2022b@vitstudent.ac.in";
 
-let typed = new Typed("#typing", {
-  strings: ["", "Book Share", "SoapSync", "Cab Share", "Lost & Found"],
-  typeSpeed: 150,
-  backSpeed: 60,
-  loop: true
+registerLink.addEventListener('click', () => {
+    wrapper.classList.add('active');
 });
 
-// ===================== Nav Bar Start =====================
-document.addEventListener('DOMContentLoaded', function () {
-  const navLinks = document.querySelectorAll('.links li a');
-  const sections = document.querySelectorAll('section');
-
-  function makeLinkActive() {
-    let currentSectionId = '';
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop;
-      const sectionHeight = section.clientHeight;
-      if (window.scrollY >= sectionTop - 50 && window.scrollY < sectionTop + sectionHeight - 50) {
-        currentSectionId = section.id;
-      }
-    });
-
-    navLinks.forEach(link => {
-      const targetId = link.getAttribute('href').substring(1);
-      if (targetId === currentSectionId) {
-        link.classList.add('active');
-      } else {
-        link.classList.remove('active');
-      }
-    });
-  }
-
-  navLinks.forEach(function (link) {
-    link.addEventListener('click', function (event) {
-      event.preventDefault();
-      navLinks.forEach(function (link) {
-        link.classList.remove('active');
-      });
-      this.classList.add('active');
-
-      const targetId = this.getAttribute('href').substring(1);
-      const targetSection = document.getElementById(targetId);
-
-      if (targetSection) {
-        const offset = 40;
-        const targetOffset = targetSection.offsetTop - offset;
-
-        window.scrollTo({
-          top: targetOffset,
-          behavior: 'smooth'
-        });
-      }
-    });
-  });
-
-  window.addEventListener('scroll', makeLinkActive);
+loginLink.addEventListener('click', () => {
+    wrapper.classList.remove('active');
 });
- 
-// ===================== Nav Bar Ends ===============================
+
+btnPopup.addEventListener('click', () => {
+    wrapper.classList.add('active-popup');
+    toggleBlur();
+});
+
+iconClose.addEventListener('click', () => {
+    wrapper.classList.remove('active-popup');
+    toggleBlur();
+});
 
 function toggleBlur() {
-  sectionContainer.classList.toggle('blur');
+    sectionContainer.classList.toggle('blur');
 }
 
 iconClose.addEventListener('click', () => {
   wrapper.classList.remove('active-popup');
-  toggleBlur();
+  document.querySelector('.section-container').classList.remove('blur');
 });
 
 // Function to handle form submission
 function handleLoginFormSubmit() {
   document.getElementById("login-form").addEventListener("submit", function (event) {
-      event.preventDefault();
-      email = document.getElementById("email").value;
-      userPwd = document.getElementById("password").value;
-      const user = getUserByEmail(email);
-      if (user) {
-          if (user.password === userPwd) {
-              const { name } = user;
-              alert(`Welcome ${name}!!`);
-              var loginStatusDiv = document.querySelector(".login-status");
-              loginStatusDiv.innerHTML = `<acronym title=${name}><i class='fa-solid fa-user fa-beat login-icon'></i></acronym>`;
-              iconClose.click();
-          } else {
-              alert("Incorrect Password");
-          }
+    event.preventDefault();
+    email = document.getElementById("email").value;
+    userPwd = document.getElementById("password").value;
+    const user = getUserByEmail(email);
+    if (user) {
+      if (user.password === userPwd) {
+        const { name } = user;
+        alert(`Welcome ${name}!!`);
+        userName = name;
+        var loginStatusDiv = document.querySelector(".login-status");
+        loginStatusDiv.innerHTML = `<acronym title=${name}><i class='fa-solid fa-user fa-beat login-icon'></i></acronym>`;
+        isLogined = true;
+        iconClose.click();
       } else {
-          alert("User not Found !! Try Signing In");
+        alert("Incorrect Password");
       }
+    } else {
+      alert("User not Found !! Try Signing In");
+    }
   });
 }
 
@@ -119,26 +86,26 @@ handleLoginFormSubmit();
 
 function handleRegisterFormSubmit() {
   document.getElementById("signUp-form").addEventListener("submit", function (event) {
-      event.preventDefault();
-      const username = document.querySelector('#user-name').value;
-      const email = document.querySelector('#user-email').value;
-      const password = document.querySelector('#user-pwd').value;
-      const user = getUserByEmail(email);
-      const agreedToTerms = document.querySelector('#signUp-check').checked;
+    event.preventDefault();
+    const username = document.querySelector('#user-name').value;
+    const email = document.querySelector('#user-email').value;
+    const password = document.querySelector('#user-pwd').value;
+    const user = getUserByEmail(email);
+    const agreedToTerms = document.querySelector('#signUp-check').checked;
 
-      if (!agreedToTerms) {
-          alert('Please agree to the terms and conditions.');
-          return;
+    if (!agreedToTerms) {
+      alert('Please agree to the terms and conditions.');
+      return;
 
+    } else {
+      if (isEmailRegistered(email)) {
+        alert("Email already registered. Try logging In !!");
       } else {
-          if (isEmailRegistered(email)) {
-              alert("Email already registered. Try logging In !!");
-          } else {
-              addUser(username, email, password);
-              alert('Registration successful!');
-              loginLink.click();
-          }
+        addUser(username, email, password);
+        alert('Registration successful!');
+        loginLink.click();
       }
+    }
 
   });
 }
@@ -146,5 +113,11 @@ function handleRegisterFormSubmit() {
 handleRegisterFormSubmit();
 
 
+function updateLoginButton() {
+  var loginStatusDiv = document.querySelector(".login-status");
+  if (isLogined) {
+    loginStatusDiv.innerHTML = `<acronym title=${userName}><i class='fa-solid fa-user fa-beat login-icon'></i></acronym>`;
+  }
+}
 
-
+updateLoginButton();
