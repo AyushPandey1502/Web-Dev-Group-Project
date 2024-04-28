@@ -2,7 +2,7 @@ let isLogined = false;
 let userName = "";
 
 let users = [
-  { name: 'Ayush Pandey', email: 'ayush.pandey2022b@vitstudent.ac.in', password: 'Ayush@123' }
+  
 ];
 
 function addUser(name, email, password) {
@@ -72,6 +72,7 @@ function handleLoginFormSubmit() {
         loginStatusDiv.innerHTML = `<acronym title=${name}><i class='fa-solid fa-user fa-beat login-icon'></i></acronym>`;
         isLogined = true;
         iconClose.click();
+        localStorage.setItem('userData', name);
       } else {
         alert("Incorrect Password");
       }
@@ -111,13 +112,3 @@ function handleRegisterFormSubmit() {
 }
 
 handleRegisterFormSubmit();
-
-
-function updateLoginButton() {
-  var loginStatusDiv = document.querySelector(".login-status");
-  if (isLogined) {
-    loginStatusDiv.innerHTML = `<acronym title=${userName}><i class='fa-solid fa-user fa-beat login-icon'></i></acronym>`;
-  }
-}
-
-updateLoginButton();

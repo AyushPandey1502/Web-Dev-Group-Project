@@ -1,3 +1,5 @@
+const userData = localStorage.getItem('userData');
+console.log(userData);
 let numClothes = 20;
 let tokenNumber = 251;
 let tokenColor = 'red';
@@ -14,7 +16,7 @@ function updateGreeting() {
         greeting = "Evening";
     }
 
-    document.querySelector('.greeting').innerHTML = greeting;
+    document.querySelector('.greeting').innerHTML = greeting + " " + `${userData}`;
 }
 
 function submitClothes() {
@@ -104,7 +106,7 @@ document.getElementById("clothesForm").addEventListener("submit", function (even
     event.preventDefault();
     if (validateForm()) {
         submitClothes();
-        
+
         document.querySelector('.clothes-num').innerHTML = numClothes;
         document.querySelector('.clothes-token-num').innerHTML = tokenNumber;
         document.querySelector('.clothes-tag-details i').style.color = tokenColor;
@@ -134,4 +136,10 @@ function validateForm() {
         return false;
     }
     return true;
+}
+
+
+if (userData && userData.length > 0) {    
+    var loginStatusDiv = document.querySelector(".login-status");
+    loginStatusDiv.innerHTML = `<acronym title="${userData}"><i class='fa-solid fa-user fa-beat login-icon'></i></acronym>`;
 }
