@@ -237,7 +237,6 @@ section.home {
     text-decoration: none;
 }
 
-
 /* ======================= OUR TEAM ============================== */
 
 .about-container {
@@ -419,11 +418,9 @@ a:active {
 }
 
 
-.contact-form .btn {
-    border: none;
-    background-color: #11afcb;
+.contact-form .bttn {
     margin-top: 0;
-    border-radius: 5px;
+    width: 100%;
     cursor: pointer;
 }
 
