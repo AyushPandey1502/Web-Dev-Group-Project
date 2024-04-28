@@ -120,7 +120,7 @@ handleRegisterFormSubmit();
 // function to add Event Listner on navTogglerBtn for aside section 
 const navTogglerBtn = document.querySelector(".nav-toggler"),
     aside = document.querySelector(".aside"),
-    mainContent = document.querySelector(".main-content");
+    mainContent = document.querySelector(".section-container");
 
 navTogglerBtn.addEventListener("click", () => {
     asideSectionTogglerBtn();

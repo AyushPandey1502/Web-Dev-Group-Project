@@ -1,0 +1,163 @@
+@media (max-width: 1199px) {
+    section {
+        margin-top: 0px;
+    }
+
+    /* section.home{
+        padding-left: 0;
+        width: 60%;
+    } */
+
+    .home-content{
+        margin: 5vh;
+        padding: 0;
+    }
+
+    .home-content p {
+        margin: 20px;
+        width: 100%;
+    }
+
+    .home-container{
+        width: 80%;
+    }
+
+    .section-container {
+        float: right;
+        width: 75%;
+    }
+
+    .nav-logo {
+        top: 30%;
+        margin-bottom: 100px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aside {
+        width: 25%;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        padding: 0 0;
+        border-right: 3px solid var(--skin-color);
+        border-bottom-right-radius: 0;
+        padding: 5px 5px;
+    }
+
+    .links,
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar {
+        align-items: center;
+    }
+
+    .links li {
+        margin-left: -35px;
+        margin-bottom: 10px;
+    }
+
+    .login-status {
+        margin: auto;
+        margin-top: 35px;
+    }
+
+    .our-team-container {
+        display: grid;
+        grid-template-columns: 200px 200px;
+        row-gap: 20px;
+        column-gap: 0;
+        width: 70%;
+    }
+
+    .team-card {
+        width: 200px;
+    }
+
+    h3.section-title {
+        text-align: left;
+        margin-left: 25%;
+    }
+
+    .team-card h3,
+    .team-card h2 {
+        text-align: center;
+    }
+    
+
+}
+
+@media (max-width: 991px) {
+
+    .section-container {
+        width: 75%;
+    }
+
+    section.home{
+        width: 100%;
+        padding-left: 80px;
+    }
+
+    .home-container{
+        width: 100%;
+    }
+
+    .home-content p {
+        margin: 20px;
+        width: 100%;
+    }
+
+    .aside {
+        width: 25%;
+    }
+
+    .card{
+        height: 200px;
+    }
+
+    .aside .navbar .nav-toggler{
+        display: block;
+    }
+}
+
+@media (max-width: 818px) {
+    .aside {
+        width: 250px;
+        left: -300px;
+    }
+
+    .section-container {
+        width: 100%;
+    }
+
+    .aside.open {
+        left: 0;
+    }
+
+    .aside .navbar .nav-toggler {
+        display: flex;
+        left: 30px;
+    }
+
+    .aside .navbar .nav-toggler.open {
+        left: 270px;
+    }
+
+    section{
+        height: 100%;
+    }
+
+}
+
+@media (max-width: 457px) {
+
+}
