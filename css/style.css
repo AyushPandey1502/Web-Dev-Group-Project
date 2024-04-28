@@ -300,6 +300,7 @@ section.home {
 
 /* ====================== Contact Page ===================== */
 
+
 .contact-section h1 {
     color: white;
     font-size: 50px;
@@ -365,7 +366,7 @@ section.home {
 .contact-list li span {
     color: #129cdc;
     margin-left: 40px;
-
+    font-weight: 500;
 }
 
 .contact-list li span a {
@@ -379,23 +380,12 @@ a:active {
     color: inherit;
 }
 
-/* 
-.contact-right p {
-    color: #129cdc;
-    font-size: 1.6em;
-    margin-bottom: 30px;
-}
-
-.contact-right p span {
-    color: #fff;
-    font-weight: 700;
-} */
 
 .contact-form input,
 .contact-form textarea {
     border: none;
-    color: #0e2431;
-    background: rgba(106, 89, 209, 0.1);
+    color: white;
+    background: #129cdc53;
     font-size: 1em;
     margin-bottom: 20px;
     padding: 15px 40px 40px 20px;
@@ -411,6 +401,11 @@ a:active {
     color: #fff;
 }
 
+.third-row ::placeholder {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
 .contact-form .first-row input {
     width: 100%;
 }
@@ -424,13 +419,15 @@ a:active {
     width: 48%;
 }
 
+
 .contact-form .btn {
     border: none;
-    background-color: #6a59d1;
+    background-color: #11afcb;
     margin-top: 0;
     border-radius: 5px;
     cursor: pointer;
 }
+
 
 
 /* ====================== Footer ====================== */
