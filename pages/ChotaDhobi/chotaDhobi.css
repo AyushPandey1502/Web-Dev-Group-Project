@@ -10,8 +10,9 @@
 }
 
 section {
-    margin-top: 50px;
+    /* margin-top: 50px; */
     margin-bottom: 0;
+    height: 100%;
 }
 
 .bg-blur {
@@ -33,7 +34,7 @@ section {
 
 .chota-dhobi-content {
     grid-template-columns: 1fr 0.8fr;
-    column-gap: 100px;
+    column-gap: 20px;
     background-color: rgba(1, 1, 1, 0.6);
     border-radius: 10px;
     width: 100%;
@@ -396,6 +397,7 @@ input:focus {
     .chota-dhobi-dashboard {
         margin-bottom: 30px;
         padding-bottom: 0px;
+        column-gap: 0;
     }
 }
 
@@ -412,12 +414,12 @@ input:focus {
         width: 100%;
         height: auto;
     }
-
+/* 
     section {
         padding: 40px 40px;
-        padding-top: 90px;
+        padding-top: 50px;
         margin-top: 0px;
-    }
+    } */
 
     .chota-dhobi-content {
         grid-template-columns: 100%;
@@ -425,14 +427,34 @@ input:focus {
     .main-img{
         height: 300px;
     }
-
+/* 
     .queries-container{
         margin-top: 50px;
-    }
+    } */
 }
 
 @media (max-width: 560px) {
+    section{
+        padding: 20px;
+    }
+    .chota-dhobi-content{
+        width: 100%;
+        padding: 20px;
+    }
+    .chota-dhobi-dashboard {
+        width: 100%;
+    }
+    .main-content {
+        row-gap: 0px;
+        column-gap: 0;
+    }
+}
+
+@media (max-width: 508px){
     section.queries {
         margin-top: 50px;
+    }
+    .queries-container {
+        width: 100%;
     }
 }
