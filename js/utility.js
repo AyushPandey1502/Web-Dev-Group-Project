@@ -112,3 +112,31 @@ function handleRegisterFormSubmit() {
 }
 
 handleRegisterFormSubmit();
+
+
+
+// ======================== NavBar ========================
+
+// function to add Event Listner on navTogglerBtn for aside section 
+const navTogglerBtn = document.querySelector(".nav-toggler"),
+    aside = document.querySelector(".aside"),
+    mainContent = document.querySelector(".main-content");
+
+navTogglerBtn.addEventListener("click", () => {
+    asideSectionTogglerBtn();
+});
+
+mainContent.addEventListener("click", () => {
+    if (aside.classList.contains("open")) {
+        asideSectionTogglerBtn();
+    }
+});
+
+// function to toggle the visibility of aside section
+function asideSectionTogglerBtn() {
+    aside.classList.toggle("open");
+    navTogglerBtn.classList.toggle("open");
+    for (let i = 0; i < totalSelection; i++) {
+        allSection[i].classList.toggle("open");
+    }
+}

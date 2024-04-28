@@ -14,10 +14,13 @@
 
 <body>
     <div class="main-container">
-        <header>
+        <header class="aside">
             <nav class="navbar flex">
                 <div class="nav-logo flex">
                     <img src="./assets/icons/icon.png" alt="">
+                </div>
+                <div class="nav-toggler">
+                    <span></span>
                 </div>
                 <div class="nav-tab">
                     <ul class="links flex" type="none">
@@ -100,7 +103,7 @@
                     <h3 class="services-desc">
                         Available Services : <span id="typing">SoapSync</span>
                     </h3>
-                    <button class="home-btn bttn">Join the community</button>
+                    <button class="home-btn bttn" onclick="scrollToCommunity()">Join the community</button>
                 </div>
             </section>
             <section class="timeline">
@@ -279,29 +282,32 @@
                     </div>
                 </div>
             </section>
-        </div>
 
-        <footer class="contact">
-            <div class="contact-container flex">
-                <div class="logo flex">
-                    <img src="./assets/icons/icon.png" alt="">
-                </div>
-                <div class="connect-us">
-                    <div class="subtitle">JOIN OUR COMMUNITY</div>
-                    <div class="social-contacts flex">
-                        <i class="fa-brands fa-square-facebook"></i>
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-discord"></i>
-                        <i class="fa-brands fa-telegram"></i>
-                        <i class="fa-brands fa-youtube"></i>
+
+            <footer class="community" id="community">
+                <div class="contact-container flex">
+                    <div class="logo flex">
+                        <img src="./assets/icons/icon.png" alt="">
+                    </div>
+                    <div class="connect-us">
+                        <div class="subtitle">JOIN OUR COMMUNITY</div>
+                        <div class="social-contacts flex">
+                            <i class="fa-brands fa-square-facebook"></i>
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-discord"></i>
+                            <i class="fa-brands fa-telegram"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="footer-copyright">Copyright © 2024 VITVERSE</div>
-        </footer>
-    </div>
-    </div>
+                <div class="footer-copyright">Copyright © 2024 VITVERSE</div>
+                <div class="s-icon arrow-up" onclick="scrollToTop()">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </div>
+
+            </footer>
+        </div>
     </div>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="js/script.js"></script>

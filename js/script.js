@@ -60,4 +60,17 @@ document.addEventListener('DOMContentLoaded', function () {
   
   // ===================== Nav Bar Ends ===============================
 
+  function scrollToCommunity() {
+    var connectSection = document.getElementById('community');
+    connectSection.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  function scrollToTop() {
+    var connectSection = document.getElementById('home');
+    connectSection.scrollIntoView({ behavior: 'smooth' });
+  }
+
+
+
+
 

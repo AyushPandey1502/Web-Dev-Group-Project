@@ -30,7 +30,7 @@ body {
             transparent,
             rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
     background: url(../assets/images/background_image.jpg) no-repeat;
-    background-repeat: repeat-y;
+    background-repeat: repeat;
     overflow-x: hidden;
 }
 
@@ -196,4 +196,152 @@ li a.active{
     border: 2px solid white;
     border-radius: 50%;
     padding: 10px;
+}
+
+/* ================== NAV BAR ======================== */
+.aside .nav-toggler {
+    height: 30px;
+    width: 35px;
+    border: 1px solid var(--bg-black-50);
+    cursor: pointer;
+    position: fixed;
+    left: 300px;
+    top: 20px;
+    border-radius: 5px;
+    background: var(--bg-black-100);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.aside .nav-toggler span {
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    display: inline-block;
+    position: relative;
+}
+
+.aside .nav-toggler.open span {
+    background: transparent;
+}
+
+
+.aside .nav-toggler span::before {
+    content: "";
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    position: absolute;
+    top: -6px;
+    left: 0;
+}
+
+.aside .nav-toggler.open span::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.aside .nav-toggler span::after {
+    content: "";
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    position: absolute;
+    top: 6px;
+    left: 0;
+}
+
+.aside .nav-toggler.open span::after {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+
+@media (max-width: 1199px) {
+    section{
+        margin-top: 0px;
+    }
+    .section-container {
+        overflow: hidden;
+        float: right;
+        width: 80%;
+    }
+
+    .nav-logo{
+        top: 30%;
+        margin-bottom: 100px;
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aside {
+        width: 20%;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        padding: 0 0;
+        border-right: 3px solid var(--skin-color);
+        padding: 5px 5px;
+    }
+
+    .links, .navbar{
+        flex-direction: column;
+    }
+
+    .navbar{
+        align-items: center;
+    }
+
+    .links li{
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (max-width: 991px) {
+
+    .section-container {
+        width: 75%;
+    }
+
+    .aside {
+        width: 25%;
+    }
+}
+
+@media (max-width: 818px) {
+    .aside {
+        width: 250px;
+        left: -300px;
+    }
+    .section-container{
+        width: 100%;
+    }
+    .aside.open {
+        left: 0;
+    }
+
+    .aside .nav-toggler {
+        display: flex;
+        left: 30px;
+    }
+
+    .aside .nav-toggler.open {
+        left: 270px;
+    }
+
+}
+
+@media (max-width: 457px){
+
 }
