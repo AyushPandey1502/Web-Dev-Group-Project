@@ -1,3 +1,5 @@
+const userData = localStorage.getItem('userData');
+
 function submitForm() {
     var form = document.getElementById("lostFoundForm");
     var formData = new FormData(form);
@@ -9,4 +11,10 @@ function submitForm() {
     enteredValues += "</ul>";
 
     document.getElementById("displayData").innerHTML = enteredValues;
+}
+
+
+if (userData && userData[0].length > 0) {    
+    var loginStatusDiv = document.querySelector(".login-status");
+    loginStatusDiv.innerHTML = `<acronym title="${userData}"><i class='fa-solid fa-user login-icon'></i></acronym>`;
 }

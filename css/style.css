@@ -160,7 +160,8 @@ section.home {
 .services-desc {
     font-size: 30px;
     color: white;
-    text-align: left;
+    text-align: center;
+
 }
 
 #typing {
@@ -662,7 +663,7 @@ a:active {
 .s-icon {
     position: fixed;
     bottom: 50px;
-    left: 95%;
+    right: 20px;
     height: 40px;
     width: 40px;
     text-align: center;

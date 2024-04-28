@@ -2,7 +2,9 @@ let isLogined = false;
 let userName = "";
 
 let users = [
-
+  { name: 'Ayush Pandey', email: 'ayush.pandey2022b@vitstudent.ac.in', password: 'Ayush@123' },
+  { name: 'Ayush Pandey', email: 'ayush.pandey2022a@vitstudent.ac.in', password: 'Ayush@Pandey' },
+  { name: 'Shashwat Pathak', email: 'shaswat.pathak2022@vitstudent.ac.in', password: 'Shaswat@123' }
 ];
 
 function addUser(name, email, password) {

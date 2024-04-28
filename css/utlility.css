@@ -244,7 +244,7 @@ li a.active {
     left: 300px;
     top: 20px;
     border-radius: 5px;
-    background: transparent;
+    background: rgba(71, 86, 110, 0.5);
     display: none;
     justify-content: center;
     align-items: center;

@@ -1,3 +1,5 @@
+const userData = localStorage.getItem('userData');
+
 const booksPerPage = 6;
 const booksContainer = document.querySelector(".borrow-book");
 const pagination = document.getElementById("pagination");
@@ -115,4 +117,9 @@ function submitForm() {
   current = 3;
   displayPage(3);
   updatePagination(3);
+}
+
+if (userData && userData[0].length > 0) {    
+    var loginStatusDiv = document.querySelector(".login-status");
+    loginStatusDiv.innerHTML = `<acronym title="${userData}"><i class='fa-solid fa-user login-icon'></i></acronym>`;
 }

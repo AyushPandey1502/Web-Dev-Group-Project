@@ -137,7 +137,6 @@ function validateForm() {
     return true;
 }
 
-
 if (userData && userData[0].length > 0) {    
     var loginStatusDiv = document.querySelector(".login-status");
     loginStatusDiv.innerHTML = `<acronym title="${userData}"><i class='fa-solid fa-user login-icon'></i></acronym>`;

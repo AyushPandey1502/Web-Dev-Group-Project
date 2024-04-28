@@ -121,11 +121,15 @@
     }
 
     .card {
-        height: 200px;
+        height: 350px;
     }
 
     header::before{
         background: transparent;
+    }
+
+    .services h1{
+        font-size: 2.2rem;
     }
 }
 
@@ -155,7 +159,47 @@
     section {
         height: 100%;
     }
+    .about-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        row-gap: 50px;
+    }
 
+    .mentor, .about-container, .our-team{
+        width: 100%;
+    }
+
+    h3.section-title{
+        text-align: center;
+        margin-left: 0;
+        display: block;
+    }
+
+    .our-team-container {
+        row-gap: 20px;
+        width: 100%;
+        gap: 40px;
+    }
+
+    .team-card {
+        width: 200px;
+    }
 }
 
-@media (max-width: 457px) {}
+@media (max-width: 545px) {
+    .our-team-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    section.home{
+        padding-top: 6vh;
+        font-size: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
