@@ -186,6 +186,36 @@ li a.active{
     color: var(--skin-color);
 }
 
+
+.links li{
+    position: relative;
+}
+    
+.submenu{
+    position: absolute;
+    /* background-color:rgba(255, 255, 255, .4) ; */
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
+    width: max-content;
+    left: 0;
+    display: none;
+    padding: 0px 0px 10px 0;
+    text-decoration: none;
+}
+.submenu li{
+    /* font-size: 18px; */
+    padding: 20px 0 0px 0;
+}
+
+.submenu li a{
+    font-size: 20px;
+}
+
+.links li:hover > .submenu{
+    display: block;
+    animation: slide 0.5s ease;
+}
+    
+
 /* =================================== Navigation Bar Ends ============================= */
 
 .login-icon{
