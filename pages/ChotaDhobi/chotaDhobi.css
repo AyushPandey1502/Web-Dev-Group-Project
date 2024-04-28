@@ -43,7 +43,6 @@ section {
 
 .chota-dhobi-dashboard {
     border: 2px solid white;
-    max-height: 500px;
     padding: 50px 40px;
     border-radius: 10px;
     animation: fadeIn 1s;
@@ -214,6 +213,7 @@ section {
 .submit-btn {
     width: 200px;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 @keyframes fadeIn {

@@ -21,261 +21,265 @@
                 </div>
                 <div class="nav-tab">
                     <ul class="links flex" type="none">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about-us">About Us</a></li>
+                        <li><a href="#home" class="active">Home</a></li>
                         <li><a href="#services">Services</a></li>
+                        <li><a href="#about-us">About Us</a></li>
                         <li><a href="#contact">Contact Us</a></li>
-                        <button class="nav-btn bttn btnLogin-popup">Login</button>
+                        <div class="login-status"><button class="nav-btn bttn btnLogin-popup">Login</button> </div>
                     </ul>
                 </div>
             </nav>
         </header>
-        <section class="home" id="home">
-            <div class="home-container flex">
-
-                <div class="home-content">
-                    <p>Introducing VITVerse: your college chaos companion. From sharing textbooks for tough exams to
-                        finding travel buddies, to even finding your Lost Items and managing laundry, we've got your
-                        back. Navigate college with ease and humor - VITVerse has you covered..</p>
+        <div class="login-popup">
+            <div class="wrapper">
+                <span class="icon-close">
+                    <ion-icon name="close">x</ion-icon>
+                </span>
+                <div class="form-box login">
+                    <h2>Login</h2>
+                    <form action="#" id="login-form">
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                            <input type="email" name="" id="email" required>
+                            <label for="">Email</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                            <input type="password" name="" id="password" required>
+                            <label for="">Password</label>
+                        </div>
+                        <div class="remember-forgot">
+                            <label><input type="checkbox" name="" id="">Remember me</label>
+                            <a href="#">Forgot Password?</a>
+                        </div>
+                        <button type="submit" class="btn submit">Login</button>
+                        <div class="login-register">
+                            <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+                        </div>
+                    </form>
                 </div>
-                <h3 class="services-desc">
-                    Available Services : <span id="typing">Book Sharing</span>
-                </h3>
-                <button class="home-btn bttn">Join the community</button>
+                <div class="form-box register">
+                    <h2>Registration</h2>
+                    <form action="#" id="signUp-form">
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="person"></ion-icon></ion-icon></span>
+                            <input type="text" name="" id="user-name" required>
+                            <label for="">Username</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                            <input type="email" name="" id="user-email" required>
+                            <label for="">Email</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                            <input type="password" name="" id="user-pwd" required>
+                            <label for="">Password</label>
+                        </div>
+                        <div class="remember-forgot">
+                            <label><input type="checkbox" name="" id="signUp-check">I agree to the terms &
+                                conditions.</label>
+                        </div>
+                        <button type="submit" class="btn submit">Register</button>
+                        <div class="login-register">
+                            <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="login-popup">
-                <div class="wrapper">
-                    <span class="icon-close">
-                        <ion-icon name="close">x</ion-icon>
-                    </span>
-                    <div class="form-box login">
-                        <h2>Login</h2>
-                        <form action="#">
-                            <div class="input-box">
-                                <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                                <input type="email" name="" id="" required>
-                                <label for="">Email</label>
-                            </div>
-                            <div class="input-box">
-                                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                                <input type="password" name="" id="" required>
-                                <label for="">Password</label>
-                            </div>
-                            <div class="remember-forgot">
-                                <label><input type="checkbox" name="" id="">Remember me</label>
-                                <a href="#">Forgot Password?</a>
-                            </div>
-                            <button type="submit" class="btn">Login</button>
-                            <div class="login-register">
-                                <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
-                            </div>
-                        </form>
+        </div>
+        <div class="section-container">
+            <section class="home" id="home">
+                <div class="home-container flex">
+
+                    <div class="home-content">
+                        <p>Introducing VITVerse: your college chaos companion. From sharing textbooks for tough exams to
+                            finding travel buddies, to even finding your Lost Items and managing laundry, we've got your
+                            back. Navigate college with ease and humor - VITVerse has you covered..</p>
                     </div>
-                    <div class="form-box register">
-                        <h2>Registration</h2>
-                        <form action="#">
-                            <div class="input-box">
-                                <span class="icon"><ion-icon name="person"></ion-icon></ion-icon></span>
-                                <input type="text" name="" id="" required>
-                                <label for="">Username</label>
-                            </div>
-                            <div class="input-box">
-                                <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                                <input type="email" name="" id="" required>
-                                <label for="">Email</label>
-                            </div>
-                            <div class="input-box">
-                                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                                <input type="password" name="" id="" required>
-                                <label for="">Password</label>
-                            </div>
-                            <div class="remember-forgot">
-                                <label><input type="checkbox" name="" id="">I agree to the terms & conditions.</label>
-                            </div>
-                            <button type="submit" class="btn">Register</button>
-                            <div class="login-register">
-                                <p>Already have an account? <a href="#" class="login-link">Login</a></p>
-                            </div>
-                        </form>
-                    </div>
+                    <h3 class="services-desc">
+                        Available Services : <span id="typing">SoapSync</span>
+                    </h3>
+                    <button class="home-btn bttn">Join the community</button>
                 </div>
-            </div>
-        </section>
-        <section class="timeline">
-            <div class="timeline-container">
-                <h2 class="section-title">TIMELINE</h2>
-                <div class="marquee-container">
-                    <div class="scrolling-wrapper-flexbox">
-                        <div class="marquee-container"></div>
-                        <div class="card timeline-card card-1">
-                            <h2>Bulls & Bear, VIT</h2>
-                            <div class="timeline-time">
-                                <h3>01-02 APRIL 2024</h3>
-                                <h2>STOCKASTIC 2024 !</h2>
+            </section>
+            <section class="timeline">
+                <div class="timeline-container">
+                    <h2 class="section-title">TIMELINE</h2>
+                    <div class="marquee-container">
+                        <div class="scrolling-wrapper-flexbox">
+                            <div class="marquee-container"></div>
+                            <div class="card timeline-card card-1">
+                                <h2>Bulls & Bear, VIT</h2>
+                                <div class="timeline-time">
+                                    <h3>01-02 APRIL 2024</h3>
+                                    <h2>STOCKASTIC 2024 !</h2>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card timeline-card card-2">
-                            <h2>E-Cell, VIT</h2>
-                            <div class="timeline-time">
-                                <h3>13-16 APRIL 2024</h3>
-                                <h2>E-SUMMIT 2024 !</h2>
+                            <div class="card timeline-card card-2">
+                                <h2>E-Cell, VIT</h2>
+                                <div class="timeline-time">
+                                    <h3>13-16 APRIL 2024</h3>
+                                    <h2>E-SUMMIT 2024 !</h2>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card timeline-card card-3">
-                            <h2>MUNSOC</h2>
-                            <div class="timeline-time">
-                                <h3>29-30 APRIL 2024</h3>
-                                <h2>VITMUN 224 !</h2>
+                            <div class="card timeline-card card-3">
+                                <h2>MUNSOC</h2>
+                                <div class="timeline-time">
+                                    <h3>29-30 APRIL 2024</h3>
+                                    <h2>VITMUN 224 !</h2>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card timeline-card card-4">
-                            <h2>TAG, VIT</h2>
-                            <div class="timeline-time">
-                                <h3>21-23 MAY 2024</h3>
-                                <h2>VIT GAMERS LEAGUE !</h2>
+                            <div class="card timeline-card card-4">
+                                <h2>TAG, VIT</h2>
+                                <div class="timeline-time">
+                                    <h3>21-23 MAY 2024</h3>
+                                    <h2>VIT GAMERS LEAGUE !</h2>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card timeline-card card-5">
-                            <h2>ROBOVITICS</h2>
-                            <div class="timeline-time">
-                                <h3>22-24 JULY 2024</h3>
-                                <h2>ROBOWARS 2024 !</h2>
+                            <div class="card timeline-card card-5">
+                                <h2>ROBOVITICS</h2>
+                                <div class="timeline-time">
+                                    <h3>22-24 JULY 2024</h3>
+                                    <h2>ROBOWARS 2024 !</h2>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card timeline-card card-6">
-                            <h2>ANCHORING CLUB</h2>
-                            <div class="timeline-time">
-                                <h3>3-4 MAY 2024</h3>
-                                <h2>GRAVITAS AUDITIONS!</h2>
+                            <div class="card timeline-card card-6">
+                                <h2>ANCHORING CLUB</h2>
+                                <div class="timeline-time">
+                                    <h3>3-4 MAY 2024</h3>
+                                    <h2>GRAVITAS AUDITIONS!</h2>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card timeline-card card-7">
-                            <h2>VIT DANCE CLUB</h2>
-                            <div class="timeline-time">
-                                <h3>13-15 MAY 2024</h3>
-                                <h2>DANCE AUDITIONS!</h2>
+                            <div class="card timeline-card card-7">
+                                <h2>VIT DANCE CLUB</h2>
+                                <div class="timeline-time">
+                                    <h3>13-15 MAY 2024</h3>
+                                    <h2>DANCE AUDITIONS!</h2>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="services">
-            <h1>Our Services</h1>
-            <div class="services-container">
-
-                <div class="services-box">
-                    <i class='bx bx-book-open'></i>
-                    <h2 class="section-title">BookShare</h2>
-                    <p>Now Borrow books, Borrow Notes and Earn Money with VITVerse.</p>
-                    <a href="../Web-Dev-Group-Project/pages/BookShare/bookShare.html" class="bttn">Try Now</a>
-                </div>
-
-                <div class="services-box">
-                    <i class='bx bxs-washer'></i>
-                    <h2 class="section-title">SoapSync</h2>
-                    <p>Now track your laundry with ease from your room with SoapSync.</p>
-                    <a href="../Web-Dev-Group-Project/pages/ChotaDhobi/chotaDhobi.html" class="bttn">Try Now</a>
-                </div>
-
-                <div class="services-box">
-                    <i class='bx bxs-taxi'></i>
-                    <h2 class="section-title">CabShare</h2>
-                    <p>Find fellow Vitians who share the common route and Save Money!</p>
-                    <a href="../Web-Dev-Group-Project/pages/cabSharing/cab.html" class="bttn">Try Now</a>
-                </div>
-
-                <div class="services-box">
-                    <i class='bx bxs-box'></i>
-                    <h2 class="section-title">Lost & Found</h2>
-                    <p>Now never lose your precious belongings with VITVerse's network</p>
-                    <a href="../Web-Dev-Group-Project/pages/lostAndFound/lostandfound.html" class="bttn">Try Now</a>
-                </div>
-
-
-            </div>
-
-        </section>
-
-        <section class="about-us" id="about-us">
-            <div class="about-container">
-                <div class="mentor">
-                    <h3 class="section-title">OUR MENTOR</h3>
-                    <img src="assets/profiles/Jayakumar sir.jpg" alt="">
-                    <h2>Prof. JAYAKUMAR S.</h2>
-                </div>
-                <div class="our-team ">
-                    <h3 class="section-title">OUR TEAM</h3>
-                    <div class="our-team-container flex">
-                        <div class="team-card flex">
-                            <img src="assets/profiles/ayush1.png" alt="">
-                            <h2>AYUSH PANDEY</h2>
-                            <h3>22BCE3956</h3>
-                        </div>
-                        <div class="team-card flex">
-                            <img src="assets/profiles/shaswat.jpg" alt="">
-                            <h2>SHASHWAT PATHAK</h2>
-                            <h3>22BCE0629</h3>
-                        </div>
-                        <div class="team-card flex">
-                            <img src="assets/profiles/ayush.jpg" alt="">
-                            <h2>AYUSH PANDEY</h2>
-                            <h3>22BCE2284</h3>
-                        </div>
-                        <div class="team-card flex">
-                            <img src="assets/profiles/sara.jpg" alt="">
-                            <h2>SARA KANETKAR</h2>
-                            <h3>22BDS0423</h3>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Contact Section -->
-        <section class="contact-section" id="contact">
-            <h1>Contact Us</h1>
-            <div class="container">
+            <section class="services" id="services">
+                <h1>Our Services</h1>
+                <div class="services-container">
 
-                <div class="content">
-
-                    <div class="contact-left">
-                        <h2>Reach us at</h2>
-                        <ul class="contact-list">
-                            <li class="contact-list">
-                                <h3 class="item-title"><i class="fas fa-phone"></i> Phone</h3>
-                                <span>+91 969138XXXX</span>
-                            </li>
-                            <li class="contact-list">
-                                <h3 class="item-title"><i class="fas fa-envelope"></i> Email Address</h3>
-                                <span><a href="mailto:xyz@gmail.com">vitverse@gmail.com</a></span>
-                            </li>
-                            <li class="contact-list">
-                                <h3 class="item-title"><i class="fas fa-map-marker-alt"></i> Address</h3>
-                                <span>VIT Vellore Tamil Nadu</span>
-                            </li>
-                        </ul>
+                    <div class="services-box">
+                        <i class='bx bx-book-open'></i>
+                        <h2 class="section-title">BookShare</h2>
+                        <p>Now Borrow books, Borrow Notes and Earn Money with VITVerse.</p>
+                        <a href="../Web-Dev-Group-Project/pages/BookShare/bookShare.html" class="bttn">Try Now</a>
                     </div>
-                    <div class="contact-right">
-                        <!-- <p>I'm always open to discussing product<br><span>design work or partnerships</span></p> -->
-                        <form action="" class="contact-form">
-                            <div class="first-row">
-                                <input type="text" placeholder="Name">
+
+                    <div class="services-box">
+                        <i class='bx bxs-washer'></i>
+                        <h2 class="section-title">SoapSync</h2>
+                        <p>Now track your laundry with ease from your room with SoapSync.</p>
+                        <a href="../Web-Dev-Group-Project/pages/soapSync/soapSync.html" class="bttn">Try Now</a>
+                    </div>
+
+                    <div class="services-box">
+                        <i class='bx bxs-taxi'></i>
+                        <h2 class="section-title">CabShare</h2>
+                        <p>Find fellow Vitians who share the common route and Save Money!</p>
+                        <a href="../Web-Dev-Group-Project/pages/cabSharing/cab.html" class="bttn">Try Now</a>
+                    </div>
+
+                    <div class="services-box">
+                        <i class='bx bxs-box'></i>
+                        <h2 class="section-title">Lost & Found</h2>
+                        <p>Now never lose your precious belongings with VITVerse's network</p>
+                        <a href="../Web-Dev-Group-Project/pages/lostAndFound/lostandfound.html" class="bttn">Try Now</a>
+                    </div>
+
+
+                </div>
+
+            </section>
+
+            <section class="about-us" id="about-us">
+                <div class="about-container">
+                    <div class="mentor">
+                        <h3 class="section-title">OUR MENTOR</h3>
+                        <img src="assets/profiles/Jayakumar sir.jpg" alt="">
+                        <h2>Prof. JAYAKUMAR S.</h2>
+                    </div>
+                    <div class="our-team ">
+                        <h3 class="section-title">OUR TEAM</h3>
+                        <div class="our-team-container flex">
+                            <div class="team-card flex">
+                                <img src="assets/profiles/ayush1.png" alt="">
+                                <h2>AYUSH PANDEY</h2>
+                                <h3>22BCE3956</h3>
                             </div>
-                            <div class="second-row">
-                                <input type="email" placeholder="Email">
-                                <input type="text" placeholder="Subject">
+                            <div class="team-card flex">
+                                <img src="assets/profiles/shaswat.jpg" alt="">
+                                <h2>SHASHWAT PATHAK</h2>
+                                <h3>22BCE0629</h3>
                             </div>
-                            <div class="third-row">
-                                <textarea name="message" id="" rows="7" placeholder="Message"></textarea>
+                            <div class="team-card flex">
+                                <img src="assets/profiles/ayush.jpg" alt="">
+                                <h2>AYUSH PANDEY</h2>
+                                <h3>22BCE2284</h3>
                             </div>
-                            <button class="btn" type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
-                        </form>
+                            <div class="team-card flex">
+                                <img src="assets/profiles/sara.jpg" alt="">
+                                <h2>SARA KANETKAR</h2>
+                                <h3>22BDS0423</h3>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+
+            <!-- Contact Section -->
+            <section class="contact-section" id="contact">
+                <h1>Contact Us</h1>
+                <div class="container">
+
+                    <div class="content">
+
+                        <div class="contact-left">
+                            <h2>Reach us at</h2>
+                            <ul class="contact-list">
+                                <li class="contact-list">
+                                    <h3 class="item-title"><i class="fas fa-phone"></i> Phone</h3>
+                                    <span>+91 969138XXXX</span>
+                                </li>
+                                <li class="contact-list">
+                                    <h3 class="item-title"><i class="fas fa-envelope"></i> Email Address</h3>
+                                    <span><a href="mailto:xyz@gmail.com">vitverse@gmail.com</a></span>
+                                </li>
+                                <li class="contact-list">
+                                    <h3 class="item-title"><i class="fas fa-map-marker-alt"></i> Address</h3>
+                                    <span>VIT Vellore Tamil Nadu</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="contact-right">
+                            <!-- <p>I'm always open to discussing product<br><span>design work or partnerships</span></p> -->
+                            <form action="" class="contact-form">
+                                <div class="first-row">
+                                    <input type="text" placeholder="Name">
+                                </div>
+                                <div class="second-row">
+                                    <input type="email" placeholder="Email">
+                                    <input type="text" placeholder="Subject">
+                                </div>
+                                <div class="third-row">
+                                    <textarea name="message" id="" rows="7" placeholder="Message"></textarea>
+                                </div>
+                                <button class="btn" type="submit">Send Message <i
+                                        class="fas fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
 
         <footer class="contact">
             <div class="contact-container flex">
@@ -299,10 +303,12 @@
     </div>
     </div>
     </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/utility.js"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </body>
 
 </html>

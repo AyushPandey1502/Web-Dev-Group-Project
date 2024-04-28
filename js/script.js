@@ -1,16 +1,11 @@
-let typed = new Typed("#typing", {
-    strings: ["", "Book Sharing", "Cab Sharing", "SoapSync", "Lost & Found"],
-    typeSpeed: 100,
-    backSpeed: 60,
-    loop: true
-});
+
 
 const wrapper = document.querySelector('.wrapper');
 const loginLink = document.querySelector('.login-link');
 const registerLink = document.querySelector('.register-link');
 const btnPopup = document.querySelector('.btnLogin-popup');
 const iconClose = document.querySelector('.icon-close');
-const sectionContainer = document.querySelector('.section-container');
+
 
 registerLink.addEventListener('click', () => {
     wrapper.classList.add('active');
@@ -30,8 +25,7 @@ iconClose.addEventListener('click', () => {
     toggleBlur();
 });
 
-function toggleBlur() {
-    sectionContainer.classList.toggle('blur');
-}
+
+
 
 
