@@ -8,7 +8,7 @@
         width: 60%;
     } */
 
-    .home-content{
+    .home-content {
         margin: 5vh;
         padding: 0;
     }
@@ -18,7 +18,7 @@
         width: 100%;
     }
 
-    .home-container{
+    .home-container {
         width: 80%;
     }
 
@@ -92,7 +92,7 @@
     .team-card h2 {
         text-align: center;
     }
-    
+
 
 }
 
@@ -102,12 +102,12 @@
         width: 75%;
     }
 
-    section.home{
+    section.home {
         width: 100%;
         padding-left: 80px;
     }
 
-    .home-container{
+    .home-container {
         width: 100%;
     }
 
@@ -120,12 +120,12 @@
         width: 25%;
     }
 
-    .card{
+    .card {
         height: 200px;
     }
 
-    .aside .navbar .nav-toggler{
-        display: block;
+    header::before{
+        background: transparent;
     }
 }
 
@@ -143,21 +143,19 @@
         left: 0;
     }
 
-    .aside .navbar .nav-toggler {
+    .aside .nav-toggler {
         display: flex;
-        left: 30px;
+        left: 330px;
     }
 
-    .aside .navbar .nav-toggler.open {
+    .aside .nav-toggler.open {
         left: 270px;
     }
 
-    section{
+    section {
         height: 100%;
     }
 
 }
 
-@media (max-width: 457px) {
-
-}
+@media (max-width: 457px) {}

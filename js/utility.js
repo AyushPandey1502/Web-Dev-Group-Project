@@ -2,7 +2,7 @@ let isLogined = false;
 let userName = "";
 
 let users = [
-  
+
 ];
 
 function addUser(name, email, password) {
@@ -30,25 +30,25 @@ const sectionContainer = document.querySelector('.section-container');
 
 
 registerLink.addEventListener('click', () => {
-    wrapper.classList.add('active');
+  wrapper.classList.add('active');
 });
 
 loginLink.addEventListener('click', () => {
-    wrapper.classList.remove('active');
+  wrapper.classList.remove('active');
 });
 
 btnPopup.addEventListener('click', () => {
-    wrapper.classList.add('active-popup');
-    toggleBlur();
+  wrapper.classList.add('active-popup');
+  toggleBlur();
 });
 
 iconClose.addEventListener('click', () => {
-    wrapper.classList.remove('active-popup');
-    toggleBlur();
+  wrapper.classList.remove('active-popup');
+  toggleBlur();
 });
 
 function toggleBlur() {
-    sectionContainer.classList.toggle('blur');
+  sectionContainer.classList.toggle('blur');
 }
 
 iconClose.addEventListener('click', () => {
@@ -119,24 +119,36 @@ handleRegisterFormSubmit();
 
 // function to add Event Listner on navTogglerBtn for aside section 
 const navTogglerBtn = document.querySelector(".nav-toggler"),
-    aside = document.querySelector(".aside"),
-    mainContent = document.querySelector(".section-container");
+  aside = document.querySelector(".aside"),
+  mainContent = document.querySelector(".section-container");
 
 navTogglerBtn.addEventListener("click", () => {
-    asideSectionTogglerBtn();
+  asideSectionTogglerBtn();
 });
 
 mainContent.addEventListener("click", () => {
-    if (aside.classList.contains("open")) {
-        asideSectionTogglerBtn();
-    }
+  if (aside.classList.contains("open")) {
+    asideSectionTogglerBtn();
+  }
 });
 
 // function to toggle the visibility of aside section
 function asideSectionTogglerBtn() {
-    aside.classList.toggle("open");
-    navTogglerBtn.classList.toggle("open");
-    for (let i = 0; i < totalSelection; i++) {
-        allSection[i].classList.toggle("open");
-    }
+  aside.classList.toggle("open");
+  navTogglerBtn.classList.toggle("open");
+  for (let i = 0; i < totalSelection; i++) {
+    allSection[i].classList.toggle("open");
+  }
 }
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const submenuLinks = document.querySelectorAll(".links .submenu a");
+  submenuLinks.forEach(function (link) {
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+      const targetUrl = this.getAttribute("href");
+      window.location.href = targetUrl;
+    });
+  });
+});
