@@ -15,8 +15,7 @@ function updateGreeting() {
     } else {
         greeting = "Evening";
     }
-
-    document.querySelector('.greeting').innerHTML = greeting + " " + `${userData}`;
+    document.querySelector('.greeting').innerHTML = greeting;
 }
 
 function submitClothes() {
@@ -139,7 +138,7 @@ function validateForm() {
 }
 
 
-if (userData && userData.length > 0) {    
+if (userData && userData[0].length > 0) {    
     var loginStatusDiv = document.querySelector(".login-status");
-    loginStatusDiv.innerHTML = `<acronym title="${userData}"><i class='fa-solid fa-user fa-beat login-icon'></i></acronym>`;
+    loginStatusDiv.innerHTML = `<acronym title="${userData}"><i class='fa-solid fa-user login-icon'></i></acronym>`;
 }

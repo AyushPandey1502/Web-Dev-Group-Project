@@ -6,8 +6,7 @@
 }
 
 .main-content {
-    justify-content: space-evenly;
-    flex-direction: column;
+    grid-template-columns: 1fr;
 }
 
 section {
@@ -19,7 +18,7 @@ section {
     background-color: rgba(71, 86, 110, 0.7);
 }
 
-.styling{
+.styling {
     font-size: 50px;
     font-weight: 600;
 }
@@ -33,11 +32,11 @@ section {
 }
 
 .chota-dhobi-content {
-    justify-content: space-evenly;
+    grid-template-columns: 1fr 0.8fr;
     column-gap: 100px;
     background-color: rgba(1, 1, 1, 0.6);
     border-radius: 10px;
-    width: 90%;
+    width: 100%;
     padding: 40px 40px;
 }
 
@@ -57,6 +56,7 @@ section {
 
 .chota-dhobi-left img {
     animation: swing 5s infinite;
+    height: min(35vw, 450px);
 }
 
 .chota-dhobi-center {
@@ -327,4 +327,112 @@ input:focus {
     width: 200px;
     padding: 10px 5px;
     margin-top: 30px;
+}
+
+@media (max-width: 1000px) {
+
+    .main-content,
+    .chota-dhobi-content {
+        flex-direction: column;
+        row-gap: 50px;
+        column-gap: 50px;
+    }
+
+    .chota-dhobi-left {
+        height: 200px;
+    }
+
+    .chota-dhobi-content {
+        background: transparent;
+        grid-template-columns: 100%;
+        justify-content: center;
+    }
+
+    .chota-dhobi-dashboard {
+        padding-bottom: 0px;
+    }
+
+    .queries-form-container {
+        margin-top: 50px;
+    }
+    .queries-container{
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 820px) {
+
+    .queries-img {
+        display: none;
+    }
+
+    .queries-form-container {
+        width: 100%;
+    }
+
+    .queries-container{
+        margin-top: 100px;
+    }
+
+    .queries-content {
+        grid-template-columns: 1fr;
+    }
+
+    .chota-dhobi-content, .chota-dhobi-center {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .main-content {
+        row-gap: 20px;
+    }
+
+    .chota-dhobi-content {
+        grid-template-columns: 90%;
+        justify-content: center;
+    }
+
+    .chota-dhobi-dashboard {
+        margin-bottom: 30px;
+        padding-bottom: 0px;
+    }
+}
+
+@media (max-width: 627px) {
+    .main-container {
+        row-gap: 200px;
+    }
+
+    .subtitle {
+        margin-bottom: 0;
+    }
+
+    .chota-dhobi-center {
+        width: 100%;
+        height: auto;
+    }
+
+    section {
+        padding: 40px 40px;
+        padding-top: 90px;
+        margin-top: 0px;
+    }
+
+    .chota-dhobi-content {
+        grid-template-columns: 100%;
+    }
+    .main-img{
+        height: 300px;
+    }
+
+    .queries-container{
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 560px) {
+    section.queries {
+        margin-top: 50px;
+    }
 }
