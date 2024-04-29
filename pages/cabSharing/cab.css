@@ -226,13 +226,11 @@ a {
 
 
 /* Adjustments for smaller screens */
-@media screen and (max-width: 797px) {
-    /* .top-container {
-        flex-direction: column;
-    } */
+@media screen and (max-width: 1200px) {
+
 
     .top-container {
-        flex-direction: column;
+        flex-direction: column-reverse;
         background-color: rgba(71, 86, 110, 0.5);
         height: 1400px;
     }
@@ -240,12 +238,8 @@ a {
     .img1 img {
         width: 600px;
         height: 600px;
+        margin-left: 250px;
     }
-
-    /* .img1 img {
-        width: 300px;
-        height: auto;
-    } */
 
     .vac-start {
         margin-top: 20px;
