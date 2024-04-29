@@ -1,4 +1,4 @@
-const userData = localStorage.getItem('userData');
+const userData = sessionStorage.getItem('userData');
 
 function submitForm() {
     var form = document.getElementById("lostFoundForm");

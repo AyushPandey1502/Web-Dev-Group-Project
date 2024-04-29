@@ -1,4 +1,4 @@
-const userData = localStorage.getItem('userData');
+const userData = sessionStorage.getItem('userData');
 console.log(userData);
 let numClothes = 20;
 let tokenNumber = 251;
@@ -137,7 +137,8 @@ function validateForm() {
     return true;
 }
 
+
 if (userData && userData[0].length > 0) {    
     var loginStatusDiv = document.querySelector(".login-status");
-    loginStatusDiv.innerHTML = `<acronym title="${userData}"><i class='fa-solid fa-user login-icon'></i></acronym>`;
+    loginStatusDiv.innerHTML = `<acronym title="${userData}"><i class='fa-solid fa-user fa-beat login-icon'></i></acronym>`;
 }

@@ -1,3 +1,5 @@
+const userData = sessionStorage.getItem('userData');
+
 let typed = new Typed("#typing", {
     strings: ["", "Book Share", "SoapSync", "Cab Share", "Lost & Found"],
     typeSpeed: 150,
@@ -113,4 +115,7 @@ document.addEventListener('DOMContentLoaded', function () {
     handleViewportWidth();
   });
 
-
+  if (userData && userData[0].length > 0) {    
+    var loginStatusDiv = document.querySelector(".login-status");
+    loginStatusDiv.innerHTML = `<acronym title="${userData}"><i class='fa-solid fa-user login-icon'></i></acronym>`;
+}

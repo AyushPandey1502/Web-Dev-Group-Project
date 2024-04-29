@@ -1,4 +1,4 @@
-const userData = localStorage.getItem('userData');
+const userData = sessionStorage.getItem('userData');
 
 const booksPerPage = 4;
 const booksContainer = document.querySelector('.vac-container');

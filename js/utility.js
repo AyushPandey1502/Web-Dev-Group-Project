@@ -74,7 +74,9 @@ function handleLoginFormSubmit() {
         loginStatusDiv.innerHTML = `<acronym title=${name}><i class='fa-solid fa-user fa-beat login-icon'></i></acronym>`;
         isLogined = true;
         iconClose.click();
-        localStorage.setItem('userData', name);
+        // localStorage.setItem('userData', name);
+        // setUserDataInCookie(name);
+        sessionStorage.setItem('userData', name);
       } else {
         alert("Incorrect Password");
       }
