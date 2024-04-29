@@ -4,13 +4,6 @@
     box-sizing: border-box;
 }
 
-body {
-    background: url(../../assets/images/background_image.jpg) no-repeat;
-    background-repeat: repeat-y;
-    overflow-x: hidden;
-    font-family: 'Poppins', sans-serif;
-}
-
 .top {
     margin-top: 7rem;
     margin-bottom: 0;
@@ -317,7 +310,7 @@ h5 {
     border-radius: 10px;
 }
 
-span {
+.arrow-down {
     filter: invert(1);
     margin-left: 42%;
     animation-name: movef;

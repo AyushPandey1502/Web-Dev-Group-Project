@@ -7,14 +7,14 @@
     <title>VITVerse | SoapSync</title>
     <link rel="stylesheet" href="../../css/utlility.css">
     <link rel="stylesheet" href="chotaDhobi.css">
+    <link rel="stylesheet" href="../../css/navbar-queries.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 
 <body>
-    <div class="popUp-container"></div>
     <div class="main-container">
-        <header>
+        <header class="aside">
             <nav class="navbar flex">
                 <div class="nav-logo flex">
                     <img src="../../assets/icons/icon.png" alt="">
@@ -22,130 +22,198 @@
                 <div class="nav-tab">
                     <ul class="links flex" type="none">
                         <li><a href="../../index.html">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#services" class="active">Services</a></li>
-                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#services" class="active">Services</a>
+                            <ul class="submenu" type="none">
+                                <li><a href="../CabSharing/cab.html">CabShare</a></li>
+                                <li><a href="../BookShare/bookShare.html">Book Share</a></li>
+                                <li><a href="../lostAndFound/lostandfound.html">Lost & Found</a></li>
+                            </ul>
+                        </li>
                         <div class="login-status"><button class="nav-btn bttn btnLogin-popup">Login</button> </div>
                     </ul>
                 </div>
             </nav>
+            <div class="nav-toggler">
+                <span></span>
+            </div>
         </header>
-
-        <section class="main-content grid">
-            <h2 class="section-title greet"><span class="styling">G</span>ood <span class="greeting">Morning</span>!</h2>
-            <div class="chota-dhobi-content grid">
-                <div class="chota-dhobi-left flex">
-                    <img src="../../assets/images/chotaDhobi/astronaut_washing.png" class="main-img">
+        <div class="login-popup">
+            <div class="wrapper">
+                <span class="icon-close">
+                    <ion-icon name="close">x</ion-icon>
+                </span>
+                <div class="form-box login">
+                    <h2>Login</h2>
+                    <form action="#" id="login-form">
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                            <input type="email" name="" id="email" required>
+                            <label for="">Email</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                            <input type="password" name="" id="password" required>
+                            <label for="">Password</label>
+                        </div>
+                        <div class="remember-forgot">
+                            <label><input type="checkbox" name="" id="">Remember me</label>
+                            <a href="#">Forgot Password?</a>
+                        </div>
+                        <button type="submit" class="btn submit">Login</button>
+                        <div class="login-register">
+                            <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+                        </div>
+                    </form>
                 </div>
-
-                <div class="chota-dhobi-dashboard">
-                    <div class="chota-dhobi-status">
-                        <h1 class="section-title washes-left">29</h1>
-                        <h3 class="subtitle">washes left</h3>
-                    </div>
-                    <div class="chota-dhobi-history">
-                        <h2 class="subtitle">History</h2>
-                        <ul>
-                            <li>13 clothes washed on <span class="date"></span></li>
-                            <li>14 clothes washed on <span class="date"></span></li>
-                            <li>12 clothes washed on <span class="date"></span></li>
-                            <li>17 clothes washed on <span class="date"></span></li>
-                            <li>19 clothes washed on <span class="date"></span></li>
-                            <li>10 clothes washed on <span class="date"></span></li>
-                        </ul>
-                    </div>
-                    <div class="button flex">
-                        <button class="bttn submit-btn" onclick=submitBtn()>Submit Clothes <i
-                                class="fa-solid fa-soap"></i></button>
-                    </div>
-                </div>
-
-
-
-                <div class="chota-dhobi-center flex">
-                    <div class="chota-dhobi-status flex">
-                        <div class="chota-dhobi-status-header flex">
-                            <h2 class="subtitle">Current <br>Status</h2>
-                            <div class="current-status">
-                                <div class="dot"></div> On Process
-                            </div>
+                <div class="form-box register">
+                    <h2>Registration</h2>
+                    <form action="#" id="signUp-form">
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="person"></ion-icon></ion-icon></span>
+                            <input type="text" name="" id="user-name" required>
+                            <label for="">Username</label>
                         </div>
-
-                        <div class="washing-status flex">
-                            <div class="clothes-numb-details flex bg-blur">
-                                <i class="fa-solid fa-shirt"></i>
-                                <span class="clothes-num">20</span>
-                            </div>
-                            <div class="clothes-tag-details flex bg-blur">
-                                <i class="fa-solid fa-tag"></i>
-                                <span class="clothes-token-num">256</span>
-                            </div>
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                            <input type="email" name="" id="user-email" required>
+                            <label for="">Email</label>
                         </div>
-                        <div class="status-content bg-blur"> We deliver more than just cleanliness. Experience the rejuvenating
-                            power of freshly laundered clothes, transforming your day into a seamless blend of comfort
-                            and confidence.</div>
-                        <button class="collect-btn bttn" onclick=clothesCollection()>Collect Now!</button>
-                    </div>
-                </div>
-
-
-
-                <div class="chota-dhobi-right flex">
-                    <h3 class="subtitle">SUBMISSION DETAILS</h3>
-                    <form id="clothesForm" action="">
-                        <div class="submit-input flex">
-                            <input type="text" id="numClothes" placeholder="number of clothes" required>
-                            <input type="text" id="tokenNumber" placeholder="token number" required>
-                            <select id="tokenColor" name="tokenColor" required>
-                                <option value="red">Red</option>
-                                <option value="green">Green</option>
-                                <option value="blue">Blue</option>
-                                <option value="yellow">Yellow</option>
-                            </select>
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                            <input type="password" name="" id="user-pwd" required>
+                            <label for="">Password</label>
                         </div>
-                        <div>
-                            <textarea name="cloth-description" id="clothDescription" cols="" rows=""
-                                placeholder="Enter description..."></textarea>
+                        <div class="remember-forgot">
+                            <label><input type="checkbox" name="" id="signUp-check">I agree to the terms &
+                                conditions.</label>
                         </div>
-                        <div class="flex">
-                            <button type="submit" class="bttn submit-clothes-btn">Submit Clothes <i
-                                    class="fa-solid fa-soap"></i></button>
+                        <button type="submit" class="btn submit">Register</button>
+                        <div class="login-register">
+                            <p>Already have an account? <a href="#" class="login-link">Login</a></p>
                         </div>
                     </form>
                 </div>
             </div>
-        </section>
+        </div>
+        <div class="section-container">
+            <section class="main-content grid">
+                <h2 class="section-title greet"><span class="styling">G</span>ood <span class="greeting">Morning</span>!
+                </h2>
+                <div class="chota-dhobi-content grid">
+                    <div class="chota-dhobi-left flex">
+                        <img src="../../assets/images/chotaDhobi/astronaut_washing.png" class="main-img">
+                    </div>
 
-        <section class="queries flex">
-            <div class="queries-container flex">
-                <h3 class="subtitle"><span class="styling">H</span>ave any queries??</h3>
-                <div class="queries-content grid">
-                    <div class="queries-form-container flex">
-                        <form action="submit-queries" class="queries-form flex">
-                            <div class="row">
-                                <input type="text" placeholder="first name">
-                                <input type="text" placeholder="last name">
+                    <div class="chota-dhobi-dashboard">
+                        <div class="chota-dhobi-status">
+                            <h1 class="section-title washes-left">29</h1>
+                            <h3 class="subtitle">washes left</h3>
+                        </div>
+                        <div class="chota-dhobi-history">
+                            <h2 class="subtitle">History</h2>
+                            <ul>
+                                <li>13 clothes washed on <span class="date"></span></li>
+                                <li>14 clothes washed on <span class="date"></span></li>
+                                <li>12 clothes washed on <span class="date"></span></li>
+                                <li>17 clothes washed on <span class="date"></span></li>
+                                <li>19 clothes washed on <span class="date"></span></li>
+                                <li>10 clothes washed on <span class="date"></span></li>
+                            </ul>
+                        </div>
+                        <div class="button flex">
+                            <button class="bttn submit-btn" onclick=submitBtn()>Submit Clothes <i
+                                    class="fa-solid fa-soap"></i></button>
+                        </div>
+                    </div>
+
+
+
+                    <div class="chota-dhobi-center flex">
+                        <div class="chota-dhobi-status flex">
+                            <div class="chota-dhobi-status-header flex">
+                                <h2 class="subtitle">Current <br>Status</h2>
+                                <div class="current-status">
+                                    <div class="dot"></div> On Process
+                                </div>
                             </div>
-                            <div class="row">
-                                <input type="email" placeholder="your email">
+
+                            <div class="washing-status flex">
+                                <div class="clothes-numb-details flex bg-blur">
+                                    <i class="fa-solid fa-shirt"></i>
+                                    <span class="clothes-num">20</span>
+                                </div>
+                                <div class="clothes-tag-details flex bg-blur">
+                                    <i class="fa-solid fa-tag"></i>
+                                    <span class="clothes-token-num">256</span>
+                                </div>
                             </div>
-                            <textarea name="desc" id="" cols="35" rows="10" placeholder="description" class="row"></textarea>
-                            <div class="row">
-                                <input type="submit" value="Submit Now !!" class="flex bttn">
+                            <div class="status-content bg-blur"> We deliver more than just cleanliness. Experience the
+                                rejuvenating
+                                power of freshly laundered clothes, transforming your day into a seamless blend of
+                                comfort
+                                and confidence.</div>
+                            <button class="collect-btn bttn" onclick=clothesCollection()>Collect Now!</button>
+                        </div>
+                    </div>
+
+
+
+                    <div class="chota-dhobi-right flex">
+                        <h3 class="subtitle">SUBMISSION DETAILS</h3>
+                        <form id="clothesForm" action="">
+                            <div class="submit-input flex">
+                                <input type="text" id="numClothes" placeholder="number of clothes" required>
+                                <input type="text" id="tokenNumber" placeholder="token number" required>
+                                <select id="tokenColor" name="tokenColor" required>
+                                    <option value="red">Red</option>
+                                    <option value="green">Green</option>
+                                    <option value="blue">Blue</option>
+                                    <option value="yellow">Yellow</option>
+                                </select>
+                            </div>
+                            <div>
+                                <textarea name="cloth-description" id="clothDescription" cols="" rows=""
+                                    placeholder="Enter description..."></textarea>
+                            </div>
+                            <div class="flex">
+                                <button type="submit" class="bttn submit-clothes-btn">Submit Clothes <i
+                                        class="fa-solid fa-soap"></i></button>
                             </div>
                         </form>
                     </div>
-                    <div class="queries-img flex">
-                        <img src="../../assets/images/chotaDhobi/queries-img.png" alt="">
+                </div>
+            </section>
+
+            <section class="queries flex">
+                <div class="queries-container flex">
+                    <h3 class="subtitle"><span class="styling">H</span>ave any queries??</h3>
+                    <div class="queries-content grid">
+                        <div class="queries-form-container flex">
+                            <form action="submit-queries" class="queries-form flex">
+                                <div class="row">
+                                    <input type="text" placeholder="first name">
+                                    <input type="text" placeholder="last name">
+                                </div>
+                                <div class="row">
+                                    <input type="email" placeholder="your email">
+                                </div>
+                                <textarea name="desc" id="" cols="35" rows="10" placeholder="description"
+                                    class="row"></textarea>
+                                <div class="row">
+                                    <input type="submit" value="Submit Now !!" class="flex bttn">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="queries-img flex">
+                            <img src="../../assets/images/chotaDhobi/queries-img.png" alt="">
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </div>
     <script src="../../js/utility.js"></script>
     <script src="chotaDhobi.js"></script>
-    <script>
-    </script>
 </body>
 
 </html>
