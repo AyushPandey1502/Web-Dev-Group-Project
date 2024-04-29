@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="lfstyl.css" />
+    <link rel="stylesheet" href="../../css/utlility.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="flex">
+        <div class="logo">
+          <img src="../../assets/images/logo.png" alt="" />
+        </div>
+
+        <div class="nav-tab">
+          <ul class="flex">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <button class="nav-btn bttn">Login</button>
+      </nav>
+    </header>
+
+    <section class="top" id="slideshow">
+      <!-- <div class="slide-wrapper"> -->
+      <div class="top-container flex">
+        <div class="topleft">
+          <h1 class="section-title">LOST AND FOUND<br /></h1>
+          <h2 class="subtitle">RETRIEVAL OF YOUR PROPERTY WITHIN MERE HOURS</h2>
+        </div>
+
+        <div class="topright">
+          <img src="../../assets/images/bookpile.png" alt="" />
+        </div>
+      </div>
+
+      <h1>ABOUT:</h1>
+      <h2 class="para">
+        Lost and found websites allow users to report lost or found items by
+        providing details such as descriptions and contact information. The
+        website's system matches lost and found items, facilitating
+        communication between the owner and finder. Once a match is found, the
+        owner can arrange to retrieve their item following the website's
+        guidelines. These platforms aim to reunite lost items with their owners
+        in a convenient and efficient manner.
+      </h2>
+    </section>
+
+    <div class="left">
+      <div class="piclost">
+        <img src="../lostAndFound/assets/img.jpg" />
+      </div>
+      <div class="lost">
+        <legend>LOST OR FOUND ITEMS</legend>
+        <height:50px></height:50px>
+        <width:50px></width:50px>
+
+        <form id="lostFoundForm">
+          <label for="firstName">First Name:</label><br />
+          <input type="text" id="firstName" name="firstName" /><br />
+
+          <label for="lastName">Last Name:</label><br />
+          <input type="text" id="lastName" name="lastName" /><br />
+
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="email" /><br />
+
+          <label for="phone">Phone Number:</label><br />
+          <input type="tel" id="phone" name="phone" /><br />
+
+          <input type="radio" id="lost" name="lostFound" value="lost" />
+          <label for="lost">Lost</label><br />
+          <input type="radio" id="found" name="lostFound" value="found" />
+          <label for="found">Found</label><br />
+
+          <label for="item">Item:</label><br />
+          <input type="text" id="item" name="item" /><br />
+
+          <label for="file">Upload File:</label><br />
+          <input type="file" id="file" name="file" /><br />
+
+          <input type="button" value="Submit" onclick="submitForm()" />
+        </form>
+      </div>
+      <div class="picfound">
+        <img src="../lostAndFound/assets/img.jpg" />
+      </div>
+    </div>
+
+    <div id="displayData">
+      <h4>INFORMATION ENTERED</h4>
+      <br />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
