@@ -234,6 +234,10 @@
     .team-card h2     .mentor img{
         font-size: 20px;
     }
+    .s-icon{
+        margin-right: 10px;
+        right: 10px;
+    }
 }
 
 @media (max-width: 545px) {
@@ -313,7 +317,5 @@
     .footer-copyright{
         font-size: 15px;
     }
-    .services-container .services-box{
-        /* padding: 10px; */
-    }
+    
 }
