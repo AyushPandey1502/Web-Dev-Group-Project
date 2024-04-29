@@ -34,10 +34,20 @@ section.home {
     width: 250px;
     font-size: 22px;
     color: black;
-    border-style: solid;
-    border-image: linear-gradient(to right, purple, blue, purple) 1;
+    border-width: 5px; 
+    border-style: so;
+    border-color: linear-gradient(to right, purple, blue, purple); 
+    background-clip: padding-box; 
+    -webkit-background-clip: padding-box; 
     cursor: pointer;
 }
+
+.home-btn:hover {
+    border-image: linear-gradient(to right, black, blue, black) 1; /* Change border gradient on hover */
+    filter: brightness(120%); /* Increase brightness on hover */
+    box-shadow: 0 0 20px rgba(0, 0, 255, 0.5); /* Add glowing effect */
+}
+
 
 
 /* =================== TIMELINE START ======================== */
@@ -272,6 +282,7 @@ section.home {
 
 .team-card {
     flex-direction: column;
+    position: relative; /* Ensure proper positioning for the linkedin-layer */
 }
 
 .team-card h3,
@@ -291,11 +302,43 @@ section.home {
     border-radius: 50%;
     height: 180px;
     width: 160px;
+    transition: 1s ease;
 }
 
 .our-team-container {
     justify-content: space-between;
 }
+
+.linkedin-layer {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.team-card:hover .linkedin-layer {
+    display: block;
+}
+
+.team-card:hover .team-img {
+    opacity: .2; /* Hide the team image on hover */
+}
+
+.linkedin-layer a {
+    display: inline-block;
+}
+
+.linkedin-layer img {
+    border:none;
+    border-radius: 50%;
+    height: 100px;
+    width: 80px;
+    opacity: 1;
+    margin-bottom: 80px;
+}
+
 
 /* ====================== Contact Page ===================== */
 
