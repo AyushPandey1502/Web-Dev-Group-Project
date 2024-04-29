@@ -83,7 +83,7 @@ fieldset {
 
 .tiles-container {
     height: 250px;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .borrowbooks {
