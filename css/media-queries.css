@@ -106,6 +106,10 @@
         width: 75%;
     }
 
+    section{
+        padding: 30px;
+    }
+
     section.home {
         width: 100%;
         padding-left: 80px;
@@ -223,6 +227,13 @@
     .services h1 {
         font-size: 2rem;
     }
+    .services-box i {
+        font-size: 4rem;
+    }
+    .mentor h2, 
+    .team-card h2     .mentor img{
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 545px) {
@@ -268,11 +279,12 @@
     }
 
     .mentor img {
-        height: 200px;
+        height: 180px;
     }
 
     .team-card img {
-        height: 180px;
+        height: 150px;
+        width: 130px;
     }
 
 
@@ -285,7 +297,10 @@
     }
 
     .contact-list li span , .contact-list li span a{
-        font-size: 18px;
+        font-size: 15px;
+    }
+    .contact-list li h3{
+        font-size: 1rem;
     }
 
     .logo img {
@@ -295,5 +310,10 @@
     .social-contacts i {
         font-size: 20px;
     }
-
+    .footer-copyright{
+        font-size: 15px;
+    }
+    .services-container .services-box{
+        /* padding: 10px; */
+    }
 }
