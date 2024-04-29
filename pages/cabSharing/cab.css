@@ -206,7 +206,7 @@ h1 {
 }
 
 .pagination .active {
-    background-color: b;
+    background-color: black;
     color: white;
 }
 
@@ -224,21 +224,18 @@ a {
 }
 
 
-
-/* Adjustments for smaller screens */
 @media screen and (max-width: 1200px) {
-
-
     .top-container {
         flex-direction: column-reverse;
         background-color: rgba(71, 86, 110, 0.5);
-        height: 1400px;
+        height: auto;
     }
 
     .img1 img {
-        width: 600px;
-        height: 600px;
-        margin-left: 250px;
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
     }
 
     .vac-start {

@@ -13,7 +13,6 @@ const books = Array.from(booksContainer.getElementsByClassName('vacancy'));
 const totalPages = Math.ceil(books.length / booksPerPage);
 let currentPage = 1;
 
-
 function displayPage(page) {
     const startIndex = (page - 1) * booksPerPage;
     const endIndex = startIndex + booksPerPage;
@@ -35,6 +34,7 @@ function updatePagination() {
         link.classList.toggle('active', page === currentPage);
     });
 }
+
 prevButton.addEventListener('click', () => {
     if (currentPage > 1) {
         currentPage--;
@@ -67,12 +67,12 @@ pageLinks.forEach((link) => {
 displayPage(currentPage);
 updatePagination();
 
-
 // Select the form elements
 const pickUpInput = document.querySelector('.loc');
 const dropInput = document.querySelector('.dest');
 const dateInput = document.querySelector('.date');
 const vacancyInput = document.querySelector('.vac');
+const priceInput = document.querySelector('.cost'); // Added price input
 const form = document.querySelector('.ride_list');
 
 // Select the container for ride cards
@@ -92,6 +92,7 @@ function updateRideCard(index) {
         <b>To</b>: ${dropInput.value} <br><br>
         <b>Date</b>: ${dateInput.value} <br><br>
         <b>Vacancy</b>: ${vacancyInput.value} <br><br>
+        <b>Price</b>: Rs. ${priceInput.value} <br><br>
         <button>Book Ride</button>
     `;
 }
@@ -110,8 +111,8 @@ form.addEventListener('submit', (e) => {
     form.reset();
 });
 
-
-if (userData && userData[0].length > 0) {    
+if (userData && userData[0].length > 0) {
     var loginStatusDiv = document.querySelector(".login-status");
     loginStatusDiv.innerHTML = `<acronym title="${userData}"><i class='fa-solid fa-user login-icon'></i></acronym>`;
 }
+
