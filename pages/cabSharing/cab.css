@@ -17,8 +17,6 @@ body {
 .top-container {
     justify-content: space-evenly;
     background-color: rgba(71, 86, 110, 0.5);
-    /* margin-left: 50px;
-    margin-right: 50px; */
 }
 
 .img1 img {
@@ -223,4 +221,42 @@ h1 {
 
 a {
     text-decoration: none;
+}
+
+
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 797px) {
+    /* .top-container {
+        flex-direction: column;
+    } */
+
+    .top-container {
+        flex-direction: column;
+        background-color: rgba(71, 86, 110, 0.5);
+        height: 1400px;
+    }
+
+    .img1 img {
+        width: 600px;
+        height: 600px;
+    }
+
+    /* .img1 img {
+        width: 300px;
+        height: auto;
+    } */
+
+    .vac-start {
+        margin-top: 20px;
+    }
+
+    .vac-container {
+        justify-content: flex-start;
+    }
+
+    .vacancy {
+        width: 90%;
+        margin: 10px 0;
+    }
 }
