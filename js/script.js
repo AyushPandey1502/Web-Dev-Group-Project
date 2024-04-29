@@ -73,48 +73,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
 
-  var fontSizeDecreased = false;
-
-  // function to resize the font size on decresing the window width
-  function decreaseFontSize() {
-    if (!fontSizeDecreased) {
-      var allElements = document.querySelectorAll('*');
-      for (var i = 0; i < allElements.length; i++) {
-        var element = allElements[i];
-        var computedStyle = window.getComputedStyle(element);
-        var fontSize = parseFloat(computedStyle.fontSize);
-        if (!isNaN(fontSize) && fontSize > 0) {
-          element.style.fontSize = (fontSize * 0.9) + 'px';
-        }
-      }
-      fontSizeDecreased = true;
-    }
-  }
-  
-  // function to restore the font size of the window width
-  function restoreFontSize() {
-    var allElements = document.querySelectorAll('*');
-    for (var i = 0; i < allElements.length; i++) {
-      var element = allElements[i];
-      element.style.fontSize = '';
-    }
-    fontSizeDecreased = false;
-  }
-  
-  function handleViewportWidth() {
-    var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-  
-    if (viewportWidth < 600) {
-      decreaseFontSize();
-    } else {
-      restoreFontSize();
-    }
-  }
-  
-  window.addEventListener('resize', function() {
-    handleViewportWidth();
-  });
-
   if (userData && userData[0].length > 0) {    
     var loginStatusDiv = document.querySelector(".login-status");
     loginStatusDiv.innerHTML = `<acronym title="${userData}"><i class='fa-solid fa-user login-icon'></i></acronym>`;
