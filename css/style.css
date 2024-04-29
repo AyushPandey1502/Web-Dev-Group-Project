@@ -15,6 +15,7 @@ section.home {
 
 .home {
     background: url(../assets/images/ComputerDesktopWallpapersCollection203_020.jpg);
+    background-position: center;
 }
 
 .home-content p {

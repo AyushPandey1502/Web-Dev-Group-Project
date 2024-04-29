@@ -92,7 +92,8 @@
     .team-card h2 {
         text-align: center;
     }
-    .contact-container{
+
+    .contact-container {
         display: grid;
         grid-template-columns: 1fr;
     }
@@ -127,11 +128,11 @@
         height: 350px;
     }
 
-    header::before{
+    header::before {
         background: transparent;
     }
 
-    .services h1{
+    .services h1 {
         font-size: 2.2rem;
     }
 }
@@ -162,7 +163,8 @@
     section {
         height: 100%;
     }
-    .about-container{
+
+    .about-container {
         display: grid;
         grid-template-columns: 1fr;
         justify-content: center;
@@ -170,11 +172,13 @@
         row-gap: 50px;
     }
 
-    .mentor, .about-container, .our-team{
+    .mentor,
+    .about-container,
+    .our-team {
         width: 100%;
     }
 
-    h3.section-title{
+    h3.section-title {
         text-align: center;
         margin-left: 0;
         display: block;
@@ -189,17 +193,35 @@
     .team-card {
         width: 200px;
     }
-    .social-contacts i{
+
+    .social-contacts i {
         font-size: 30px;
     }
 
-    .contact-section .content{
+    .contact-section .content {
         display: grid;
         grid-template-columns: 1fr;
         width: 100%;
     }
-    .logo img{
+
+    .logo img {
         height: 150px;
+    }
+
+    .services-box h2 {
+        font-size: 1.5rem;
+    }
+
+    .services-box p {
+        font-size: 1rem;
+    }
+
+    .services-container .services-box {
+        height: 400px;
+    }
+
+    .services h1 {
+        font-size: 2rem;
     }
 }
 
@@ -211,17 +233,67 @@
         width: 100%;
     }
 
-    section.home{
+    section.home {
         padding-top: 6vh;
         padding-left: 10px;
         padding-right: 10px;
     }
 
-    .home-content{
-        padding: -20px;
+    .home-content {
+        margin-left: 0;
     }
 
-    .home-content p{
+    .home-content p {
+        font-size: 20px;
+    }
+
+    .services-desc {
         font-size: 22px;
     }
+
+    #typing {
+        font-size: 28px;
+    }
+
+    .card {
+        height: 230px;
+    }
+
+    .section-title {
+        margin-bottom: 1.5rem;
+    }
+
+    .scrolling-wrapper-flexbox {
+        margin-top: 40px;
+    }
+
+    .mentor img {
+        height: 200px;
+    }
+
+    .team-card img {
+        height: 180px;
+    }
+
+
+    .contact-section h1 {
+        font-size: 35px;
+    }
+
+    .contact-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact-list li span , .contact-list li span a{
+        font-size: 18px;
+    }
+
+    .logo img {
+        height: 100px;
+    }
+
+    .social-contacts i {
+        font-size: 20px;
+    }
+
 }
