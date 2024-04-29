@@ -155,4 +155,16 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  const submenu = document.querySelector('.submenu');
+
+  function removeSubmenu() {
+      if(window.innerWidth < 1199 && submenu) {
+          submenu.style.display = 'none';
+      }
+  }
+  window.addEventListener('resize', function() {
+      removeSubmenu();
+  });
+});
 

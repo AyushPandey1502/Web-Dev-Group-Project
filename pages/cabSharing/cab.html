@@ -7,165 +7,235 @@
     <title>VITVerse | Cab Sharing</title>
     <link rel="stylesheet" href="../../css/utlility.css">
     <link rel="stylesheet" href="cab.css">
+    <link rel="stylesheet" href="../../css/navbar-queries.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <header>
+    <header class="aside">
         <nav class="navbar flex">
             <div class="nav-logo flex">
                 <img src="../../assets/icons/icon.png" alt="">
             </div>
             <div class="nav-tab">
                 <ul class="links flex" type="none">
-                    <li><a href="#home">Home</a></li>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="#services" class="active">Services</a>
+                        <ul class="submenu" type="none">
+                            <li><a href="../CabSharing/cab.html">CabShare</a></li>
+                            <li><a href="../BookShare/bookShare.html">Book Share</a></li>
+                            <li><a href="../lostAndFound/lostandfound.html">Lost & Found</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#about-us">About Us</a></li>
-                    <li><a href="#services">Services</a></li>
                     <li><a href="#contact">Contact Us</a></li>
-                    <button class="nav-btn bttn btnLogin-popup">Login</button>
+                    <div class="login-status"><button class="nav-btn bttn btnLogin-popup">Login</button> </div>
                 </ul>
             </div>
         </nav>
+        <div class="nav-toggler">
+            <span></span>
+        </div>
     </header>
-
-
-    <section class="top-container flex">
-        <form class="ride_list">
-            <h1>LIST A RIDE</h1>
-            Pick Up<br>
-            <input class="loc" type="text" placeholder="&#9679;"><br>
-            Drop<br>
-            <input class="dest" type="text" placeholder="&#9679;"> <br>
-            When<br>
-            <input class=" date" type="date" placeholder="U+1F464"> <br>
-            Vacancy
-            <input class="vac" type="number" placeholder="&#x1F464;" min="1"> <br>
-            Cost per person<br>
-            <input class="cost" type="text" placeholder="&#x20B9;"> <br>
-
-            <button>List Ride</button>
-        </form>
-        <div class="img1">
-            <img src="../../assets/images/astro-car.png" alt="">
-        </div>
-    </section>
-
-    <section>
-        <div class="vac-start flex">
-            <h1>Available Rides</h1>
-            <div class="ride-top-image">
-                <img src="../../assets/images/cab3.png" alt="">
+    <div class="login-popup">
+        <div class="wrapper">
+            <span class="icon-close">
+                <ion-icon name="close">x</ion-icon>
+            </span>
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form action="#" id="login-form">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" name="" id="email" required>
+                        <label for="">Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" name="" id="password" required>
+                        <label for="">Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox" name="" id="">Remember me</label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn submit">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+                    </div>
+                </form>
+            </div>
+            <div class="form-box register">
+                <h2>Registration</h2>
+                <form action="#" id="signUp-form">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></ion-icon></span>
+                        <input type="text" name="" id="user-name" required>
+                        <label for="">Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" name="" id="user-email" required>
+                        <label for="">Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" name="" id="user-pwd" required>
+                        <label for="">Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox" name="" id="signUp-check">I agree to the terms &
+                            conditions.</label>
+                    </div>
+                    <button type="submit" class="btn submit">Register</button>
+                    <div class="login-register">
+                        <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
             </div>
         </div>
-        <div class="vac-container flex">
-            <div class="vacancy v1">
-                <b>From</b> : VIT Vellore <br><br>
-                <b>To</b> : Katpadi Station<br><br>
-                <b>Date</b> : 2024-04-28<br><br>
-                <b>Vacancy</b> : 3<br><br>
-                <b>Price</b> : Rs: 100<br><br>
-                <button>Book Ride</button>
+    </div>
 
+    <div class="section-container">
+        <section class="top-container flex">
+            <form class="ride_list">
+                <h1>LIST A RIDE</h1>
+                Pick Up<br>
+                <input class="loc" type="text" placeholder="&#9679;"><br>
+                Drop<br>
+                <input class="dest" type="text" placeholder="&#9679;"> <br>
+                When<br>
+                <input class=" date" type="date" placeholder="U+1F464"> <br>
+                Vacancy
+                <input class="vac" type="number" placeholder="&#x1F464;" min="1"> <br>
+                Cost per person<br>
+                <input class="cost" type="text" placeholder="&#x20B9;"> <br>
+
+                <button>List Ride</button>
+            </form>
+            <div class="img1">
+                <img src="../../assets/images/astro-car.png" alt="">
             </div>
-            <div class="vacancy v2">
-                <b>From</b> : VIT Vellore <br><br>
-                <b>To</b> : New Bus Stand<br><br>
-                <b>Date</b> : 2024-04-26<br><br>
-                <b>Vacancy</b> : 2<br><br>
-                <b>Price</b> : Rs: 120<br><br>
-                <button>Book Ride</button>
+        </section>
+
+        <section>
+            <div class="vac-start flex">
+                <h1>Available Rides</h1>
+                <div class="ride-top-image">
+                    <img src="../../assets/images/cab3.png" alt="">
+                </div>
             </div>
-            <div class="vacancy v3">
-                <b>From</b> : Chennai Airport <br><br>
-                <b>To</b> : VIT Vellore<br><br>
-                <b>Date</b> : 2024-04-30<br><br>
-                <b>Vacancy</b> : 1<br><br>
-                <b>Price</b> : Rs: 1500<br><br>
-                <button>Book Ride</button>
+            <div class="vac-container flex">
+                <div class="vacancy v1">
+                    <b>From</b> : VIT Vellore <br><br>
+                    <b>To</b> : Katpadi Station<br><br>
+                    <b>Date</b> : 2024-04-28<br><br>
+                    <b>Vacancy</b> : 3<br><br>
+                    <b>Price</b> : Rs: 100<br><br>
+                    <button>Book Ride</button>
+
+                </div>
+                <div class="vacancy v2">
+                    <b>From</b> : VIT Vellore <br><br>
+                    <b>To</b> : New Bus Stand<br><br>
+                    <b>Date</b> : 2024-04-26<br><br>
+                    <b>Vacancy</b> : 2<br><br>
+                    <b>Price</b> : Rs: 120<br><br>
+                    <button>Book Ride</button>
+                </div>
+                <div class="vacancy v3">
+                    <b>From</b> : Chennai Airport <br><br>
+                    <b>To</b> : VIT Vellore<br><br>
+                    <b>Date</b> : 2024-04-30<br><br>
+                    <b>Vacancy</b> : 1<br><br>
+                    <b>Price</b> : Rs: 1500<br><br>
+                    <button>Book Ride</button>
+                </div>
+                <div class="vacancy v4">
+                    <b>From</b> : VIT Vellore <br><br>
+                    <b>To</b> : Banglore Airport<br><br>
+                    <b>Date</b> : 2024-04-28<br><br>
+                    <b>Vacancy</b> : 3<br><br>
+                    <b>Price</b> : Rs: 2000<br><br>
+                    <button>Book Ride</button>
+                </div>
+                <div class="vacancy v5">
+                    <b>From</b> : VIT Vellore <br><br>
+                    <b>To</b> : Katpadi Station<br><br>
+                    <b>Date</b> : 24-04-2024<br><br>
+                    <b>Vacancy</b> : 3<br><br>
+                    <b>Price</b> : Rs: 100<br><br>
+                    <button>Book Ride</button>
+                </div>
+                <div class="vacancy v6">
+                    <b>From</b> : VIT Vellore <br><br>
+                    <b>To</b> : Katpadi Railway Station<br><br>
+                    <b>Date</b> : 24-04-2024<br><br>
+                    <b>Vacancy</b> : 3<br><br>
+                    <b>Price</b> : Rs: 100<br><br>
+                    <button>Book Ride</button>
+                </div>
+                <div class="vacancy v7">
+                    <b>From</b> : VIT Vellore <br><br>
+                    <b>To</b> : Katpadi Railway Station<br><br>
+                    <b>Date</b> : 24-04-2024<br><br>
+                    <b>Vacancy</b> : 3<br><br>
+                    <b>Price</b> : Rs: 100<br><br>
+                    <button>Book Ride</button>
+                </div>
+                <div class="vacancy v8">
+                    <b>From</b> : VIT Vellore <br><br>
+                    <b>To</b> : Katpadi Railway Station<br><br>
+                    <b>Date</b> : 24-04-2024<br><br>
+                    <b>Vacancy</b> : 3<br><br>
+                    <b>Price</b> : Rs: 100<br><br>
+                    <button>Book Ride</button>
+                </div>
+                <div class="vacancy v9">
+                    <b>From</b> : VIT Vellore <br><br>
+                    <b>To</b> : Katpadi Railway Station<br><br>
+                    <b>Date</b> : 24-04-2024<br><br>
+                    <b>Vacancy</b> : 3<br><br>
+                    <b>Price</b> : Rs: 100<br><br>
+                    <button>Book Ride</button>
+                </div>
+                <div class="vacancy v10">
+                    <b>From</b> : VIT Vellore <br><br>
+                    <b>To</b> : Katpadi Railway Station<br><br>
+                    <b>Date</b> : 24-04-2024<br><br>
+                    <b>Vacancy</b> : 3<br><br>
+                    <b>Price</b> : Rs: 100<br><br>
+                    <button>Book Ride</button>
+                </div>
+                <div class="vacancy v11">
+                    <b>From</b> : VIT Vellore <br><br>
+                    <b>To</b> : Katpadi Railway Station<br><br>
+                    <b>Date</b> : 24-04-2024<br><br>
+                    <b>Vacancy</b> : 3<br><br>
+                    <b>Price</b> : Rs: 100<br><br>
+                    <button>Book Ride</button>
+                </div>
+                <div class="vacancy v12">
+                    <b>From</b> : VIT Vellore <br><br>
+                    <b>To</b> : Katpadi Railway Station<br><br>
+                    <b>Date</b> : 24-04-2024<br><br>
+                    <b>Vacancy</b> : 3<br><br>
+                    <b>Price</b> : Rs: 100<br><br>
+                    <button>Book Ride</button>
+                </div>
             </div>
-            <div class="vacancy v4">
-                <b>From</b> : VIT Vellore <br><br>
-                <b>To</b> : Banglore Airport<br><br>
-                <b>Date</b> : 2024-04-28<br><br>
-                <b>Vacancy</b> : 3<br><br>
-                <b>Price</b> : Rs: 2000<br><br>
-                <button>Book Ride</button>
+            <div class="pagination" id="pagination">
+                <a href="#" id="prev">Previous</a>
+                <a href="#" class="page-link" data-page="1">1</a>
+                <a href="#" class="page-link" data-page="2">2</a>
+                <a href="#" class="page-link" data-page="3">3</a>
+                <a href="#" id="next">Next</a>
+                <p id="page-numbers"> </p>
             </div>
-            <div class="vacancy v5">
-                <b>From</b> : VIT Vellore <br><br>
-                <b>To</b> : Katpadi Station<br><br>
-                <b>Date</b> : 24-04-2024<br><br>
-                <b>Vacancy</b> : 3<br><br>
-                <b>Price</b> : Rs: 100<br><br>
-                <button>Book Ride</button>
-            </div>
-            <div class="vacancy v6">
-                <b>From</b> : VIT Vellore <br><br>
-                <b>To</b> : Katpadi Railway Station<br><br>
-                <b>Date</b> : 24-04-2024<br><br>
-                <b>Vacancy</b> : 3<br><br>
-                <b>Price</b> : Rs: 100<br><br>
-                <button>Book Ride</button>
-            </div>
-            <div class="vacancy v7">
-                <b>From</b> : VIT Vellore <br><br>
-                <b>To</b> : Katpadi Railway Station<br><br>
-                <b>Date</b> : 24-04-2024<br><br>
-                <b>Vacancy</b> : 3<br><br>
-                <b>Price</b> : Rs: 100<br><br>
-                <button>Book Ride</button>
-            </div>
-            <div class="vacancy v8">
-                <b>From</b> : VIT Vellore <br><br>
-                <b>To</b> : Katpadi Railway Station<br><br>
-                <b>Date</b> : 24-04-2024<br><br>
-                <b>Vacancy</b> : 3<br><br>
-                <b>Price</b> : Rs: 100<br><br>
-                <button>Book Ride</button>
-            </div>
-            <div class="vacancy v9">
-                <b>From</b> : VIT Vellore <br><br>
-                <b>To</b> : Katpadi Railway Station<br><br>
-                <b>Date</b> : 24-04-2024<br><br>
-                <b>Vacancy</b> : 3<br><br>
-                <b>Price</b> : Rs: 100<br><br>
-                <button>Book Ride</button>
-            </div>
-            <div class="vacancy v10">
-                <b>From</b> : VIT Vellore <br><br>
-                <b>To</b> : Katpadi Railway Station<br><br>
-                <b>Date</b> : 24-04-2024<br><br>
-                <b>Vacancy</b> : 3<br><br>
-                <b>Price</b> : Rs: 100<br><br>
-                <button>Book Ride</button>
-            </div>
-            <div class="vacancy v11">
-                <b>From</b> : VIT Vellore <br><br>
-                <b>To</b> : Katpadi Railway Station<br><br>
-                <b>Date</b> : 24-04-2024<br><br>
-                <b>Vacancy</b> : 3<br><br>
-                <b>Price</b> : Rs: 100<br><br>
-                <button>Book Ride</button>
-            </div>
-            <div class="vacancy v12">
-                <b>From</b> : VIT Vellore <br><br>
-                <b>To</b> : Katpadi Railway Station<br><br>
-                <b>Date</b> : 24-04-2024<br><br>
-                <b>Vacancy</b> : 3<br><br>
-                <b>Price</b> : Rs: 100<br><br>
-                <button>Book Ride</button>
-            </div>
-        </div>
-        <div class="pagination" id="pagination">
-            <a href="#" id="prev">Previous</a>
-            <a href="#" class="page-link" data-page="1">1</a>
-            <a href="#" class="page-link" data-page="2">2</a>
-            <a href="#" class="page-link" data-page="3">3</a>
-            <a href="#" id="next">Next</a>
-            <p id="page-numbers"> </p>
-        </div>
-    </section>
+        </section>
+    </div>
     <script src="cab.js"></script>
+    <script src="../../js/utility.js"></script>
 </body>
 
 </html> -->

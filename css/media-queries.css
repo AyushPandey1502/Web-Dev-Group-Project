@@ -92,7 +92,10 @@
     .team-card h2 {
         text-align: center;
     }
-
+    .contact-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 
 }
 
@@ -186,6 +189,18 @@
     .team-card {
         width: 200px;
     }
+    .social-contacts i{
+        font-size: 30px;
+    }
+
+    .contact-section .content{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .logo img{
+        height: 150px;
+    }
 }
 
 @media (max-width: 545px) {
@@ -198,8 +213,15 @@
 
     section.home{
         padding-top: 6vh;
-        font-size: 15px;
         padding-left: 10px;
         padding-right: 10px;
+    }
+
+    .home-content{
+        padding: -20px;
+    }
+
+    .home-content p{
+        font-size: 22px;
     }
 }
