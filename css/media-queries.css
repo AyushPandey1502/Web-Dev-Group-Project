@@ -319,5 +319,7 @@
     .footer-copyright{
         font-size: 15px;
     }
-    
+    .contact-container{
+        padding-left: 0px;
+    }
 }
