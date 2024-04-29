@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+section{
+    height: 100%;
+    width: 100%;
+}
+
 .top {
     margin-top: 7rem;
     margin-bottom: 0;
@@ -385,73 +390,103 @@ a {
     transition: 0.5s ease;
 }
 
-@media screen and (max-width: 768px) {
-    .top-container {
-        flex-direction: column;
-        height: auto;
+@media screen and (max-width: 1199px){
+    .tiles-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 20px;
     }
 
-    .topright img {
-        width: 100%;
-        height: auto;
+    section.titles{
+        height: 100%;
     }
 
-    .tiles-container {
-        flex-direction: column;
+    .postBook{
+        margin-top: 400px;
+    }
+    .post-right img{
+        height: 300px;
+        width: 300px;
     }
 
-    .borrowbooks,
-    .borrownotes,
-    .earnmoney {
-        width: 90%;
-        margin: 0 auto 20px;
+    .postBook{
+        margin-top: 800px;
     }
 
-    .borrow-books {
-        flex-direction: column;
+}
+
+@media screen and (max-width: 1055px){
+    .tiles-container{
+        grid-template-columns: 1fr;
+        justify-content: center;
     }
 
-    .post {
-        flex-direction: column;
+    .borrow-right img{
+        width: 200px;
+        height: 200px;
     }
 
-    .post-left,
-    .post-right {
-        width: 100%;
-        text-align: center;
+    .borrowbooks, .borrownotes, .earnmoney{
+        margin-left: 150px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .post{
+        flex-direction: column-reverse;
     }
 
-    .post-right img {
-        width: 100%;
-        height: auto;
+    .post-right img{
+        display: none;
     }
 
-    .post-right,
-    .borrow-right {
-        width: 100%;
-        text-align: center;
-        margin-top: 20px;
-        /* Add margin to separate images */
+    .top-container{
+        padding: 40px;
     }
 
-    .post-right img,
-    .borrow-right img {
-        max-width: 90%;
-        /* Limit image width */
-        height: auto;
+    .topleft .subtitle{
+        display: none;
+    }
+}
+@media screen and (max-width: 675px){
+
+    section{
+        padding: 10px;
+    }
+    .bor{
+        height: 400px;
+        padding-bottom: 100px;
     }
 
-
-    .form {
-        flex-direction: column;
+    .arrow-down{
+        display: none;
     }
 
-    #bookname,
-    #publishers,
-    #author,
-    #edition,
-    #genre {
-        width: 100%;
-        margin-bottom: 10px;
+    .bor .nav-btn{
+        width: 200px;
+    }
+
+    .borrowbooks, .borrownotes, .earnmoney{
+        margin-left: 5rem;
+        margin-right: 5rem;
+        margin-bottom: 20px;
+    }
+
+    .top{
+        padding: 20px;
+    }
+
+    .post{
+        margin-top: 100px;
+    }
+
+    .borrow-right{
+        display: none;
+    }
+
+    .top-container{
+        margin-bottom: 50px;
     }
 }
