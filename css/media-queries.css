@@ -249,10 +249,12 @@
     }
 
     section.home {
-        padding-top: 6vh;
+        align-items: center;
+        padding-top: 10vh;
         padding-left: 10px;
         padding-right: 10px;
     }
+
 
     .home-content {
         margin-left: 0;
